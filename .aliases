@@ -14,7 +14,7 @@ alias -- -="cd -"
 #alias p="cd ~/projects"
 alias g="git"
 alias hgr="history|grep"
-#alias fgr="find .|grep"
+alias fgr="find .|grep"
 alias pgr="ps aux|grep"
 alias dc="docker-compose"
 
