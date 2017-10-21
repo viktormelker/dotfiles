@@ -2,9 +2,20 @@
     "window.zoomLevel": 0,
     "files.exclude": {
         "**/*.js": { "when": "$(basename).ts" },
-        "**/*.map": { "when": "$(basename).map" }
+        "**/*.map": { "when": "$(basename).map" },
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true
     },
     "editor.rulers": [
         80, 120
-    ]
+    ],
+    "workbench.iconTheme": "vscode-icons",
+    "search.exclude": {
+        "**/.venv/": true
+    },
+    "editor.renderWhitespace": "all",
+    "files.trimTrailingWhitespace": true
 }

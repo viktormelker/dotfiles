@@ -8,8 +8,13 @@
 # update all installed packages
 sudo pacman -Syu
 
-# install fish shell
 sudo pacman -S fish
 
 sudo pacman -S ripgrep
+
+sudo pacman -S yaourt
+
+sudo pacman -S bash-completion
+
+yaourt visual-studio-code
 
