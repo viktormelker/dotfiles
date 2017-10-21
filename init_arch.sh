@@ -8,15 +8,23 @@
 # update all installed packages
 sudo pacman -Syu
 
+# new shell
 sudo pacman -S fish
 
-sudo pacman -S ripgrep
-
+# installing non standard packages
 sudo pacman -S yaourt
 
+# 
 sudo pacman -S bash-completion
 
-sudo pacman -S docker-compose
-
+# For development
 yaourt visual-studio-code
+sudo pacman -S docker-compose
+sudo pacman -S ripgrep
 
+# Cloud development
+yaourt google-cloud-sdk
+yaourt -S kubernetes
+
+# fyndiq new platform stuff
+yaourt -S librdkafka-git
