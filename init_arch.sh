@@ -16,5 +16,7 @@ sudo pacman -S yaourt
 
 sudo pacman -S bash-completion
 
+sudo pacman -S docker-compose
+
 yaourt visual-studio-code
 
