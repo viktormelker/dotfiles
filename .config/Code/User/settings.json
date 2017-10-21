@@ -1,0 +1,10 @@
+{
+    "window.zoomLevel": 0,
+    "files.exclude": {
+        "**/*.js": { "when": "$(basename).ts" },
+        "**/*.map": { "when": "$(basename).map" }
+    },
+    "editor.rulers": [
+        80, 120
+    ]
+}

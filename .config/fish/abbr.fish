@@ -1,4 +1,3 @@
-abbr l 'ls -laoh'
 abbr dc docker-compose
 abbr fgr 'find .|grep'
 abbr hgr 'history|grep'
