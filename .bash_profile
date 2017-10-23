@@ -44,5 +44,7 @@ done;
 # You could just use `-g` instead, but I like being explicit
 #complete -W "NSGlobalDomain" defaults;
 
+ff () { /usr/bin/find . -name "$@" ; }      # ff:       Find file under the current directory
+
 # use fish_shell
 exec fish
