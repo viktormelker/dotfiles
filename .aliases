@@ -2,9 +2,9 @@
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
+alias .3="cd ../.."
+alias .4="cd ../../.."
+alias .5="cd ../../../.."
 alias -- -="cd -"
 
 # Shortcuts
@@ -13,10 +13,12 @@ alias -- -="cd -"
 #alias dt="cd ~/Desktop"
 #alias p="cd ~/projects"
 alias g="git"
+alias c="clear""
 alias hgr="history|grep"
 alias fgr="find .|grep"
 alias pgr="ps aux|grep"
 alias dc="docker-compose"
+alias qfind="find . -name"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`

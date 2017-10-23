@@ -1,5 +1,8 @@
 {
     "window.zoomLevel": 0,
+    "python.linting.pylintEnabled": false,
+    "python.linting.pep8Enabled": true,
+    "python.linting.flake8Enabled": true,
     "files.exclude": {
         "**/*.js": { "when": "$(basename).ts" },
         "**/*.map": { "when": "$(basename).map" },
