@@ -47,4 +47,4 @@ done;
 ff () { /usr/bin/find . -name "$@" ; }      # ff:       Find file under the current directory
 
 # use fish_shell
-exec fish
+# exec fish
