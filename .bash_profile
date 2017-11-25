@@ -1,8 +1,13 @@
+# set git options
+git config --global user.email "viktormelker@gmail.com"
+git config --global user.name "Viktor Melker"
+
+
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
 # Load the shell dotfiles, and then some:
-# * ~/.path can be used to extend `$PATH`.
+# * ~/.path< can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
 for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
@@ -47,4 +52,5 @@ done;
 ff () { /usr/bin/find . -name "$@" ; }      # ff:       Find file under the current directory
 
 # use fish_shell
+echo "Edit the .bash_profile file to enable fish shell"
 # exec fish

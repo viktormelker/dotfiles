@@ -21,7 +21,9 @@ sudo apt install htop
 echo "VScode must be installed from .deb package on their website. Press any key to continue"
 pause
 sudo apt install docker-compose
-# sudo pacman -S ripgrep
+sudo apt install python-pip
+sudo apt install httpie
+
 
 # Cloud development
 sudo apt install google-cloud-sdk
@@ -29,3 +31,4 @@ sudo apt install google-cloud-sdk
 
 # fyndiq new platform stuff
 sudo apt install librdkafka-dev
+
