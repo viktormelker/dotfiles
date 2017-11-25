@@ -5,4 +5,4 @@ pip install virtualenv
 sudo pip install pep8
 sudo pip install setuptools
 sudo pip install flake8
-
+sudo pip install yapf
