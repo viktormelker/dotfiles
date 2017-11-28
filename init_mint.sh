@@ -15,6 +15,7 @@ sudo apt install fish
 
 # install tools
 sudo apt install htop
+sudo apt install lastpass-cli
 # sudo apt install snapd
 
 # For development
