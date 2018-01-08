@@ -8,6 +8,7 @@ abbr gc 'git commit -m '
 abbr gco 'git checkout'
 abbr gs 'git status'
 abbr gd 'git diff'
+abbr gl 'git pull'
 
 abbr kc 'kubectl'
 abbr kgp 'kubectl get pods'
