@@ -11,6 +11,7 @@ abbr gd 'git diff'
 abbr gl 'git pull'
 abbr gco 'git checkout'
 abbr gp 'git push'
+abbr gmm 'git merge master'
 
 abbr kc 'kubectl'
 abbr kgp 'kubectl get pods'
