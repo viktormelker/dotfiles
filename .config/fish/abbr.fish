@@ -19,3 +19,7 @@ abbr kgs 'kubectl get svc'
 abbr kgd 'kubectl get deploy'
 abbr unset 'set --erase'
 abbr tp 'telepresence'
+
+abbr connect_dev 'gcloud container clusters get-credentials dev-cluster --zone europe-west1-b --project fyndiq-dev'
+abbr connect_sandbox 'gcloud container clusters get-credentials sandbox --zone asia-east1-b --project fyndiq-prod'
+abbr connect_global 'gcloud container clusters get-credentials global-platform --zone europe-west1-d --project fyndiq-prod'
