@@ -24,6 +24,10 @@ brew install kubectl
 # pip
 sudo easy_install pip
 
+# telepresence
+brew cask install osxfuse
+brew install socat datawire/blackbird/telepresence
+
 # fyndiq new platform stuff
 brew install librdkafka
 
