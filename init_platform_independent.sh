@@ -11,3 +11,4 @@ sudo pip install setuptools
 sudo pip install flake8
 sudo pip install yapf
 sudo pip install fabric 
+sudo pip install pylint 
