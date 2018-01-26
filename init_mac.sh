@@ -30,4 +30,5 @@ brew install socat datawire/blackbird/telepresence
 
 # fyndiq new platform stuff
 brew install librdkafka
+brew install kafkacat
 
