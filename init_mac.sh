@@ -20,6 +20,7 @@ brew install httpie
 brew install ripgrep
 brew install caskroom/cask/google-cloud-sdk
 brew install kubectl
+brew install node
 
 # pip
 sudo easy_install pip
