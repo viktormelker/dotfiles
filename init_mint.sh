@@ -27,6 +27,7 @@ sudo apt install python-pip
 sudo apt install httpie
 sudo apt install python-dev
 sudo apt install python3-dev
+sudo apt install vim
 
 
 # Cloud development
