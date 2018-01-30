@@ -22,8 +22,11 @@ sudo apt install lastpass-cli
 echo "VScode must be installed from .deb package on their website. Press any key to continue"
 pause
 sudo apt install docker-compose
+sudo apt install docker.io
 sudo apt install python-pip
 sudo apt install httpie
+sudo apt install python-dev
+sudo apt install python3-dev
 
 
 # Cloud development
