@@ -17,6 +17,13 @@ sudo apt install fish
 sudo apt install htop
 sudo apt install lastpass-cli
 # sudo apt install snapd
+nix-env --install ripgrep
+
+# package manager
+curl https://nixos.org/nix/install | sh
+
+# for nicer diffs
+nix-env -i diff-so-fancy
 
 # For development
 echo "VScode must be installed from .deb package on their website. Press any key to continue"
