@@ -23,6 +23,7 @@ brew install kubectl
 brew install node
 brew install diff-so-fancy
 brew install graphviz
+brew install stern
 
 # pip
 sudo easy_install pip
