@@ -17,13 +17,24 @@ sudo apt install fish
 sudo apt install htop
 sudo apt install lastpass-cli
 # sudo apt install snapd
+nix-env --install ripgrep
+
+# package manager
+curl https://nixos.org/nix/install | sh
+
+# for nicer diffs
+nix-env -i diff-so-fancy
 
 # For development
 echo "VScode must be installed from .deb package on their website. Press any key to continue"
 pause
 sudo apt install docker-compose
+sudo apt install docker.io
 sudo apt install python-pip
 sudo apt install httpie
+sudo apt install python-dev
+sudo apt install python3-dev
+sudo apt install vim
 
 
 # Cloud development
