@@ -24,6 +24,7 @@ brew install node
 brew install diff-so-fancy
 brew install graphviz
 brew install stern
+brew install mongodb
 
 # pip
 sudo easy_install pip
