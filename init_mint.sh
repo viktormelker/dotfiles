@@ -11,7 +11,8 @@ pause
 
 
 # new shell
-sudo apt install fish
+nix-env -i fish
+sudo ln -s ~/.nix-profile/bin/fish /usr/bin/
 
 # install tools
 sudo apt install htop
