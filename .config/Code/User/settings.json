@@ -20,5 +20,8 @@
         "**/.venv/": true
     },
     "editor.renderWhitespace": "all",
-    "files.trimTrailingWhitespace": true
+    "files.trimTrailingWhitespace": true,
+    "editor.formatOnPaste": true,
+    "editor.minimap.enabled": false,
+    "autoDocstring.docstringFormat": "google"
 }
