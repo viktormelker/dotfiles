@@ -11,7 +11,8 @@ pause
 
 
 # new shell
-sudo apt install fish
+nix-env -i fish
+sudo ln -s ~/.nix-profile/bin/fish /usr/bin/
 
 # install tools
 sudo apt install htop
@@ -35,12 +36,18 @@ sudo apt install httpie
 sudo apt install python-dev
 sudo apt install python3-dev
 sudo apt install vim
+sudo apt install python3-venv
 
 
 # Cloud development
 sudo apt install google-cloud-sdk
-# sudo snap install kubectl --classic
 
 # fyndiq new platform stuff
 sudo apt install librdkafka-dev
+
+# Install telepresence
+cd ~/dev
+git clone git@github.com:datawire/telepresence.git
+sudo env PREFIX=/usr/local ~/dev/telepresence/install.sh
+
 
