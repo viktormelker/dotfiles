@@ -37,6 +37,7 @@ sudo apt install python-dev
 sudo apt install python3-dev
 sudo apt install vim
 sudo apt install python3-venv
+sudo apt install jq
 
 
 # Cloud development
