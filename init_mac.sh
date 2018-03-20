@@ -26,6 +26,8 @@ brew install graphviz
 brew install stern
 brew install mongodb
 brew install jq
+brew install mysql
+brew install hub
 
 # pip
 sudo easy_install pip
