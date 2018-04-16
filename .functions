@@ -174,3 +174,8 @@ function o() {
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
+
+# ff: Find file under the current directory
+ff () {
+	/usr/bin/find . -name "$@";
+}
