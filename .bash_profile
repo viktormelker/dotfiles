@@ -49,8 +49,6 @@ done;
 # You could just use `-g` instead, but I like being explicit
 #complete -W "NSGlobalDomain" defaults;
 
-ff () { /usr/bin/find . -name "$@" ; }      # ff:       Find file under the current directory
-
 # use fish_shell
 echo "Edit the .bash_profile file to enable fish shell"
 # exec fish

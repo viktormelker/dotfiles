@@ -39,12 +39,11 @@ sudo apt install python3-dev
 sudo apt install vim
 sudo apt install python3-venv
 sudo apt install npm
+sudo apt install jq
 
 # fix problem with docker
 sudo pip uninstall docker-py
 sudo pip install docker
-
-
 
 # Cloud development
 sudo apt install google-cloud-sdk

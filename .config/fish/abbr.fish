@@ -23,5 +23,6 @@ abbr tp 'telepresence'
 abbr connect_dev 'gcloud container clusters get-credentials dev-cluster --zone europe-west1-b --project fyndiq-dev'
 abbr connect_sandbox 'gcloud container clusters get-credentials sandbox --zone asia-east1-b --project fyndiq-prod'
 abbr connect_global 'gcloud container clusters get-credentials global-platform --zone europe-west1-d --project fyndiq-prod'
+abbr connect_staging 'gcloud container clusters get-credentials staging-platform --zone europe-west1-b --project fyndiq-prod'
 
 abbr pipi 'pip install --process-dependency-links -U -r'
