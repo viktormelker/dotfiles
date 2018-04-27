@@ -40,6 +40,7 @@ sudo apt install vim
 sudo apt install python3-venv
 sudo apt install npm
 sudo apt install jq
+sudo apt install tree
 
 # fix problem with docker
 sudo pip uninstall docker-py
