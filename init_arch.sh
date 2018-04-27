@@ -14,13 +14,14 @@ sudo pacman -S fish
 # installing non standard packages
 sudo pacman -S yaourt
 
-# 
+#
 sudo pacman -S bash-completion
 
 # For development
 yaourt visual-studio-code
 sudo pacman -S docker-compose
 sudo pacman -S ripgrep
+sudo pacman -S yapf
 
 # Cloud development
 yaourt google-cloud-sdk
