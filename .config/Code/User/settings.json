@@ -24,7 +24,6 @@
     "editor.formatOnPaste": true,
     "editor.minimap.enabled": false,
     "autoDocstring.docstringFormat": "google",
-    "autoDocstring.guessTypes": false,
     "explorer.confirmDelete": false,
     "files.associations": {
         "*.avsc": "json"
