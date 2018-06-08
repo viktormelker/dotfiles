@@ -29,7 +29,8 @@ nix-env -i diff-so-fancy
 # For development
 echo "VScode must be installed from .deb package on their website. Press any key to continue"
 pause
-sudo apt install docker-compose
+sudo curl -L https://github.com/docker/compose/releases/download/1.19.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
 sudo apt install docker.io
 sudo apt install python-pip
 sudo apt install httpie
@@ -37,8 +38,13 @@ sudo apt install python-dev
 sudo apt install python3-dev
 sudo apt install vim
 sudo apt install python3-venv
+sudo apt install npm
 sudo apt install jq
+sudo apt install tree
 
+# fix problem with docker
+sudo pip uninstall docker-py
+sudo pip install docker
 
 # Cloud development
 sudo apt install google-cloud-sdk
