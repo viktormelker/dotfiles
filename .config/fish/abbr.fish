@@ -26,6 +26,6 @@ abbr connect_global 'gcloud container clusters get-credentials global-platform -
 abbr connect_staging 'gcloud container clusters get-credentials staging-platform --zone europe-west1-b --project fyndiq-prod'
 abbr connect_integration 'gcloud container clusters get-credentials integration-platform --zone europe-west1-b --project fyndiq-dev'
 
-
+abbr G '| grep'
 
 abbr pipi 'pip install --process-dependency-links -U -r'
