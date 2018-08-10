@@ -28,6 +28,7 @@ brew install mongodb
 brew install jq
 brew install mysql
 brew install hub
+brew install meld
 
 # pip
 sudo easy_install pip

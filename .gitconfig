@@ -161,8 +161,8 @@
 	autocorrect = 1
 
 [merge]
-
 	# Include summaries of merged commits in newly created merge commit messages
+	tool="meld"
 	log = true
 
 [push]
