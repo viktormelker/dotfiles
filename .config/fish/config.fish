@@ -10,3 +10,6 @@ end
 if not ssh-add -l > /dev/null
   ssh-add ~/.ssh/id_rsa
 end
+
+# Define alias in shell
+alias git "hub"
