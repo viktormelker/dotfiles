@@ -29,6 +29,7 @@ brew install jq
 brew install mysql
 brew install hub
 brew install meld
+brew cask install minikube
 
 # pip
 sudo easy_install pip

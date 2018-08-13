@@ -30,3 +30,5 @@ abbr connect_integration 'gcloud container clusters get-credentials integration-
 abbr pipi 'pip install --process-dependency-links -U -r'
 
 abbr hpr 'hub pull-request'
+
+abbr mk 'minikube'
