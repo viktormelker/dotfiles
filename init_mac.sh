@@ -30,6 +30,7 @@ brew install mysql
 brew install hub
 brew install meld
 brew cask install minikube
+brew install postgresql
 
 # pip
 sudo easy_install pip
