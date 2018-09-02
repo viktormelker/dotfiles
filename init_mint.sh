@@ -13,12 +13,15 @@ pause
 # new shell
 nix-env -i fish
 sudo ln -s ~/.nix-profile/bin/fish /usr/bin/
+curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
+fisher fzf edc/bass omf/thefuck omf/theme-bobthefish pipenv
 
 # install tools
 sudo apt install htop
 sudo apt install lastpass-cli
 # sudo apt install snapd
 nix-env --install ripgrep
+sudo apt-get install meld
 
 # package manager
 curl https://nixos.org/nix/install | sh
@@ -33,6 +36,7 @@ sudo curl -L https://github.com/docker/compose/releases/download/1.19.0/docker-c
 sudo chmod +x /usr/local/bin/docker-compose
 sudo apt install docker.io
 sudo apt install python-pip
+sudo apt install python3-pip
 sudo apt install httpie
 sudo apt install python-dev
 sudo apt install python3-dev
@@ -41,6 +45,16 @@ sudo apt install python3-venv
 sudo apt install npm
 sudo apt install jq
 sudo apt install tree
+sudo apt-get install openssh-server
+sudo pip install pipenv
+sudo apt-get install fonts-powerline
+sudo pip3 install thefuck
+
+# neo4j
+wget -O - https://debian.neo4j.org/neotechnology.gpg.key | sudo apt-key add -
+echo 'deb https://debian.neo4j.org/repo stable/' | sudo tee /etc/apt/sources.list.d/neo4j.list
+sudo apt-get update
+sudo apt-get install neo4j
 
 # fix problem with docker
 sudo pip uninstall docker-py
