@@ -12,6 +12,7 @@ brew install python3
 
 # install fish shell
 brew install fish
+curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
 
 # install tools
 brew install htop
@@ -31,6 +32,7 @@ brew install hub
 brew install meld
 brew cask install minikube
 brew install postgresql
+brew install maven
 
 # pip
 sudo easy_install pip
