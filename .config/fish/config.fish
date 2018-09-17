@@ -13,3 +13,5 @@ end
 
 # Define alias in shell
 alias git "hub"
+
+set -g theme_powerline_fonts no
