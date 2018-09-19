@@ -33,6 +33,7 @@ brew install meld
 brew cask install minikube
 brew install postgresql
 brew install maven
+brew install tree
 
 # pip
 sudo easy_install pip
