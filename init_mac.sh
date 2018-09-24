@@ -34,6 +34,7 @@ brew cask install minikube
 brew install postgresql
 brew install maven
 brew install tree
+brew install kubernetes-helm
 
 # pip
 sudo easy_install pip
