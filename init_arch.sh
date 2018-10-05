@@ -8,35 +8,46 @@
 # update all installed packages
 sudo pacman -Syu
 
-# new shell
-sudo pacman -S fish fisherman
-curl -L https://get.oh-my.fish | fish
+# zsh
+sudo pacman -S manjaro-zsh-config powerline zsh-autosuggestions zsh-completions zsh-history-substring-search zsh-syntax-highlighting
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+
+# fish shell
+#sudo pacman -S fish fisherman
+#curl -L https://get.oh-my.fish | fish
 # plugins
-fisher pipenv
-fisher fzf
-fisher edc/bass  # bash scripts
-omf install bobthefish
+#fisher pipenv
+#fisher fzf
+#fisher edc/bass  # bash scripts
+#omf install bobthefish
 
 # installing non standard packages
-sudo pacman -S yaourt
+sudo pacman -S yay
 
 #
 sudo pacman -S bash-completion
 
-
-
 # For development
-yaourt visual-studio-code
+yay visual-studio-code-bin
 sudo pacman -S docker-compose
+sudo pacman -S docker
 sudo pacman -S ripgrep
-sudo pacman -S yapf
-yaourt -S neo4j-community
-yaourt -S python-pipenv
+yay -S neo4j-community
+sudo pacman -S python-pipenv
+sudo pacman -S nodejs
+sudo pacman -S npm
+sudo pacman -S vim jq tree
+sudo pacman -S powerline-fonts
+sudo pacman -S httpie
+sudo pacman -S tmux
+sudo pacman -S diff-so-fancy
+
 
 
 # Cloud development
-yaourt google-cloud-sdk
-yaourt -S kubernetes
+yay google-cloud-sdk
+yay -S kubernetes
+yay -S kubectl-bin
 
 # fyndiq new platform stuff
-yaourt -S librdkafka-git
+yay -S librdkafka-git

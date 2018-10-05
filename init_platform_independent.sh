@@ -10,10 +10,6 @@ sudo pip install pep8
 sudo pip install setuptools
 sudo pip install flake8
 sudo pip install yapf
-sudo pip install fabric
 sudo pip install pylint
-
-# install nix (installation manager)
-bash <(curl https://nixos.org/nix/install)
 
 mkdir ~/dev
