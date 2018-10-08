@@ -37,7 +37,7 @@ brew install maven
 brew install tree
 brew install kubernetes-helm
 helm init --client-only
-brew install mysql-shell
+brew cask install mysql-shell
 
 # pip
 sudo easy_install pip
