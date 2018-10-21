@@ -9,7 +9,6 @@ pip install --upgrade pip
 sudo apt update
 sudo apt upgrade
 
-
 sudo apt install docker.io
 sudo apt install httpie
 sudo apt install python-dev
@@ -22,6 +21,7 @@ sudo apt install tree
 sudo apt install openssh-server
 sudo apt install fonts-powerline
 pip3 install --user pipenv
+sudo apt install tmux
 
 # neo4j
 wget -O - https://debian.neo4j.org/neotechnology.gpg.key | sudo apt-key add -
@@ -52,6 +52,15 @@ curl https://nixos.org/nix/install | sh
 
 # Diffs
 nix-env -i diff-so-fancy
+
+# VSCode
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
+sudo apt-get install apt-transport-https
+sudo apt-get update
+sudo apt-get install code # or code-insiders
+
 
 # Zsh
 apt-get install zsh

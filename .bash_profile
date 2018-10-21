@@ -4,7 +4,7 @@ git config --global user.name "Viktor Melker"
 
 
 # Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH";
+export PATH="$HOME/bin:$HOME/.nix-profile/bin;$PATH";
 
 # Load the shell dotfiles, and then some:
 # * ~/.path< can be used to extend `$PATH`.
