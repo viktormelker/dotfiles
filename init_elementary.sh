@@ -53,6 +53,10 @@ curl https://nixos.org/nix/install | sh
 # Diffs
 nix-env -i diff-so-fancy
 
+# Other
+nix-env -i ripgrep
+
+
 # VSCode
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
 sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/
