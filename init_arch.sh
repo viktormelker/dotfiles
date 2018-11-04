@@ -51,3 +51,6 @@ yay -S kubectl-bin
 
 # fyndiq new platform stuff
 yay -S librdkafka-git
+
+# Configure fastest mirrors
+sudo pacman-mirrors --fasttrack 10 && sudo pacman -Syyu
