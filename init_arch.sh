@@ -34,7 +34,6 @@ sudo pacman -S docker
 sudo pacman -S ripgrep
 yay -S neo4j-community
 sudo pacman -S python-pipenv
-pip install --user poetry
 sudo pacman -S nodejs
 sudo pacman -S npm
 sudo pacman -S vim jq tree
@@ -42,7 +41,7 @@ sudo pacman -S powerline-fonts
 sudo pacman -S httpie
 sudo pacman -S tmux
 sudo pacman -S diff-so-fancy
-
+sudo pacman -S ctags
 
 
 # Cloud development
@@ -58,3 +57,10 @@ yay -S franz
 
 # Configure fastest mirrors
 sudo pacman-mirrors --fasttrack 10 && sudo pacman -Syyu
+
+# install poetry
+curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
+source $HOME/.poetry/env
+mkdir ~/.zfunc
+poetry completions zsh > ~/.zfunc/_poetry
+
