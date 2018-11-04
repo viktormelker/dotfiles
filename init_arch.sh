@@ -34,6 +34,7 @@ sudo pacman -S docker
 sudo pacman -S ripgrep
 yay -S neo4j-community
 sudo pacman -S python-pipenv
+pip install --user poetry
 sudo pacman -S nodejs
 sudo pacman -S npm
 sudo pacman -S vim jq tree
