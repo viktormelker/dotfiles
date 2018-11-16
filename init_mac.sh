@@ -38,6 +38,7 @@ brew install tree
 brew install kubernetes-helm
 helm init --client-only
 brew cask install mysql-shell
+brew install reattach-to-user-namespace
 
 # pip
 sudo easy_install pip
