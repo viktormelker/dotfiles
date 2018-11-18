@@ -73,6 +73,7 @@ plugins=(
   postgres
   tmux
   pip
+  zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
