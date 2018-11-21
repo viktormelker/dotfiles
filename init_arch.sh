@@ -27,6 +27,8 @@ sudo pacman -S yay
 #
 sudo pacman -S bash-completion
 
+sudo pacman -S chromium
+
 # For development
 yay visual-studio-code-bin
 sudo pacman -S docker-compose
@@ -48,6 +50,9 @@ sudo pacman -S ctags
 yay google-cloud-sdk
 yay -S kubernetes
 yay -S kubectl-bin
+
+
+yay -S spotify
 
 # fyndiq new platform stuff
 yay -S librdkafka-git
