@@ -15,4 +15,9 @@ sudo pip install pylint
 mkdir ~/dev
 
 # install tmux plugin manager
+mkdir -p ~/.tmux/
+git clone https://github.com/siadat/session-finder ~/.tmux/session-finder
+~/.tmux/session-finder/install.bash
+
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
