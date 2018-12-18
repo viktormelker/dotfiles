@@ -40,6 +40,7 @@ helm init --client-only
 brew cask install mysql-shell
 brew install reattach-to-user-namespace
 brew install fzf
+brew install gradle
 
 # pip
 sudo easy_install pip
