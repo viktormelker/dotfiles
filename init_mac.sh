@@ -41,6 +41,7 @@ brew cask install mysql-shell
 brew install reattach-to-user-namespace
 brew install fzf
 brew install gradle
+brew install jenv
 
 # pip
 sudo easy_install pip
