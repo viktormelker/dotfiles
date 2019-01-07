@@ -28,4 +28,8 @@
     "files.associations": {
         "*.avsc": "json"
     },
+    "explorer.confirmDragAndDrop": false,
+    "git.confirmSync": false,
+    "vsdocker.imageUser": "docker.io/melkerman",
+    "docker.defaultRegistryPath": "melkerman",
 }
