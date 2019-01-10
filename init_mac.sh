@@ -42,6 +42,7 @@ brew install reattach-to-user-namespace
 brew install fzf
 brew install gradle
 brew install jenv
+brew install pyenv
 
 # pip
 sudo easy_install pip
