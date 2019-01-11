@@ -42,7 +42,11 @@ brew install reattach-to-user-namespace
 brew install fzf
 brew install gradle
 brew install jenv
+
+# pyenv
 brew install pyenv
+brew install openssl readline sqlite3 xz zlib
+
 
 # pip
 sudo easy_install pip

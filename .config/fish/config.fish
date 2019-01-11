@@ -15,3 +15,6 @@ end
 alias git "hub"
 
 set -g theme_powerline_fonts no
+
+status --is-interactive; and source (pyenv init -|psub)
+
