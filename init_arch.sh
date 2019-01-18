@@ -33,7 +33,6 @@ sudo pacman -S chromium
 yay visual-studio-code-bin
 sudo pacman -S docker-compose
 sudo pacman -S docker
-sudo pacman -S ripgrep
 yay -S neo4j-community
 sudo pacman -S python-pipenv
 sudo pacman -S nodejs
@@ -42,7 +41,6 @@ sudo pacman -S vim jq tree
 sudo pacman -S powerline-fonts
 sudo pacman -S httpie
 sudo pacman -S tmux
-sudo pacman -S diff-so-fancy
 sudo pacman -S ctags
 
 

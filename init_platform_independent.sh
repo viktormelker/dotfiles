@@ -19,3 +19,13 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # Install pyenv
 curl https://pyenv.run | bash
+
+# fzf, needed for some of the tmux stuff!
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+
+# Nix package manager
+curl https://nixos.org/nix/install | sh
+. /home/viktor/.nix-profile/etc/profile.d/nix.sh
+nix-env -i diff-so-fancy
+nix-env -i ripgrep

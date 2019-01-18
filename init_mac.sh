@@ -19,11 +19,9 @@ fisher Ladicle/fish-kubectl-prompt
 brew install htop
 brew install ctop
 brew install httpie
-brew install ripgrep
 brew install caskroom/cask/google-cloud-sdk
 brew install kubectl
 brew install node
-brew install diff-so-fancy
 brew install graphviz
 brew install stern
 brew install mongodb

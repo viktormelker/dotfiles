@@ -20,14 +20,8 @@ fisher fzf edc/bass omf/thefuck omf/theme-bobthefish pipenv
 sudo apt install htop
 sudo apt install lastpass-cli
 # sudo apt install snapd
-nix-env --install ripgrep
 sudo apt-get install meld
 
-# package manager
-curl https://nixos.org/nix/install | sh
-
-# for nicer diffs
-nix-env -i diff-so-fancy
 
 # For development
 echo "VScode must be installed from .deb package on their website. Press any key to continue"

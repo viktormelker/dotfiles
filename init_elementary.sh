@@ -46,16 +46,6 @@ cd ~/dev
 git clone git@github.com:datawire/telepresence.git
 sudo env PREFIX=/usr/local ~/dev/telepresence/install.sh
 
-# Nix package manager
-curl https://nixos.org/nix/install | sh
-. /home/viktor/.nix-profile/etc/profile.d/nix.sh
-
-# Diffs
-nix-env -i diff-so-fancy
-
-# Other
-nix-env -i ripgrep
-
 
 # VSCode
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
