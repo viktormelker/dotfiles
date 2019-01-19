@@ -107,8 +107,14 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+export PYENV_ROOT="$HOME/.pyenv"
 export PATH=~/.pyenv/bin:$PATH
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export PATH=~/.fzf/bin:$PATH
+
+export PATH=~/.nix-profile/bin:$PATH
+
+source ~/.zplug/init.zsh
