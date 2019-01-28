@@ -29,3 +29,6 @@ curl https://nixos.org/nix/install | sh
 . /home/viktor/.nix-profile/etc/profile.d/nix.sh
 nix-env -i diff-so-fancy
 nix-env -i ripgrep
+
+# zsh
+mkdir ~/.zsh
