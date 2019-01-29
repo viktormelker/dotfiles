@@ -38,7 +38,6 @@ helm init --client-only
 brew cask install mysql-shell
 brew install reattach-to-user-namespace
 brew install gradle
-brew install jenv
 
 # pyenv
 brew install openssl readline sqlite3 xz zlib

@@ -36,3 +36,6 @@ mkdir ~/.zsh
 # zplug
 export ZPLUG_HOME=~/.zplug
 $ git clone https://github.com/zplug/zplug $ZPLUG_HOME
+
+# jenv
+git clone https://github.com/gcuisinier/jenv.git ~/.jenv
