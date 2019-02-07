@@ -39,3 +39,6 @@ $ git clone https://github.com/zplug/zplug $ZPLUG_HOME
 
 # jenv
 git clone https://github.com/gcuisinier/jenv.git ~/.jenv
+
+# tensorflow
+git clone https://github.com/tensorflow/tensorflow.git ~/dev/tensorflow
