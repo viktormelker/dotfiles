@@ -67,9 +67,8 @@ source $HOME/.poetry/env
 mkdir ~/.zfunc
 poetry completions zsh > ~/.zfunc/_poetry
 
-# build system for tensorflow
-sudo pacman -S bazel
+# for some openai envs
+sudo pacman -S swig
 
-# for building tensorflow with amd graphics support
-sudo pacman -S ocl-icd opencl-headers opencl-mesa
-yay -S computecpp
+# tensorflow stuff
+sudo pacman -S openmpi
