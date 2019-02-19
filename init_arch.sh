@@ -45,10 +45,9 @@ sudo pacman -S ctags
 
 
 # Cloud development
-yay google-cloud-sdk
+yay -S google-cloud-sdk
 yay -S kubernetes
 yay -S kubectl-bin
-
 
 yay -S spotify
 
@@ -72,3 +71,8 @@ sudo pacman -S swig
 
 # tensorflow stuff
 sudo pacman -S openmpi
+# for opencl
+sudo pacman -S clinfo ocl-icd opencl-headers
+yay -S python-pygpu-git
+# for AMD GPU
+sudo pacman -S opencl-mesa
