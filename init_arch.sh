@@ -51,9 +51,6 @@ yay -S kubectl-bin
 
 yay -S spotify
 
-# fyndiq new platform stuff
-yay -S librdkafka-git
-
 # communication
 yay -S franz
 
@@ -69,10 +66,5 @@ poetry completions zsh > ~/.zfunc/_poetry
 # for some openai envs
 sudo pacman -S swig
 
-# tensorflow stuff
-sudo pacman -S openmpi
-# for opencl
-sudo pacman -S clinfo ocl-icd opencl-headers
-yay -S python-pygpu-git
-# for AMD GPU
-sudo pacman -S opencl-mesa
+yay -S slack-desktop
+yay -S dropbox
