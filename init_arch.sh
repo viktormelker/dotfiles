@@ -68,3 +68,5 @@ sudo pacman -S swig
 
 yay -S slack-desktop
 yay -S dropbox
+
+sudo pacman -S ripgrep
