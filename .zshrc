@@ -11,6 +11,13 @@
 #ZSH_THEME="agnoster"
 ZSH_THEME="robbyrussell"
 
+# Aliases
+alias hgr="history|grep"
+alias fgr="find .|grep"
+alias pgr="ps aux|grep"
+alias qfind="find . -name"
+alias reload="exec ${SHELL} -l"
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
