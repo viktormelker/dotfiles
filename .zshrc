@@ -8,8 +8,10 @@
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-#ZSH_THEME="agnoster"
-ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
+#ZSH_THEME="robbyrussell"
+
+export FZF_BASE=~/.fzf
 
 # Aliases
 alias hgr="history|grep"
@@ -82,6 +84,7 @@ plugins=(
   pip
   zsh-autosuggestions
   github
+  fzf
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -132,7 +135,7 @@ zplug "MichaelAquilina/zsh-autoswitch-virtualenv"
 zplug "~/.zsh", from:local
 
 # Load theme file
-zplug 'dracula/zsh', as:theme
+#zplug 'dracula/zsh', as:theme
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
