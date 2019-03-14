@@ -74,6 +74,7 @@ plugins=(
   tmux
   pip
   zsh-autosuggestions
+  github
 )
 
 source $ZSH/oh-my-zsh.sh

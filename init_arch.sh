@@ -70,3 +70,14 @@ yay -S slack-desktop
 yay -S dropbox
 
 sudo pacman -S ripgrep
+
+yay -S diff-so-fancy
+
+# start docker daemon on boot
+sudo systemctl enable docker.service
+
+# add user to docker group
+sudo gpasswd -a viktor docker
+
+sudo pacman -S hub
+sudo pacman -S neovim
