@@ -17,7 +17,8 @@
     ],
     "workbench.iconTheme": "vscode-icons",
     "search.exclude": {
-        "**/.venv/": true
+        "**/.venv/": true,
+        "**/venv/": true,
     },
     "editor.renderWhitespace": "all",
     "files.trimTrailingWhitespace": true,
