@@ -81,3 +81,4 @@ sudo gpasswd -a viktor docker
 
 sudo pacman -S hub
 sudo pacman -S neovim
+sudo pacman -S xsel

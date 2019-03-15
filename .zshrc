@@ -85,6 +85,7 @@ plugins=(
   zsh-autosuggestions
   github
   fzf
+  dotenv
 )
 
 source $ZSH/oh-my-zsh.sh
