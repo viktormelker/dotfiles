@@ -19,6 +19,7 @@
     "search.exclude": {
         "**/.venv/": true,
         "**/venv/": true,
+        "**/dist/": true,
     },
     "editor.renderWhitespace": "all",
     "files.trimTrailingWhitespace": true,
