@@ -83,3 +83,6 @@ sudo pacman -S hub
 sudo pacman -S neovim
 sudo pacman -S xsel
 sudo pacman -S kscreen
+
+sudo yay -S discord
+sudo pacman -S neofetch
