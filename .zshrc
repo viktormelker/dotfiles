@@ -20,6 +20,10 @@ alias pgr="ps aux|grep"
 alias qfind="find . -name"
 alias reload="exec ${SHELL} -l"
 
+# For funnel work
+# alias stats='PYTHONSTARTUP=/home/viktor/dev/umbrella/plugin-scripts/outputanalysis_workspace/.outputanalysis_pystartup python3'
+
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
