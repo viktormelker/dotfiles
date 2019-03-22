@@ -23,6 +23,7 @@ alias reload="exec ${SHELL} -l"
 # For funnel work
 # alias stats='PYTHONSTARTUP=/home/viktor/dev/umbrella/plugin-scripts/outputanalysis_workspace/.outputanalysis_pystartup python3'
 
+setopt hist_ignore_dups
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
