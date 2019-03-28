@@ -19,6 +19,7 @@ alias fgr="find .|grep"
 alias pgr="ps aux|grep"
 alias qfind="find . -name"
 alias reload="exec ${SHELL} -l"
+alias vi="vim"
 
 # For funnel work
 # alias stats='PYTHONSTARTUP=/home/viktor/dev/umbrella/plugin-scripts/outputanalysis_workspace/.outputanalysis_pystartup python3'
@@ -128,6 +129,8 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH=~/.pyenv/bin:$PATH
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+# required for vim plugin YouCompleteMe
+export PYTHON_CONFIGURE_OPTS="--enable-shared"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export PATH=~/.fzf/bin:$PATH
@@ -156,3 +159,4 @@ zplug load --verbose
 # jenv
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
+

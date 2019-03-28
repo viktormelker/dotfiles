@@ -40,3 +40,7 @@ $ git clone https://github.com/zplug/zplug $ZPLUG_HOME
 # jenv
 git clone https://github.com/gcuisinier/jenv.git ~/.jenv
 
+# vim
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+
