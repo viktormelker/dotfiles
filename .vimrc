@@ -22,7 +22,12 @@ Plugin 'nvie/vim-flake8'
 Plugin 'jnurmine/Zenburn'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'kien/ctrlp.vim'
-" Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'itchyny/lightline.vim'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -37,7 +42,7 @@ set foldmethod=indent
 set foldlevel=99
 
 " Enable folding with the spacebar
-" nnoremap <space> za
+nnoremap <space> za
 
 set encoding=utf-8
 
@@ -73,7 +78,16 @@ set nu
 set clipboard=unnamed
 
 "custom keys
-let mapleader=","
+let mapleader="§"
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
-"
+" Color theme switch
 call togglebg#map("<F5>")
+" Toggle NERDTree
+map <leader>n :NERDTreeToggle<CR>
+
+
+" nerdtree don't show .pyc files
+let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
+
+" exit even if last window is nerdtree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif

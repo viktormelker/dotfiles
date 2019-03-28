@@ -63,3 +63,5 @@ sudo ubuntu-drivers autoinstall
 
 sudo apt install postgresql-client-common
 sudo apt install postgresql-client
+
+sudo apt install build-essential cmake python3-dev
