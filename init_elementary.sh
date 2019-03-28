@@ -22,21 +22,13 @@ sudo apt install openssh-server
 sudo apt install fonts-powerline
 pip3 install --user pipenv
 sudo apt install tmux
+sudo apt install docker-compose
 
 # neo4j
 wget -O - https://debian.neo4j.org/neotechnology.gpg.key | sudo apt-key add -
 echo 'deb https://debian.neo4j.org/repo stable/' | sudo tee /etc/apt/sources.list.d/neo4j.list
 sudo apt-get update
 sudo apt-get install neo4j
-
-# Cloud development
-export CLOUD_SDK_REPO="cloud-sdk-$(lsb_release -c -s)"
-echo "deb http://packages.cloud.google.com/apt $CLOUD_SDK_REPO main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
-curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
-sudo apt-get update && sudo apt-get install google-cloud-sdk
-
-
-sudo apt install google-cloud-sdk
 
 # fyndiq new platform stuff
 sudo apt install librdkafka-dev
@@ -68,3 +60,6 @@ apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libread
 # graphics drivers
 sudo ubuntu-drivers list
 sudo ubuntu-drivers autoinstall
+
+sudo apt install postgresql-client-common
+sudo apt install postgresql-client
