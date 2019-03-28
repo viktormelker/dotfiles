@@ -39,18 +39,6 @@ set foldlevel=99
 " Enable folding with the spacebar
 " nnoremap <space> za
 
-" Indent python files properly
-au BufNewFile,BufRead *.py
-    \ set tabstop=4
-    \ set softtabstop=4
-    \ set shiftwidth=4
-    \ set textwidth=79
-    \ set expandtab
-    \ set autoindent
-    \ set fileformat=unix
-
-" Mark extra unnecessary whitespace
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 set encoding=utf-8
 
@@ -86,7 +74,7 @@ set nu
 set clipboard=unnamed
 
 "custom keys
-let mapleader=" "
+let mapleader=","
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 "
 call togglebg#map("<F5>")
