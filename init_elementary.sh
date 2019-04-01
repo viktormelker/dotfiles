@@ -65,3 +65,6 @@ sudo apt install postgresql-client-common
 sudo apt install postgresql-client
 
 sudo apt install build-essential cmake python3-dev
+
+# copy paste functionality in vim
+sudo apt install vim-gtk
