@@ -160,3 +160,5 @@ zplug load --verbose
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
+
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1

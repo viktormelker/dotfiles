@@ -27,6 +27,7 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'itchyny/lightline.vim'
+Plugin 'majutsushi/tagbar'
 
 
 " All of your Plugins must be added before the following line
@@ -46,9 +47,18 @@ nnoremap <space> za
 
 set encoding=utf-8
 
+set ruler         " show the cursor position all the time
+set showcmd       " display incomplete commands
+set incsearch     " do incremental searching
+set hlsearch      " highlight all search results
+set laststatus=2  " Always display the status line
+
+" Make it obvious where 80 characters is
+set textwidth=80
+set colorcolumn=+1
+
 " shortcuts for YouCompleteMe
 let g:ycm_autoclose_preview_window_after_completion=1
-map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 let python_highlight_all=1
 syntax on
@@ -62,6 +72,14 @@ if 'VIRTUAL_ENV' in os.environ:
   activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
   execfile(activate_this, dict(__file__=activate_this))
 EOF
+
+" Set syntax highlighting for specific file types
+autocmd BufRead,BufNewFile *.md set filetype=markdown
+autocmd BufRead,BufNewFile .{jscs,jshint,eslint}rc set filetype=json
+autocmd BufRead,BufNewFile aliases.local,zshrc.local,*/zsh/configs/* set filetype=sh
+autocmd BufRead,BufNewFile gitconfig.local set filetype=gitconfig
+autocmd BufRead,BufNewFile tmux.conf.local set filetype=tmux
+autocmd BufRead,BufNewFile vimrc.local set filetype=vim
 
 " colorscheme selection
 if has('gui_running')
@@ -84,7 +102,13 @@ map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 call togglebg#map("<F5>")
 " Toggle NERDTree
 map <leader>n :NERDTreeToggle<CR>
-
+" Toggle tagbar
+map <leader>b :TagbarToggle<CR>
+" Easier split navigation
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 " nerdtree don't show .pyc files
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
