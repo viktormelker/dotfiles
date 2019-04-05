@@ -93,7 +93,7 @@ endif
 set nu
 
 " integrate with system clipboard
-set clipboard=unnamed
+set clipboard=unnamedplus
 
 "custom keys
 let mapleader="§"
