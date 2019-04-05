@@ -92,6 +92,7 @@ plugins=(
   github
   fzf
   dotenv
+  # pipenv  # not merged yet, see https://github.com/robbyrussell/oh-my-zsh/pull/6698
 )
 
 source $ZSH/oh-my-zsh.sh
