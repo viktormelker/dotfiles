@@ -57,6 +57,10 @@ set laststatus=2  " Always display the status line
 set textwidth=80
 set colorcolumn=+1
 
+" Show tabs
+set list
+set listchars=tab:>-
+
 " shortcuts for YouCompleteMe
 let g:ycm_autoclose_preview_window_after_completion=1
 
