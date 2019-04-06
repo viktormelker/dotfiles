@@ -28,6 +28,9 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'majutsushi/tagbar'
+" tabular must come before vim-markdown!
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 
 
 " All of your Plugins must be added before the following line
