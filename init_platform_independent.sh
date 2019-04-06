@@ -42,5 +42,7 @@ git clone https://github.com/gcuisinier/jenv.git ~/.jenv
 
 # vim
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-
-
+# Install all plugins with :PluginInstall in vim
+# Configure YouCompleteMe by running install
+# `cd ~/.vim/bundle/YouCompleteMe`
+# `./install.py --clang-completer`
