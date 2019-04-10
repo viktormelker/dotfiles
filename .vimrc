@@ -105,6 +105,8 @@ set clipboard=unnamedplus
 "custom keys
 let mapleader="§"
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+map <leader>r  :YcmCompleter GoToReferences<CR>
+
 " Color theme switch
 call togglebg#map("<F5>")
 " Toggle NERDTree
