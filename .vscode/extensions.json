@@ -11,7 +11,8 @@
 		"mikestead.dotenv",
 		"shd101wyy.markdown-preview-enhanced",
 		"ms-pyright.pyright",
-		"fallenwood.viml"
+		"fallenwood.viml",
+		"rust-lang.rust"
 	],
 	// List of extensions recommended by VS Code that should not be recommended for users of this workspace.
 	"unwantedRecommendations": [
