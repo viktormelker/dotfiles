@@ -87,3 +87,4 @@ sudo pacman -S kscreen
 sudo yay -S discord
 sudo pacman -S neofetch
 sudo pacman -S gvim
+yay -S postman

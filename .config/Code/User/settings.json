@@ -13,7 +13,7 @@
         "**/.DS_Store": true
     },
     "editor.rulers": [
-        80, 120
+        100
     ],
     "workbench.iconTheme": "vscode-icons",
     "search.exclude": {
