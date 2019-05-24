@@ -13,12 +13,6 @@ ZSH_THEME="agnoster"
 
 export FZF_BASE=~/.fzf
 
-# Aliases
-source ~/.aliases
-
-# For funnel work
-source ~/.aliases_funnel
-
 setopt hist_ignore_dups
 
 # Set list of themes to pick from when loading at random
@@ -162,3 +156,9 @@ export PATH="$HOME/.yarn/bin:$PATH"
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 
 export PYTHONBREAKPOINT=pudb.set_trace
+
+# Aliases
+source ~/.aliases
+
+# For funnel work
+source ~/.aliases_funnel
