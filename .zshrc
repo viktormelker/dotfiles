@@ -14,12 +14,7 @@ ZSH_THEME="agnoster"
 export FZF_BASE=~/.fzf
 
 # Aliases
-alias hgr="history|grep"
-alias fgr="find .|grep"
-alias pgr="ps aux|grep"
-alias qfind="find . -name"
-alias reload="exec ${SHELL} -l"
-alias vi="vim"
+source ~/.aliases
 
 # For funnel work
 source ~/.aliases_funnel
@@ -165,3 +160,5 @@ eval "$(jenv init -)"
 export PATH="$HOME/.yarn/bin:$PATH"
 
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+
+export PYTHONBREAKPOINT=pudb.set_trace

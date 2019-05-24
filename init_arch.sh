@@ -90,3 +90,5 @@ sudo pacman -S gvim
 yay -S postman
 
 sudo pacman -S aws-cli
+yay -S nerd-fonts-complete
+sudo pacman -S lsd
