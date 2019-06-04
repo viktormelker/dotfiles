@@ -155,7 +155,7 @@ export PATH="$HOME/.yarn/bin:$PATH"
 
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 
-export PYTHONBREAKPOINT=pudb.set_trace
+export PYTHONBREAKPOINT=ipdb.set_trace
 
 # Aliases
 source ~/.aliases
