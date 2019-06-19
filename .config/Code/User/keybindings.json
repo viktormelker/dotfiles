@@ -6,8 +6,8 @@
         "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
     },
     {
-        "key": "f12",
-        "command": "-editor.action.revealDefinition",
+        "key": "ctrl+shift+8",
+        "command": "editor.action.jumpToBracket",
         "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
     }
 ]
