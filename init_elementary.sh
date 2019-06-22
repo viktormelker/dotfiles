@@ -68,3 +68,7 @@ sudo apt install build-essential cmake python3-dev
 
 # copy paste functionality in vim
 sudo apt install vim-gtk
+
+sudo snap install lsd
+sudo apt-get install npm
+sudo apt-get install yarn
