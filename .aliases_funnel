@@ -9,3 +9,10 @@ _run_in_downloader() {
     (pushd "$HOME/dev/umbrella/downloader" && source venv/bin/activate && PYTHONPATH=. "bin/${script}.py" $@ ; popd)
 }
 alias dfs='_run_in_downloader download_for_source'
+
+_run_in_docker() {
+    script=$1
+    shift
+    (pushd "$HOME/dev/umbrella/downloader" && docker run --rm -it -v ${PWD}/../:/repo -v ${HOME}:/root -e PYTHONPATH=/repo/downloader -w=/repo/downloader plugin-runner python "bin/${script}.py" $@ ; popd)
+}
+alias dfs-docker='_run_in_docker download_for_source'
