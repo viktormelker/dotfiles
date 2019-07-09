@@ -81,7 +81,6 @@ plugins=(
   github
   fzf
   dotenv
-  zsh-syntax-highlighting
   colored-man-pages
   # pipenv  # not merged yet, see https://github.com/robbyrussell/oh-my-zsh/pull/6698
 )
