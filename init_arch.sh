@@ -94,3 +94,4 @@ yay -S nerd-fonts-complete
 sudo pacman -S lsd
 sudo pacman -S xclip
 sudo pacman -S hub
+sudo pacman -S postgresql
