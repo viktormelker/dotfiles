@@ -82,7 +82,11 @@ plugins=(
   fzf
   dotenv
   colored-man-pages
-  # pipenv  # not merged yet, see https://github.com/robbyrussell/oh-my-zsh/pull/6698
+  virtualenv
+  aws
+  httpie
+  pipenv
+  pyenv
 )
 
 source $ZSH/oh-my-zsh.sh
