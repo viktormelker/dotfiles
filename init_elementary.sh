@@ -72,3 +72,6 @@ sudo apt install vim-gtk
 sudo snap install lsd
 sudo apt-get install npm
 sudo apt-get install yarn
+
+# postgres stuff
+sudo apt-get postgresql libpq-dev
