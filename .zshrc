@@ -133,7 +133,7 @@ export PATH=~/.fzf/bin:$PATH
 export PATH=~/.nix-profile/bin:$PATH
 
 source ~/.zplug/init.zsh
-# zplug "MichaelAquilina/zsh-autoswitch-virtualenv"
+zplug "MichaelAquilina/zsh-autoswitch-virtualenv"
 
 # Can manage local plugins
 zplug "~/.zsh", from:local
