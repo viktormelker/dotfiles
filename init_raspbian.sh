@@ -1,4 +1,5 @@
-apt-get update
+sudo apt-get update
 
-apt-get install vim
-apt-get install docker docker-compose
+sudo apt-get install vim
+sudo apt-get install docker docker-compose
+sudo apt-get install xclip
