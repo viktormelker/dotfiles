@@ -13,6 +13,9 @@ alias dfs='_run_in_downloader download_for_source'
 _run_in_docker() {
     script=$1
     shift
-    (pushd "$HOME/dev/umbrella/downloader" && docker run --rm -it -v ${PWD}/../:/repo -v ${HOME}:/root -e PYTHONPATH=/repo/downloader -w=/repo/downloader plugin-runner python "bin/${script}.py" $@ ; popd)
+    (pushd "$HOME/dev/umbrella/downloader" && docker run --rm -it -v ${PWD}/../:/repo -v ${HOME}:/root -e PYTHONPATH=/repo/downloader -w=/repo/downloader --net="host" plugin-runner python "bin/${script}.py" $@ ; popd)
 }
 alias dfs-docker='_run_in_docker download_for_source'
+alias pipi='pip3 install -r ../requirements-standalone-dev.txt && pip3 install \
+        --extra-index-url https://pypi.fury.io/1TNLgmxhJR2zmzeZBDyg/funnel/ \
+        -r requirements.txt'
