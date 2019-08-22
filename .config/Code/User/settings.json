@@ -36,4 +36,5 @@
     "git.confirmSync": false,
     "vsdocker.imageUser": "docker.io/melkerman",
     "docker.defaultRegistryPath": "melkerman",
+    "python.formatting.provider": "black"
 }
