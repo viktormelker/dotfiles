@@ -1,7 +1,7 @@
 # Contains aliases used at funnel
 
 alias venv="source venv/bin/activate"
-alias stats='PYTHONSTARTUP=/home/viktor/dev/umbrella/plugin-scripts/outputanalysis_workspace/.outputanalysis_pystartup python3'
+alias stats='PYTHONSTARTUP=/home/viktor/dev/umbrella/plugin-scripts/outputanalysis_workspace/.outputanalysis_pystartup ipython'
 
 _run_in_downloader() {
     script=$1
