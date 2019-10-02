@@ -95,4 +95,11 @@ sudo pacman -S lsd
 sudo pacman -S xclip
 sudo pacman -S hub
 sudo pacman -S postgresql
+
+# Yubikey stuff
 sudo pacman -S yubikey-manager-qt
+sudo pacman -S yubico-pam
+sudo pacman -S libu2f-host
+yay -S acsccid
+sudo systemctl enable pcscd.service
+sudo systemctl start pcscd.service
