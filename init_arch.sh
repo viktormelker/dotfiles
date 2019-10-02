@@ -95,3 +95,4 @@ sudo pacman -S lsd
 sudo pacman -S xclip
 sudo pacman -S hub
 sudo pacman -S postgresql
+sudo pacman -S yubikey-manager-qt
