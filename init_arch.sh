@@ -103,3 +103,7 @@ sudo pacman -S libu2f-host
 yay -S acsccid
 sudo systemctl enable pcscd.service
 sudo systemctl start pcscd.service
+
+# for power management stuff
+sudo pacman -S ethtool  # use to disable wake on lan
+# sudo pacman -S acpi_call  # Thinkpad battery calibration
