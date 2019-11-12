@@ -167,3 +167,6 @@ source ~/.aliases
 
 # For funnel work
 source ~/.aliases_funnel
+
+# add ruby paths
+export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
