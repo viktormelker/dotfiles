@@ -1,9 +1,12 @@
 # Setup file for arch linux based distros
 
 # handle keys
-#sudo pacman-key --init
-#sudo pacman-key --populate archlinux
-#sudo pacman-key --refresh-keys
+sudo pacman-key --init
+sudo pacman-key --populate archlinux
+sudo pacman-key --refresh-keys
+
+# Configure fastest mirrors
+sudo pacman-mirrors --fasttrack 10 && sudo pacman -Syyu
 
 # update all installed packages
 sudo pacman -Syu
@@ -33,6 +36,11 @@ sudo pacman -S chromium
 yay visual-studio-code-bin
 sudo pacman -S docker-compose
 sudo pacman -S docker
+# add user to docker group
+sudo gpasswd -a viktor docker
+# start docker daemon on boot
+sudo systemctl enable docker.service
+
 yay -S neo4j-community
 sudo pacman -S python-pipenv
 sudo pacman -S nodejs
@@ -54,14 +62,11 @@ yay -S spotify
 # communication
 yay -S franz
 
-# Configure fastest mirrors
-sudo pacman-mirrors --fasttrack 10 && sudo pacman -Syyu
-
 # install poetry
-curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
-source $HOME/.poetry/env
-mkdir ~/.zfunc
-poetry completions zsh > ~/.zfunc/_poetry
+# curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
+# source $HOME/.poetry/env
+# mkdir ~/.zfunc
+# poetry completions zsh > ~/.zfunc/_poetry
 
 # for some openai envs
 sudo pacman -S swig
@@ -69,24 +74,13 @@ sudo pacman -S swig
 yay -S slack-desktop
 yay -S dropbox
 
-sudo pacman -S ripgrep
-
-yay -S diff-so-fancy
-
-# start docker daemon on boot
-sudo systemctl enable docker.service
-
-# add user to docker group
-sudo gpasswd -a viktor docker
-
 sudo pacman -S hub
-sudo pacman -S neovim
 sudo pacman -S xsel
 sudo pacman -S kscreen
 
 sudo yay -S discord
 sudo pacman -S neofetch
-sudo pacman -S gvim
+# sudo pacman -S gvim
 yay -S postman
 
 sudo pacman -S aws-cli
@@ -98,6 +92,7 @@ sudo pacman -S postgresql
 
 # Yubikey stuff
 sudo pacman -S yubikey-manager-qt
+sudo pacman -S yubikey-manager
 sudo pacman -S yubico-pam
 sudo pacman -S libu2f-host
 yay -S acsccid
@@ -107,3 +102,5 @@ sudo systemctl start pcscd.service
 # for power management stuff
 sudo pacman -S ethtool  # use to disable wake on lan
 # sudo pacman -S acpi_call  # Thinkpad battery calibration
+
+yay -S nvm
