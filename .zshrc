@@ -77,7 +77,6 @@ plugins=(
   postgres
   tmux
   pip
-  zsh-autosuggestions
   github
   fzf
   dotenv
@@ -152,8 +151,8 @@ fi
 zplug load --verbose
 
 # jenv
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
+#export PATH="$HOME/.jenv/bin:$PATH"
+#eval "$(jenv init -)"
 
 # Node stuff
 export PATH="$HOME/.yarn/bin:$PATH"
@@ -170,3 +169,5 @@ source ~/.aliases_funnel
 
 # add ruby paths
 export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
+
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh

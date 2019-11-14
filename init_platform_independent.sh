@@ -50,3 +50,5 @@ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 # Configure YouCompleteMe by running install
 cd ~/.vim/bundle/YouCompleteMe
 ./install.py --clang-completer
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions

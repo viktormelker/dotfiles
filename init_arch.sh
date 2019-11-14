@@ -12,7 +12,7 @@ sudo pacman-mirrors --fasttrack 10 && sudo pacman -Syyu
 sudo pacman -Syu
 
 # zsh
-sudo pacman -S manjaro-zsh-config powerline zsh-autosuggestions zsh-completions zsh-history-substring-search zsh-syntax-highlighting
+sudo pacman -S manjaro-zsh-config powerline zsh-completions zsh-history-substring-search zsh-syntax-highlighting
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
 # fish shell
