@@ -104,3 +104,4 @@ sudo pacman -S ethtool  # use to disable wake on lan
 # sudo pacman -S acpi_call  # Thinkpad battery calibration
 
 yay -S nvm
+sudo pacman -S graphviz
