@@ -9,5 +9,26 @@
         "key": "ctrl+shift+8",
         "command": "editor.action.jumpToBracket",
         "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    // Terminal command tracking on Windows and Linux
+    {
+        "key": "ctrl+up",
+        "command": "workbench.action.terminal.scrollToPreviousCommand",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "workbench.action.terminal.scrollToNextCommand",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+up",
+        "command": "workbench.action.terminal.selectToPreviousCommand",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+down",
+        "command": "workbench.action.terminal.selectToNextCommand",
+        "when": "terminalFocus"
     }
 ]
