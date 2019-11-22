@@ -105,3 +105,4 @@ sudo pacman -S ethtool  # use to disable wake on lan
 
 yay -S nvm
 sudo pacman -S graphviz
+sudo pacman -S tig
