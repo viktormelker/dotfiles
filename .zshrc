@@ -171,3 +171,7 @@ source ~/.aliases_funnel
 export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+export FPATH="$HOME/.zsh/functions:$FPATH"
+autoload -Uz kp
+autoload -Uz fp
