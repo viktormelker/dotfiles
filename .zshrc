@@ -175,3 +175,6 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 export FPATH="$HOME/.zsh/functions:$FPATH"
 autoload -Uz kp
 autoload -Uz fp
+
+# For rust executables
+export PATH="$HOME/.cargo/bin:$PATH"
