@@ -62,12 +62,6 @@ yay -S spotify
 # communication
 yay -S franz
 
-# install poetry
-# curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
-# source $HOME/.poetry/env
-# mkdir ~/.zfunc
-# poetry completions zsh > ~/.zfunc/_poetry
-
 # for some openai envs
 sudo pacman -S swig
 
@@ -80,7 +74,6 @@ sudo pacman -S kscreen
 
 sudo yay -S discord
 sudo pacman -S neofetch
-# sudo pacman -S gvim
 yay -S postman
 
 sudo pacman -S aws-cli
@@ -106,3 +99,5 @@ sudo pacman -S ethtool  # use to disable wake on lan
 yay -S nvm
 sudo pacman -S graphviz
 sudo pacman -S tig
+sudo pacman -S rust
+cargo install du-dust
