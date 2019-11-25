@@ -101,3 +101,5 @@ sudo pacman -S graphviz
 sudo pacman -S tig
 sudo pacman -S rust
 cargo install du-dust
+
+sudo pacman -S cmake
