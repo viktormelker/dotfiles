@@ -103,3 +103,4 @@ sudo pacman -S rust
 cargo install du-dust
 
 sudo pacman -S cmake
+sudo pacman -S termtosvg
