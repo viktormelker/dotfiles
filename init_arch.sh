@@ -104,3 +104,4 @@ cargo install du-dust
 
 sudo pacman -S cmake
 sudo pacman -S termtosvg
+sudo pacman -S mariadb
