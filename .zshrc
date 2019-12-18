@@ -160,6 +160,7 @@ export PATH="$HOME/.yarn/bin:$PATH"
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 
 export PYTHONBREAKPOINT=ipdb.set_trace
+export PYTHONIOENCODING=utf-8
 
 # Aliases
 source ~/.aliases
