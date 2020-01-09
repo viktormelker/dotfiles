@@ -107,3 +107,4 @@ sudo pacman -S termtosvg
 sudo pacman -S mariadb
 
 yay -S direnv
+sudo pacman -S okular
