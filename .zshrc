@@ -181,3 +181,5 @@ autoload -Uz fp
 export PATH="$HOME/.cargo/bin:$PATH"
 
 eval "$(direnv hook zsh)"
+
+source /usr/share/nvm/init-nvm.sh
