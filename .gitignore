@@ -17,4 +17,5 @@ Thumbs.db
 # virtualenvs
 .venv
 
+.python-version
 .vscode
