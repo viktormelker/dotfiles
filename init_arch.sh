@@ -108,3 +108,4 @@ sudo pacman -S mariadb
 
 yay -S direnv
 sudo pacman -S okular
+sudo pacman -S yarn
