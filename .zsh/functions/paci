@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+### PATH
+# mnemonic: [P]acman [I]install
+# List pacman installable packages and allows selection of one for installation
+# press [escape] to go back to directory listing, [escape] twice to exit completely
+
+local package=$(pacman -Ss | awk '/[a-zA-Z\-]*\/[a-zA-Z\-]*/{print $1}' | eval "fzf ${FZF_DEFAULT_OPTS} --header='[Install pacman package]'")
+
+if [[ $package ]]; then
+  sudo pacman -S $package
+fi
