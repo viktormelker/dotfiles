@@ -71,17 +71,17 @@ plugins=(
   git
   docker-compose
   common-aliases
-  command-not-found
+  # command-not-found
   docker
-  kubectl
+  # kubectl
   postgres
   tmux
-  pip
+  # pip
   github
   fzf
   dotenv
   colored-man-pages
-  virtualenv
+  # virtualenv
   aws
   httpie
   pipenv
@@ -123,6 +123,7 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH=~/.pyenv/bin:$PATH
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
 # required for vim plugin YouCompleteMe
 export PYTHON_CONFIGURE_OPTS="--enable-shared"
 
@@ -156,6 +157,7 @@ zplug load --verbose
 
 # Node stuff
 export PATH="$HOME/.yarn/bin:$PATH"
+source /usr/share/nvm/init-nvm.sh
 
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 
@@ -171,15 +173,17 @@ source ~/.aliases_funnel
 # add ruby paths
 export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
 
+# plugin
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+# Add custom functions
 export FPATH="$HOME/.zsh/functions:$FPATH"
 autoload -Uz kp
 autoload -Uz fp
+autoload -Uz paci
 
 # For rust executables
 export PATH="$HOME/.cargo/bin:$PATH"
 
+# direnv plugin for loading environment variables
 eval "$(direnv hook zsh)"
-
-source /usr/share/nvm/init-nvm.sh
