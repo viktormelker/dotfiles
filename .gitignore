@@ -19,3 +19,4 @@ Thumbs.db
 
 .python-version
 .vscode
+.mypy_cache
