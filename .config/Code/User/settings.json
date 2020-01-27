@@ -25,6 +25,8 @@
     "search.useIgnoreFiles": false,
     "editor.renderWhitespace": "all",
     "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "files.insertFinalNewline": true,
     "editor.formatOnPaste": true,
     "editor.minimap.enabled": false,
     "autoDocstring.docstringFormat": "google",
