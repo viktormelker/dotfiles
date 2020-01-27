@@ -112,3 +112,4 @@ sudo pacman -S yarn
 sudo pacman -S i3-vm i3status-manjaro dmenu-manjaro i3-wallpapers i3lock pcmanfm network-manager-applet
 
 sudo pacman -S tldr
+sudo pacman -S kio-gdrive
