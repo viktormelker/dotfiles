@@ -84,7 +84,6 @@ plugins=(
   # virtualenv
   aws
   httpie
-  pipenv
   pyenv
 )
 
