@@ -109,6 +109,9 @@ sudo pacman -S mariadb
 yay -S direnv
 sudo pacman -S okular
 sudo pacman -S yarn
+
 sudo pacman -S i3-vm i3status-manjaro dmenu-manjaro i3-wallpapers i3lock pcmanfm network-manager-applet feh rofi py3status xautolock
+yay -S alttab-git
+
 sudo pacman -S tldr
 sudo pacman -S kio-gdrive
