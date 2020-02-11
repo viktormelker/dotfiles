@@ -43,7 +43,7 @@ ${color2}navigate workspaces - ${color}mod+Ctrl+arrows
 ${color2}toggle floating - ${color}mod+Shift+Space
 
 ${color2}lock screen - ${color}Ctrl+Alt+l
-${color2}system mode - ${color}mod+pausel
+${color2}system mode - ${color}mod+pause
 
 ${color2}mod = ${color}<Super>
 ]]
