@@ -191,9 +191,9 @@ bar {
         status_command py3status -c ~/.i3status.conf
 }
 
-xautolock -time 10 -locker "i3lock -i '~/Downloads/wallpapers/nightsky1.jpg'" &
+set $Locker i3lock -i '/home/viktor/Downloads/wallpapers/ryan-pernofski-weuZKB19ZeU-unsplash.png' && sleep 1
 
-set $Locker i3lock && sleep 1
+bindsym Mod1+ctrl+l exec $Locker
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
