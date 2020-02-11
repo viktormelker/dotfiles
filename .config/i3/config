@@ -33,6 +33,7 @@ exec --no-startup-id nm-applet
 # Wallpapers using feh
 exec_always --no-startup-id feh --recursive --randomize --bg-fill ~/Downloads/wallpapers
 
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -49,8 +50,10 @@ bindsym $mod+Return exec konsole
 # kill focused window
 bindsym $mod+Shift+q kill
 
+# use rofi to start/swithc programs
+bindsym $mod+d exec --no-startup-id "rofi -show-icons -modi windowcd,window,drun -show drun"
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+# bindsym $mod+d exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -180,7 +183,9 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status
+        i3bar_command i3bar
+        position top
+        status_command py3status -c ~/.i3status.conf
 }
 
 set $Locker i3lock && sleep 1
