@@ -110,7 +110,8 @@ yay -S direnv
 sudo pacman -S okular
 sudo pacman -S yarn
 
-sudo pacman -S i3-vm i3status-manjaro dmenu-manjaro i3-wallpapers i3lock pcmanfm network-manager-applet feh rofi py3status xautolock
+# i3 stuff
+sudo pacman -S i3-vm i3status-manjaro dmenu-manjaro i3-wallpapers i3lock pcmanfm network-manager-applet feh rofi py3status xautolock conky
 yay -S alttab-git
 
 sudo pacman -S tldr
