@@ -76,7 +76,7 @@ plugins=(
   # kubectl
   postgres
   tmux
-  # pip
+  pip
   github
   fzf
   dotenv
