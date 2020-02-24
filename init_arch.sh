@@ -116,3 +116,5 @@ yay -S alttab-git
 
 sudo pacman -S tldr
 sudo pacman -S kio-gdrive
+
+npm install -g aws-cdk
