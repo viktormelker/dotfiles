@@ -39,6 +39,9 @@ ${color2}move windows - ${color}mod+Shift+[hjkl | arrow_keys]
 ${color2}reload config file - ${color}mod+Shift+c
 ${color2}restart i3 inplace - ${color}mod+Shift+r
 
+${color2}decrease brightness - ${color}mod+F5
+${color2}increase brightness - ${color}mod+F6
+
 ${color2}switch to workspace 1-8 - ${color}mod+1-8
 ${color2}send to workspace 1-8 - ${color}mod+Shift+1-8
 ${color2}navigate workspaces - ${color}mod+Ctrl+arrows
