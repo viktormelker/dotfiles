@@ -5,7 +5,7 @@ conky.config = {
     cpu_avg_samples = 2,
     default_color = 'EB564D',
     double_buffer = true,
-    font = 'Bitstream Vera Sans:size=14',
+    font = 'Bitstream Vera Sans:size=10',
     draw_shades = false,
     gap_x = 25,
     gap_y = 45,
@@ -36,6 +36,9 @@ ${color2}split container (vert) - ${color}mod+v
 ${color2}focus windows - ${color}mod+[hjkl | arrow_keys]
 ${color2}move windows - ${color}mod+Shift+[hjkl | arrow_keys]
 
+${color2}reload config file - ${color}mod+Shift+c
+${color2}restart i3 inplace - ${color}mod+Shift+r
+
 ${color2}switch to workspace 1-8 - ${color}mod+1-8
 ${color2}send to workspace 1-8 - ${color}mod+Shift+1-8
 ${color2}navigate workspaces - ${color}mod+Ctrl+arrows
@@ -43,7 +46,7 @@ ${color2}navigate workspaces - ${color}mod+Ctrl+arrows
 ${color2}toggle floating - ${color}mod+Shift+Space
 
 ${color2}lock screen - ${color}Ctrl+Alt+l
-${color2}system mode - ${color}mod+pause
+${color2}system mode - ${color}mod+pause | mod+Shift+s
 
 ${color2}mod = ${color}<Super>
 ]]
