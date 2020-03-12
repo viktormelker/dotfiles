@@ -121,3 +121,6 @@ npm install -g aws-cdk
 
 # for dig etc
 sudo pacman -S bind
+
+# needed for some zsh autocomplete
+sudo pacman -S gopass
