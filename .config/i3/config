@@ -31,7 +31,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 # Wallpapers using feh
-exec_always --no-startup-id feh --recursive --randomize --bg-fill ~/Downloads/wallpapers
+exec_always --no-startup-id feh --recursive --randomize --bg-fill ~/Pictures/wallpapers
 
 # enable alttab
 exec_always alttab
@@ -133,7 +133,7 @@ bindsym $mod+F5 exec xbacklight -10
 bindsym $mod+F6 exec xbacklight +10
 
 # Take screenshot
-#bindsym $mod+Print import ~/Pictures/screenshot.png
+bindsym $mod+Print exec import ~/Pictures/screenshot.png
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -215,7 +215,7 @@ bar {
         status_command py3status -c ~/.i3status.conf
 }
 
-set $Locker i3lock -i '/home/viktor/Downloads/wallpapers/ryan-pernofski-weuZKB19ZeU-unsplash.png' && sleep 1
+set $Locker i3lock -i '/home/viktor/Pictures/wallpapers/ryan-pernofski-weuZKB19ZeU-unsplash.png' && sleep 1
 
 bindsym Mod1+ctrl+l exec $Locker
 
