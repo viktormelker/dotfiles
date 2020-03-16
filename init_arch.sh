@@ -43,7 +43,7 @@ sudo systemctl enable docker.service
 
 yay -S neo4j-community
 sudo pacman -S python-pipenv
-sudo pacman -S nodejs
+sudo pacman -S nodejs-lts-erbium
 sudo pacman -S npm
 sudo pacman -S vim jq tree
 sudo pacman -S powerline-fonts
@@ -111,7 +111,8 @@ sudo pacman -S okular
 sudo pacman -S yarn
 
 # i3 stuff
-sudo pacman -S i3-vm i3status-manjaro dmenu-manjaro i3-wallpapers i3lock pcmanfm network-manager-applet feh rofi py3status xautolock conky xorg-xbacklight dunst
+sudo pacman -S i3-vm i3status-manjaro dmenu-manjaro i3-wallpapers i3lock pcmanfm network-manager-applet feh rofi py3status xautolock conky xorg-xbacklight pulseaudio pavucontrol dunst
+
 yay -S alttab-git
 
 sudo pacman -S tldr
