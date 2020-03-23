@@ -133,6 +133,7 @@ export PATH=~/.nix-profile/bin:$PATH
 
 source ~/.zplug/init.zsh
 zplug "MichaelAquilina/zsh-autoswitch-virtualenv"
+export AUTOSWITCH_VIRTUAL_ENV_DIR=~/.local/share/virtualenvs  # to be the same as pipenv
 
 # Can manage local plugins
 zplug "~/.zsh", from:local
