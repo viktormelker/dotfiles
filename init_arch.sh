@@ -125,5 +125,9 @@ sudo pacman -S bind
 
 # needed for some zsh autocomplete
 sudo pacman -S gopass
+
 sudo pacman -S ranger
 sudo pacman -S redis
+
+# websockets
+sudo npm install -g wscat
