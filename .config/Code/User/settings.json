@@ -39,4 +39,7 @@
     "vsdocker.imageUser": "docker.io/melkerman",
     "docker.defaultRegistryPath": "melkerman",
     "python.formatting.provider": "black",
+    "liveshare.guestApprovalRequired": true,
+    "pythonautovenv.pipenvPath": "/home/viktor/.local/bin/pipenv",
+    "pythonautovenv.usePipenv": true
 }
