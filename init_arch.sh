@@ -133,4 +133,4 @@ sudo pacman -S redis
 sudo npm install -g wscat
 
 # bluetooth
-sudo pacman -S bluez-utils pulseaudio-bluetooth
+sudo pacman -S bluez-utils pulseaudio-bluetooth blueman
