@@ -185,5 +185,8 @@ autoload -Uz paci
 # For rust executables
 export PATH="$HOME/.cargo/bin:$PATH"
 
+# for aws-vault
+export PATH="$HOME/.aws/bin:$PATH"
+
 # direnv plugin for loading environment variables
 eval "$(direnv hook zsh)"
