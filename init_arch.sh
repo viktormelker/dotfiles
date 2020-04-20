@@ -134,3 +134,5 @@ sudo npm install -g wscat
 
 # bluetooth
 sudo pacman -S bluez-utils pulseaudio-bluetooth blueman
+
+yay -S aws-vault
