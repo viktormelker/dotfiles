@@ -136,3 +136,6 @@ sudo npm install -g wscat
 sudo pacman -S bluez-utils pulseaudio-bluetooth blueman
 
 yay -S aws-vault
+
+# for creating gifs
+pacman -S peek

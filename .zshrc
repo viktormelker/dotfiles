@@ -109,15 +109,6 @@ export ARCHFLAGS="-arch x86_64"
 # ssh
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH=~/.pyenv/bin:$PATH
 eval "$(pyenv init -)"
@@ -170,6 +161,8 @@ source ~/.aliases
 # For funnel work
 source ~/.aliases_funnel
 
+alias -s {cs,ts,html,py,js,jsx,json,sh,md,txt}=code
+
 # add ruby paths
 export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
 
@@ -190,3 +183,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 # direnv plugin for loading environment variables
 eval "$(direnv hook zsh)"
+
+# required for aws cli command completion
+autoload bashcompinit && bashcompinit
+complete -C '/bin/aws_completer' aws

@@ -40,6 +40,15 @@
     "docker.defaultRegistryPath": "melkerman",
     "python.formatting.provider": "black",
     "liveshare.guestApprovalRequired": true,
+    "pythonautovenv.enable": true,
     "pythonautovenv.pipenvPath": "/home/viktor/.local/bin/pipenv",
-    "pythonautovenv.usePipenv": true
+    "pythonautovenv.usePipenv": true,
+    "pythonautovenv.autoInstall": true,
+    "git.suggestSmartCommit": false,
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    }
 }
