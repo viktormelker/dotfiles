@@ -152,8 +152,8 @@ fi
 zplug load --verbose
 
 # jenv
-#export PATH="$HOME/.jenv/bin:$PATH"
-#eval "$(jenv init -)"
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
 
 # Node stuff
 export PATH="$HOME/.yarn/bin:$PATH"
