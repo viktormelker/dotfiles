@@ -187,3 +187,5 @@ eval "$(direnv hook zsh)"
 # required for aws cli command completion
 autoload bashcompinit && bashcompinit
 complete -C '/bin/aws_completer' aws
+
+export PIPENV_IGNORE_VIRTUALENVS=1
