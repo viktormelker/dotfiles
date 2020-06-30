@@ -76,7 +76,7 @@ sudo yay -S discord
 sudo pacman -S neofetch
 yay -S postman
 
-sudo pacman -S aws-cli
+yay -S aws-cli-v2-bin
 yay -S nerd-fonts-complete
 sudo pacman -S lsd
 sudo pacman -S xclip
