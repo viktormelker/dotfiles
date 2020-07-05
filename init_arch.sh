@@ -140,4 +140,3 @@ yay -S aws-vault
 # for creating gifs
 sudo pacman -S peek
 
-sudo pacman -S python-poetry
