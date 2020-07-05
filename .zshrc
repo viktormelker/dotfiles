@@ -189,4 +189,7 @@ autoload bashcompinit && bashcompinit
 complete -C '/bin/aws_completer' aws
 
 export PIPENV_IGNORE_VIRTUALENVS=1
+
+# poetry
 export PATH="$HOME/.poetry/bin:$PATH"
+poetry completions zsh > ~/.zfunc/_poetry
