@@ -138,4 +138,6 @@ sudo pacman -S bluez-utils pulseaudio-bluetooth blueman
 yay -S aws-vault
 
 # for creating gifs
-pacman -S peek
+sudo pacman -S peek
+
+sudo pacman -S python-poetry
