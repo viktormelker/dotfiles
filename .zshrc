@@ -189,3 +189,4 @@ autoload bashcompinit && bashcompinit
 complete -C '/bin/aws_completer' aws
 
 export PIPENV_IGNORE_VIRTUALENVS=1
+export PATH="$HOME/.poetry/bin:$PATH"
