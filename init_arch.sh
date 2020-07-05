@@ -140,3 +140,5 @@ yay -S aws-vault
 # for creating gifs
 sudo pacman -S peek
 
+# poetry
+curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
