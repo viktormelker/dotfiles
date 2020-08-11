@@ -142,10 +142,6 @@ fi
 
 zplug load --verbose
 
-# jenv
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
-
 # Node stuff
 export PATH="$HOME/.yarn/bin:$PATH"
 source /usr/share/nvm/init-nvm.sh
@@ -193,3 +189,5 @@ export PIPENV_IGNORE_VIRTUALENVS=1
 # poetry
 export PATH="$HOME/.poetry/bin:$PATH"
 poetry completions zsh > ~/.zfunc/_poetry
+
+export TERMINAL=konsole
