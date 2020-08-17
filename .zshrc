@@ -190,4 +190,6 @@ export PIPENV_IGNORE_VIRTUALENVS=1
 export PATH="$HOME/.poetry/bin:$PATH"
 poetry completions zsh > ~/.zfunc/_poetry
 
-export TERMINAL=konsole
+export QT_AUTO_SCREEN_SCALE_FACTOR=1
+export GDK_SCALE=2
+export GDK_DPI_SCALE=0.5
