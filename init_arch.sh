@@ -147,3 +147,6 @@ sudo pacman -S termite
 sudo pacman -S zip
 
 echo 'xrdb -merge ~/.Xresources' >> ~/.xinitrc
+
+# take screenshot app
+sudo pacman -S flameshot
