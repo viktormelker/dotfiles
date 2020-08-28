@@ -150,3 +150,5 @@ echo 'xrdb -merge ~/.Xresources' >> ~/.xinitrc
 
 # take screenshot app
 sudo pacman -S flameshot
+
+sudo pacman -S rclone
