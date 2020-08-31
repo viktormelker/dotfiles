@@ -57,8 +57,6 @@ bindsym $mod+F6 exec "xbacklight -inc 10; notify-send 'brightness up'"
 # bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
 bindsym $mod+F5 exec "xbacklight -dec 10; notify-send 'brightness down'"
 
-# Take screenshot
-bindsym $mod+Print exec import ~/Pictures/screenshot.png
 
 # Start Applications
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
@@ -308,7 +306,7 @@ exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 exec_always alttab
 exec bash ~/scripts/display/home_dual.sh
-
+exec --no-startup-id flameshot
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
