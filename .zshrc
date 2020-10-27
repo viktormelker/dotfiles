@@ -195,4 +195,4 @@ export GDK_SCALE=2
 export GDK_DPI_SCALE=0.5
 
 export PATH="$HOME/.jenv/bin:$PATH"
-'eval "$(jenv init -)"'
+eval "$(jenv init -)"
