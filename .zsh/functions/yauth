@@ -8,5 +8,9 @@
 local oath=$(ykman oath list | eval "fzf ${FZF_DEFAULT_OPTS} --header='[Get oath authentication code]'")
 
 if [[ $oath ]]; then
-  ykman oath code $oath
+  local long_code=$(ykman oath code $oath)
+  local code=$(echo "$long_code" | awk '{print $2}')
 fi
+echo "The following code was copied to the clipboard"
+echo $code | xsel --clipboard
+echo $code
