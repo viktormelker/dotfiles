@@ -176,6 +176,10 @@ autoload -Uz yauth
 export PATH="$HOME/.cargo/bin:$PATH"
 
 # for aws-vault
+eval "$(aws-vault --completion-script-zsh)"
+export AWS_VAULT_PROMPT=ykman
+export YKMAN_OATH_CREDENTIAL_NAME=aws-viktor
+
 # export PATH="$HOME/.aws/bin:$PATH"
 
 # direnv plugin for loading environment variables
