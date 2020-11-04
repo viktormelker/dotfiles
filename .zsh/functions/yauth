@@ -1,0 +1,12 @@
+#!/usr/bin/env zsh
+
+### PATH
+# mnemonic: [Y]ubikey [auth]
+# Use yubikey to authenticate
+# press [escape] to go back to directory listing, [escape] twice to exit completely
+
+local oath=$(ykman oath list | eval "fzf ${FZF_DEFAULT_OPTS} --header='[Get oath authentication code]'")
+
+if [[ $oath ]]; then
+  ykman oath code $oath
+fi

@@ -88,6 +88,8 @@ sudo pacman -S yubikey-manager-qt
 sudo pacman -S yubikey-manager
 sudo pacman -S yubico-pam
 sudo pacman -S libu2f-host
+sudo pacman -S libfido2
+yay -S yubioath-desktop
 yay -S acsccid
 sudo systemctl enable pcscd.service
 sudo systemctl start pcscd.service

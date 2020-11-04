@@ -170,6 +170,7 @@ export FPATH="$HOME/.zsh/functions:$FPATH"
 autoload -Uz kp
 autoload -Uz fp
 autoload -Uz paci
+autoload -Uz yauth
 
 # For rust executables
 export PATH="$HOME/.cargo/bin:$PATH"
