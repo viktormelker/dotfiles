@@ -154,3 +154,5 @@ echo 'xrdb -merge ~/.Xresources' >> ~/.xinitrc
 sudo pacman -S flameshot
 
 sudo pacman -S rclone
+
+yay -S i3-gnome-pomodoro-git
