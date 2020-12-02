@@ -179,6 +179,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 eval "$(aws-vault --completion-script-zsh)"
 export AWS_VAULT_PROMPT=ykman
 export YKMAN_OATH_CREDENTIAL_NAME=aws-viktor
+#export AWS_VAULT_BACKEND=kwallet
 
 # export PATH="$HOME/.aws/bin:$PATH"
 
