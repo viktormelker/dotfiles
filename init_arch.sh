@@ -101,7 +101,7 @@ sudo pacman -S ethtool  # use to disable wake on lan
 yay -S nvm
 sudo pacman -S graphviz
 sudo pacman -S tig
-sudo pacman -S rust
+sudo pacman -S rustup
 cargo install du-dust
 
 sudo pacman -S cmake
