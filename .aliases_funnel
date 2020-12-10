@@ -19,3 +19,7 @@ alias dfs-docker='_run_in_docker download_for_source'
 alias pipi='pip3 install -r ../requirements-standalone-dev.txt && pip3 install \
         --extra-index-url https://pypi.fury.io/1TNLgmxhJR2zmzeZBDyg/funnel/ \
         -r requirements.txt'
+
+# aws-vault
+alias aeda="aws-vault exec data-in-admin --"
+alias aeqa="aws-vault exec data-in-admin --"
