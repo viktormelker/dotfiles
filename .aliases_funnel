@@ -22,4 +22,4 @@ alias pipi='pip3 install -r ../requirements-standalone-dev.txt && pip3 install \
 
 # aws-vault
 alias aeda="aws-vault exec data-in-admin --"
-alias aeqa="aws-vault exec data-in-admin --"
+alias aeqa="aws-vault exec qwaya-admin --"
