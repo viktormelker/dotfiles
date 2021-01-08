@@ -2,10 +2,16 @@
     "window.zoomLevel": 0,
     "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true,
+    "python.linting.flake8Path": "/home/viktor/.local/bin/flake8",
     "python.linting.mypyEnabled": false,
+    "python.linting.mypyPath": "/home/viktor/.local/bin/mypy",
     "files.exclude": {
-        "**/*.js": { "when": "$(basename).ts" },
-        "**/*.map": { "when": "$(basename).map" },
+        "**/*.js": {
+            "when": "$(basename).ts"
+        },
+        "**/*.map": {
+            "when": "$(basename).map"
+        },
         "**/.git": true,
         "**/.svn": true,
         "**/.hg": true,
@@ -39,12 +45,25 @@
     "vsdocker.imageUser": "docker.io/melkerman",
     "docker.defaultRegistryPath": "melkerman",
     "python.formatting.provider": "black",
+    "python.formatting.blackPath": "/home/viktor/.local/bin/black",
     "liveshare.guestApprovalRequired": true,
+    "liveshare.allowGuestDebugControl": true,
+    "liveshare.allowGuestTaskControl": true,
     "git.suggestSmartCommit": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     "[javascriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
-    }
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.languageServer": "Pylance",
+    "python.analysis.typeCheckingMode": "basic",
+    "sync.gist": "3e547ba1a64dd63a0fd16ce8a3acf7cd",
+    "aws.onDefaultRegionMissing": "add",
+    "javascript.updateImportsOnFileMove.enabled": "always"
 }
