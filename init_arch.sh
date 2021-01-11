@@ -1,5 +1,7 @@
 # Setup file for arch linux based distros
 
+sudo pacman -s stow
+
 # handle keys
 sudo pacman-key --init
 sudo pacman-key --populate archlinux
