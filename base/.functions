@@ -128,13 +128,13 @@ function server() {
 #	fi;
 #}
 
-# `s` with no arguments opens the current directory in Sublime Text, otherwise
+# `c` with no arguments opens the current directory in Vscode, otherwise
 # opens the given location
-function s() {
+function c() {
 	if [ $# -eq 0 ]; then
-		subl .;
+		code .;
 	else
-		subl "$@";
+		code "$@";
 	fi;
 }
 
