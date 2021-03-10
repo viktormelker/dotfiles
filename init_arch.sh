@@ -117,7 +117,7 @@ sudo pacman -S okular
 sudo pacman -S yarn
 
 # i3 stuff
-sudo pacman -S i3-vm i3status-manjaro dmenu-manjaro i3-wallpapers i3lock pcmanfm network-manager-applet feh rofi py3status xautolock conky xorg-xbacklight pulseaudio pavucontrol dunst
+sudo pacman -S i3-vm i3status-manjaro dmenu-manjaro i3-wallpapers i3lock pcmanfm network-manager-applet feh rofi py3status xautolock conky xorg-xbacklight pulseaudio pavucontrol dunst perl-anyevent-i3
 
 yay -S alttab-git
 
