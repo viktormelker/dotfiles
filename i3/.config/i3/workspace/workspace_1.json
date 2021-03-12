@@ -13,19 +13,19 @@
             "current_border_width": 2,
             "floating": "auto_off",
             "geometry": {
-                "height": 2051,
-                "width": 3840,
-                "x": 0,
-                "y": 0
+               "height": 2118,
+               "width": 3840,
+               "x": 0,
+               "y": 0
             },
             "marks": [],
             "name": "i3: Layout saving in i3 — Mozilla Firefox",
-            "percent": 1,
+            "percent": null,
             "swallows": [
-                {
-                    "class": "^firefox$",
-                    "window_role": "^browser$"
-                }
+               {
+               "class": "^firefox$",
+               "window_role": "^browser$"
+               }
             ],
             "type": "con"
         }

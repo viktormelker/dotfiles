@@ -160,3 +160,7 @@ sudo pacman -S flameshot
 sudo pacman -S rclone
 
 yay -S i3-gnome-pomodoro-git
+
+# For flutter
+yay -S flutter
+sudo pacman -S dart
