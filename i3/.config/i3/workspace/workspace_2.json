@@ -24,7 +24,7 @@
             "swallows": [
                {
                     "class": "^Termite$",
-                    "instance": "^_tmux_terminal$",
+                    "instance": "^_tmux_terminal$"
                }
             ],
             "type": "con"
