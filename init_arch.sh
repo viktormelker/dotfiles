@@ -164,3 +164,6 @@ yay -S i3-gnome-pomodoro-git
 # For flutter
 yay -S flutter
 sudo pacman -S dart
+
+# for circuitpython
+yay -S mu-editor
