@@ -166,4 +166,7 @@ yay -S flutter
 sudo pacman -S dart
 
 # for circuitpython
-yay -S mu-editor
+yay -S mu-editor bossa
+
+# for arm programmer
+yay -S jlink
