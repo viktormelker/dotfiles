@@ -3,19 +3,6 @@
 alias venv="source venv/bin/activate"
 alias stats='PYTHONSTARTUP=/home/viktor/dev/umbrella/plugin-scripts/outputanalysis_workspace/.outputanalysis_pystartup ipython'
 
-_run_in_downloader() {
-    script=$1
-    shift
-    (pushd "$HOME/dev/umbrella/downloader" && source venv/bin/activate && PYTHONPATH=. "bin/${script}.py" $@ ; popd)
-}
-alias dfs='_run_in_downloader download_for_source'
-
-_run_in_docker() {
-    script=$1
-    shift
-    (pushd "$HOME/dev/umbrella/downloader" && docker run --rm -it -v ${PWD}/../:/repo -v ${HOME}:/root -e PYTHONPATH=/repo/downloader -w=/repo/downloader --net="host" plugin-runner python "bin/${script}.py" $@ ; popd)
-}
-alias dfs-docker='_run_in_docker download_for_source'
 alias pipi='pip3 install -r ../requirements-standalone-dev.txt && pip3 install \
         --extra-index-url https://pypi.fury.io/1TNLgmxhJR2zmzeZBDyg/funnel/ \
         -r requirements.txt'
@@ -23,3 +10,15 @@ alias pipi='pip3 install -r ../requirements-standalone-dev.txt && pip3 install \
 # aws-vault
 alias aeda="aws-vault exec data-in-admin --"
 alias aeqa="aws-vault exec qwaya-admin --"
+
+## User defined environment variables
+plugin_scripts_folder="$HOME/dev/umbrella/plugin-scripts"
+export PLUGIN_FOLDER_PATH="$HOME/dev/umbrella/connector-plugins/plugins"
+## User defined funcs
+_run_in_plugin_scripts() {
+    script=$1
+    shift
+    (pushd "$plugin_scripts_folder"  && pipenv run python3 "${script}.py" $@ ; popd)
+}
+## User defined alias'
+alias dfs='_run_in_plugin_scripts download_for_source'
