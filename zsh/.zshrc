@@ -91,11 +91,6 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
@@ -146,24 +141,22 @@ zplug load --verbose
 export PATH="$HOME/.yarn/bin:$PATH"
 source /usr/share/nvm/init-nvm.sh
 
+# Python
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
-
 export PYTHONBREAKPOINT=ipdb.set_trace
 export PYTHONIOENCODING=utf-8
 
 # Aliases
 source ~/.aliases
-
 # For funnel work
 source ~/.aliases_funnel
-
 alias -s {cs,ts,html,py,js,jsx,json,sh,md,txt}=code
 
 # add ruby paths
 export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
 
 # plugin
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Add custom functions
 export FPATH="$HOME/.zsh/functions:$FPATH"
@@ -179,16 +172,10 @@ export PATH="$HOME/.cargo/bin:$PATH"
 eval "$(aws-vault --completion-script-zsh)"
 export AWS_VAULT_PROMPT=ykman
 export YKMAN_OATH_CREDENTIAL_NAME=aws-viktor
-#export AWS_VAULT_BACKEND=kwallet
-
-# export PATH="$HOME/.aws/bin:$PATH"
+export AWS_VAULT_BACKEND=kwallet
 
 # direnv plugin for loading environment variables
 eval "$(direnv hook zsh)"
-
-# required for aws cli command completion
-autoload bashcompinit && bashcompinit
-complete -C '/bin/aws_completer' aws
 
 export PIPENV_IGNORE_VIRTUALENVS=1
 
