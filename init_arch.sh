@@ -162,7 +162,7 @@ sudo pacman -S rclone
 yay -S i3-gnome-pomodoro-git
 
 # For flutter
-yay -S flutter
+yay -S flutter vysor
 sudo pacman -S dart
 
 # for circuitpython
