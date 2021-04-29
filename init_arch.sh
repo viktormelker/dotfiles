@@ -171,3 +171,6 @@ yay -S mu-editor bossa
 # for arm programmer
 yay -S jlink
 sudo pacman -S arm-none-eabi-gcc arm-none-eabi-newlib
+
+# Instead of docker
+sudo pacman -S podman
