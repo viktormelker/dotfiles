@@ -28,7 +28,7 @@ font xft:URWGothic-Book 11
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec termite
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -315,7 +315,7 @@ exec --no-startup-id flameshot
 # Autostart applications that are shown on screen
 exec --no-startup-id ~/.config/i3/scripts/add_layouts.sh
 exec --no-startup-id firefox
-exec --no-startup-id "termite -e tmux --name _tmux_terminal"
+exec --no-startup-id "alacritty -e tmux --class _tmux_terminal"
 exec --no-startup-id chromium
 exec --no-startup-id slack
 exec --no-startup-id "spotify --force-device-scale-factor=1.63"
