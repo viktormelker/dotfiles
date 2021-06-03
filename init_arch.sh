@@ -162,7 +162,7 @@ sudo pacman -S rclone
 yay -S i3-gnome-pomodoro-git
 
 # For flutter
-yay -S flutter
+yay -S flutter vysor
 sudo pacman -S dart
 
 # for circuitpython
@@ -173,3 +173,6 @@ yay -S jlink
 sudo pacman -S arm-none-eabi-gcc arm-none-eabi-newlib
 
 sudo pacman -S alacritty
+
+# Instead of docker
+sudo pacman -S podman
