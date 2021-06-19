@@ -74,15 +74,12 @@ plugins=(
   # command-not-found
   docker
   # kubectl
-  postgres
   tmux
   pip
   github
   fzf
   dotenv
   colored-man-pages
-  # virtualenv
-  aws
   httpie
   pyenv
 )
@@ -114,8 +111,6 @@ export PYTHON_CONFIGURE_OPTS="--enable-shared"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export PATH=~/.fzf/bin:$PATH
-
-export PATH=~/.nix-profile/bin:$PATH
 
 source ~/.zplug/init.zsh
 zplug "MichaelAquilina/zsh-autoswitch-virtualenv"
@@ -168,24 +163,12 @@ autoload -Uz yauth
 # For rust executables
 export PATH="$HOME/.cargo/bin:$PATH"
 
-# for aws-vault
-eval "$(aws-vault --completion-script-zsh)"
-export AWS_VAULT_PROMPT=ykman
-export YKMAN_OATH_CREDENTIAL_NAME=aws-viktor
-export AWS_VAULT_BACKEND=kwallet
-
 # direnv plugin for loading environment variables
 eval "$(direnv hook zsh)"
 
-export PIPENV_IGNORE_VIRTUALENVS=1
-
-# poetry
-export PATH="$HOME/.poetry/bin:$PATH"
-poetry completions zsh > ~/.zfunc/_poetry
-
-export QT_AUTO_SCREEN_SCALE_FACTOR=1
-export GDK_SCALE=2
-export GDK_DPI_SCALE=0.5
-
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
+# export QT_AUTO_SCREEN_SCALE_FACTOR=1
+# export GDK_SCALE=2
+# export GDK_DPI_SCALE=0.5
+#
+# export PATH="$HOME/.jenv/bin:$PATH"
+# eval "$(jenv init -)"
