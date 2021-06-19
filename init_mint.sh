@@ -9,13 +9,6 @@ sudo apt-get dist-upgrade
 echo "Go into driver manager, use any drivers necessary. Press any key when done!"
 pause
 
-
-# new shell
-nix-env -i fish
-sudo ln -s ~/.nix-profile/bin/fish /usr/bin/
-curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
-fisher fzf edc/bass omf/thefuck omf/theme-bobthefish pipenv
-
 # install tools
 sudo apt install htop
 sudo apt install lastpass-cli

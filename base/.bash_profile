@@ -49,10 +49,6 @@ done;
 # You could just use `-g` instead, but I like being explicit
 #complete -W "NSGlobalDomain" defaults;
 
-# use fish_shell
-echo "Edit the .bash_profile file to enable fish shell"
-# exec fish
-
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi

@@ -10,11 +10,6 @@ sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
 brew install python
 brew install python3
 
-# install fish shell
-brew install fish
-curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
-fisher Ladicle/fish-kubectl-prompt
-
 # install tools
 brew install htop
 brew install ctop
