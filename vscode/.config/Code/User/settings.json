@@ -65,5 +65,6 @@
     "python.analysis.typeCheckingMode": "basic",
     "sync.gist": "3e547ba1a64dd63a0fd16ce8a3acf7cd",
     "aws.onDefaultRegionMissing": "add",
-    "javascript.updateImportsOnFileMove.enabled": "always"
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "security.workspace.trust.untrustedFiles": "open"
 }

@@ -101,10 +101,7 @@ export ARCHFLAGS="-arch x86_64"
 # ssh
 export SSH_KEY_PATH="~/.ssh/id_ed25519"
 
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH=~/.pyenv/bin:$PATH
 eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
 
 # required for vim plugin YouCompleteMe
 export PYTHON_CONFIGURE_OPTS="--enable-shared"
