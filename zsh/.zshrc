@@ -81,7 +81,6 @@ plugins=(
   dotenv
   colored-man-pages
   httpie
-  pyenv
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -100,8 +99,6 @@ export ARCHFLAGS="-arch x86_64"
 
 # ssh
 export SSH_KEY_PATH="~/.ssh/id_ed25519"
-
-eval "$(pyenv init -)"
 
 # required for vim plugin YouCompleteMe
 export PYTHON_CONFIGURE_OPTS="--enable-shared"
