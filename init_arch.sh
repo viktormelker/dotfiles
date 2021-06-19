@@ -1,3 +1,6 @@
+#!/bin/bash
+set -e 
+
 # Setup file for arch linux based distros
 
 sudo pacman -s stow
@@ -16,15 +19,6 @@ sudo pacman -Syu
 # zsh
 sudo pacman -S manjaro-zsh-config powerline zsh-completions zsh-history-substring-search zsh-syntax-highlighting
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-
-# fish shell
-#sudo pacman -S fish fisherman
-#curl -L https://get.oh-my.fish | fish
-# plugins
-#fisher pipenv
-#fisher fzf
-#fisher edc/bass  # bash scripts
-#omf install bobthefish
 
 # installing non standard packages
 sudo pacman -S yay
