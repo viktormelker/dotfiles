@@ -313,12 +313,11 @@ exec bash ~/scripts/display/home_dual.sh
 exec --no-startup-id flameshot
 
 # Autostart applications that are shown on screen
-exec --no-startup-id ~/.config/i3/scripts/add_layouts.sh
+# exec --no-startup-id ~/.config/i3/scripts/add_layouts.sh
 exec --no-startup-id firefox
 exec --no-startup-id "alacritty -e tmux --class _tmux_terminal"
-exec --no-startup-id chromium
-exec --no-startup-id slack
-exec --no-startup-id "spotify --force-device-scale-factor=1.63"
+# exec --no-startup-id slack
+# exec --no-startup-id "spotify --force-device-scale-factor=1.63"
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
