@@ -102,7 +102,7 @@ fi
 export ARCHFLAGS="-arch x86_64"
 
 # ssh
-export SSH_KEY_PATH="~/.ssh/rsa_id"
+export SSH_KEY_PATH="~/.ssh/id_ed25519"
 
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH=~/.pyenv/bin:$PATH
