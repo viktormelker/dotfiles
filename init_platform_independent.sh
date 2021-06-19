@@ -1,3 +1,4 @@
+#!/bin/bash
 # install all cross plattform stuff here
 
 git config --global user.email "viktormelker@gmail.com"
@@ -5,12 +6,6 @@ git config --global user.name "Viktor Melker"
 git config --global gpg.program gpg2
 
 pip install --upgrade pip
-sudo pip install virtualenv
-sudo pip install pep8
-sudo pip install setuptools
-sudo pip install flake8
-sudo pip install yapf
-sudo pip install pylint
 
 mkdir ~/dev
 
@@ -41,8 +36,6 @@ mkdir ~/.zsh
 export ZPLUG_HOME=~/.zplug
 git clone https://github.com/zplug/zplug $ZPLUG_HOME
 
-# jenv
-git clone https://github.com/gcuisinier/jenv.git ~/.jenv
 
 # vim
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
