@@ -1,7 +1,7 @@
 # Setup fzf
 # ---------
-if [[ ! "$PATH" == */usr/local/opt/fzf/bin* ]]; then
-  export PATH="$PATH:~/.fzf/bin"
+if [[ ! "$PATH" == */home/viktor/.fzf/bin* ]]; then
+  export PATH="${PATH:+${PATH}:}~/.fzf/bin"
 fi
 
 # Auto-completion
