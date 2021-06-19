@@ -37,47 +37,56 @@ sudo gpasswd -a viktor docker
 # start docker daemon on boot
 sudo systemctl enable docker.service
 
-yay -S neo4j-community
-sudo pacman -S python-pipenv
-sudo pacman -S nodejs-lts-erbium
-sudo pacman -S npm
+# important developer stuff
 sudo pacman -S vim jq tree
 sudo pacman -S powerline-fonts
 sudo pacman -S httpie
 sudo pacman -S tmux
 sudo pacman -S ctags
-
-
-# Cloud development
-yay -S google-cloud-sdk
-yay -S kubernetes
-yay -S kubectl-bin
-
-yay -S spotify
-
-# communication
-yay -S franz
-
-# for some openai envs
-sudo pacman -S swig
-
-yay -S slack-desktop
-yay -S dropbox
-
+sudo pacman -S npm
+sudo pacman -S zip
+sudo pacman -S alacritty
 sudo pacman -S hub
 sudo pacman -S xsel
 sudo pacman -S kscreen
+yay -S direnv
+sudo pacman -S cmake
+sudo pacman -S bind
+sudo pacman -S gopass
 
-sudo yay -S discord
-sudo pacman -S neofetch
-yay -S postman
+echo 'xrdb -merge ~/.Xresources' >> ~/.xinitrc
 
+# Cloud development
+yay -S google-cloud-sdk
+
+# AWS stuff
 yay -S aws-cli-v2-bin
-yay -S nerd-fonts-complete
+yay -S aws-vault
+npm install -g aws-cdk
+
+# communication
+yay -S franz
+yay -S slack-desktop
+yay -S discord
+
+# Nice tools
+sudo pacman -S peek flameshot
+sudo pacman -S graphviz
+sudo pacman -S tig
+sudo pacman -S rustup
+rustup install stable
+rustup default stable
+cargo install du-dust
+sudo pacman -S okular
 sudo pacman -S lsd
 sudo pacman -S xclip
-sudo pacman -S hub
-sudo pacman -S postgresql
+yay -S nerd-fonts-complete
+sudo pacman -S tldr
+sudo pacman -S ranger
+yay -S spotify
+
+# bluetooth
+sudo pacman -S bluez-utils pulseaudio-bluetooth blueman
 
 # Yubikey stuff
 sudo pacman -S yubikey-manager-qt
@@ -90,70 +99,22 @@ yay -S acsccid
 sudo systemctl enable pcscd.service
 sudo systemctl start pcscd.service
 
-# for power management stuff
-sudo pacman -S ethtool  # use to disable wake on lan
-# sudo pacman -S acpi_call  # Thinkpad battery calibration
-
-yay -S nvm
-sudo pacman -S graphviz
-sudo pacman -S tig
-sudo pacman -S rustup
-rustup install stable
-rustup default stable
-cargo install du-dust
-
-sudo pacman -S cmake
-sudo pacman -S termtosvg
-sudo pacman -S mariadb
-
-yay -S direnv
-sudo pacman -S okular
-sudo pacman -S yarn
 
 # i3 stuff
-sudo pacman -S i3-vm i3status-manjaro dmenu-manjaro i3-wallpapers i3lock pcmanfm network-manager-applet feh rofi py3status xautolock conky xorg-xbacklight pulseaudio pavucontrol dunst perl-anyevent-i3
+sudo pacman -S i3-vm i3status-manjaro dmenu-manjaro 
+sudo pacman -S i3-wallpapers i3lock pcmanfm network-manager-applet 
+sudo pacman -S feh rofi py3status xautolock conky xorg-xbacklight 
+sudo pacman -S pulseaudio pavucontrol dunst perl-anyevent-i3
+# yay -S alttab-git
 
-yay -S alttab-git
+# Optional development stuff
+# Tools
+sudo pacman -S rclone
+yay -S postman
 
-sudo pacman -S tldr
-sudo pacman -S kio-gdrive
-
-npm install -g aws-cdk
-
-# for dig etc
-sudo pacman -S bind
-
-# needed for some zsh autocomplete
-sudo pacman -S gopass
-
-sudo pacman -S ranger
-sudo pacman -S redis
-
-# websockets
-sudo npm install -g wscat
-
-# bluetooth
-sudo pacman -S bluez-utils pulseaudio-bluetooth blueman
-
-yay -S aws-vault
-
-# for creating gifs
-sudo pacman -S peek
 
 # poetry
 curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
-
-sudo pacman -S termite
-sudo pacman -S zip
-
-echo 'xrdb -merge ~/.Xresources' >> ~/.xinitrc
-
-# take screenshot app
-sudo pacman -S flameshot
-
-sudo pacman -S rclone
-
-yay -S i3-gnome-pomodoro-git
 
 # For flutter
 yay -S flutter vysor
@@ -162,11 +123,23 @@ sudo pacman -S dart
 # for circuitpython
 yay -S mu-editor bossa
 
+# for javascript development
+sudo pacman -S yarn
+
 # for arm programmer
 yay -S jlink
 sudo pacman -S arm-none-eabi-gcc arm-none-eabi-newlib
 
-sudo pacman -S alacritty
-
 # Instead of docker
 sudo pacman -S podman
+
+# for some openai envs
+sudo pacman -S swig
+
+# Databases
+yay -S neo4j-community
+sudo pacman -S redis
+sudo pacman -S postgresql
+sudo pacman -S mariadb
+
+
