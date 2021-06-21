@@ -109,9 +109,9 @@ yay -S alttab-git
 
 # Optional development stuff
 # Tools
+sudo pacman -S sof-firmware
 sudo pacman -S rclone
 yay -S postman
-
 
 # poetry
 curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
