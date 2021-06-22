@@ -145,7 +145,7 @@ alias -s {cs,ts,html,py,js,jsx,json,sh,md,txt}=code
 export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
 
 # plugin
-# source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Add custom functions
 export FPATH="$HOME/.zsh/functions:$FPATH"
@@ -164,5 +164,3 @@ eval "$(direnv hook zsh)"
 # export GDK_SCALE=2
 # export GDK_DPI_SCALE=0.5
 #
-# export PATH="$HOME/.jenv/bin:$PATH"
-# eval "$(jenv init -)"
