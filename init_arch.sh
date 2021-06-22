@@ -112,6 +112,9 @@ yay -S alttab-git
 sudo pacman -S rclone
 yay -S postman
 
+# for kubernetes
+yay -S minikube kubectl
+
 
 # poetry
 curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
