@@ -54,22 +54,17 @@ bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 
 # Screen brightness controls
 # bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
-bindsym $mod+F6 exec "xbacklight -inc 10; notify-send 'brightness up'"
+bindsym $mod+F7 exec "xbacklight -inc 10; notify-send 'brightness up'"
 # bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
-bindsym $mod+F5 exec "xbacklight -dec 10; notify-send 'brightness down'"
+bindsym $mod+F6 exec "xbacklight -dec 10; notify-send 'brightness down'"
 
 
 # Start Applications
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
-bindsym $mod+F2 exec palemoon
-bindsym $mod+F3 exec pcmanfm
-# bindsym $mod+F3 exec ranger
-bindsym $mod+Shift+F3 exec pcmanfm_pkexec
-# bindsym $mod+F5 exec terminal -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill picom
 bindsym $mod+Ctrl+t exec --no-startup-id picom -b
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
-bindsym Print exec --no-startup-id flameshot gui -p /home/viktor/Bilder
+bindsym Print exec --no-startup-id flameshot gui -p /home/viktor/Pictures
 bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
 bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
 
@@ -315,7 +310,7 @@ exec --no-startup-id flameshot
 # Autostart applications that are shown on screen
 # exec --no-startup-id ~/.config/i3/scripts/add_layouts.sh
 exec --no-startup-id firefox
-exec --no-startup-id "alacritty -e tmux --class _tmux_terminal"
+exec --no-startup-id "alacritty -e tmux"
 # exec --no-startup-id slack
 # exec --no-startup-id "spotify --force-device-scale-factor=1.63"
 
