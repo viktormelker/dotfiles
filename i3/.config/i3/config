@@ -454,7 +454,6 @@ mode "$mode_gaps_outer" {
 #######################################
 
 set $mode_screens (s) single screen, (h) home dual screens
-bindsym $mod+Shift+p mode "$mode_gaps"
 mode "$mode_screens" {
     bindsym s exec --no-startup-id bash ~/scripts/display/single_screen.sh, mode "default"
     # bindsym d exec --no-startup-id bash ~/scripts/display/office_dual.sh, mode "default"
