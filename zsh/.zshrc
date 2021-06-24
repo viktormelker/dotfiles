@@ -142,7 +142,7 @@ alias -s {cs,ts,html,py,js,jsx,json,sh,md,txt}=code
 export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
 
 # plugin
-# source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Add custom functions
 export FPATH="$HOME/.zsh/functions:$FPATH"
