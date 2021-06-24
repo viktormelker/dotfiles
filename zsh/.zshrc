@@ -73,7 +73,7 @@ plugins=(
   common-aliases
   # command-not-found
   docker
-  # kubectl
+  kubectl
   tmux
   pip
   github
@@ -112,9 +112,6 @@ export AUTOSWITCH_VIRTUAL_ENV_DIR=~/.local/share/virtualenvs  # to be the same a
 
 # Can manage local plugins
 zplug "~/.zsh", from:local
-
-# Load theme file
-#zplug 'dracula/zsh', as:theme
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
@@ -163,6 +160,3 @@ eval "$(direnv hook zsh)"
 # export QT_AUTO_SCREEN_SCALE_FACTOR=1
 # export GDK_SCALE=2
 # export GDK_DPI_SCALE=0.5
-#
-# export PATH="$HOME/.jenv/bin:$PATH"
-# eval "$(jenv init -)"
