@@ -160,3 +160,9 @@ eval "$(direnv hook zsh)"
 export QT_AUTO_SCREEN_SCALE_FACTOR=1
 export GDK_SCALE=2
 export GDK_DPI_SCALE=0.5
+
+export TERMINAL=/usr/bin/alacritty
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
