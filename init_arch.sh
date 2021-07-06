@@ -68,7 +68,6 @@ npm install -g aws-cdk
 yay -S franz
 yay -S slack-desktop
 yay -S discord
-
 # Nice tools
 sudo pacman -S peek flameshot
 sudo pacman -S graphviz
@@ -143,3 +142,5 @@ yay -S neo4j-community
 sudo pacman -S redis
 sudo pacman -S postgresql
 sudo pacman -S mariadb
+
+sudo pacman -S terraform
