@@ -53,6 +53,7 @@ yay -S direnv
 sudo pacman -S cmake
 sudo pacman -S bind
 sudo pacman -S gopass
+sudo pacman -S keychain
 
 echo 'xrdb -merge ~/.Xresources' >> ~/.xinitrc
 
