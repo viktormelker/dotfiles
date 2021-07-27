@@ -309,7 +309,7 @@ exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 exec_always alttab
-exec bash ~/scripts/display/home_dual.sh
+# exec bash ~/scripts/display/home_dual.sh
 exec --no-startup-id flameshot
 
 # Autostart applications that are shown on screen
