@@ -134,9 +134,6 @@ export PYTHONIOENCODING=utf-8
 
 # Aliases
 source ~/.aliases
-# For funnel work
-source ~/.aliases_funnel
-alias -s {cs,ts,html,py,js,jsx,json,sh,md,txt}=code
 
 # add ruby paths
 export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
