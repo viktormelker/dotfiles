@@ -146,3 +146,4 @@ sudo pacman -S mariadb
 
 sudo pacman -S terraform
 sudo pacman -S kustomize
+sudo pacman -S numlockx
