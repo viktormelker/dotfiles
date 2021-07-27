@@ -147,6 +147,7 @@ autoload -Uz kp
 autoload -Uz fp
 autoload -Uz paci
 autoload -Uz yauth
+autoload -Uz kcluster
 
 # For rust executables
 export PATH="$HOME/.cargo/bin:$PATH"
