@@ -1,9 +1,0 @@
-#!/usr/bin/env zsh
-
-# Chose kubernetes cluster config.
-readonly cluster_name=$(cat ~/.zsh/k8s/clusters.txt | awk '{print $1}' FS=":" | eval "fzf ${FZF_DEFAULT_OPTS} --header='[Select kubernetes cluster]'")
-
-if [[ $cluster_name ]]; then
-  readonly command=$(cat ~/.zsh/k8s/clusters.txt | grep $cluster_name | awk '{print $2}' FS=":")
-  eval $command
-fi
