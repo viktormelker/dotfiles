@@ -170,3 +170,6 @@ eval `keychain --agents ssh --eval id_ed25519`
 
 # completion for gcloud
 source /opt/google-cloud-sdk/completion.zsh.inc
+
+# switching kubernetes cluster
+bindkey -s '^o' 'kubectx\n'
