@@ -1,1 +1,0 @@
-integration:gcloud container clusters get-credentials integration --zone europe-north1-a --project creator-studio-307813
