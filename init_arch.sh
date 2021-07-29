@@ -84,6 +84,8 @@ yay -S nerd-fonts-complete
 sudo pacman -S tldr
 sudo pacman -S ranger
 yay -S spotify
+sudo pacman -S geoip
+sudo pacman -S calcurse
 
 # bluetooth
 sudo pacman -S bluez-utils pulseaudio-bluetooth blueman

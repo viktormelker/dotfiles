@@ -32,11 +32,6 @@ nix-env -i ripgrep
 # zsh
 mkdir ~/.zsh
 
-# zplug
-export ZPLUG_HOME=~/.zplug
-git clone https://github.com/zplug/zplug $ZPLUG_HOME
-
-
 # vim
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 # Install all plugins with :PluginInstall in vim
