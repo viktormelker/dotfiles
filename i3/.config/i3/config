@@ -308,7 +308,7 @@ exec --no-startup-id flameshot
 # exec --no-startup-id ~/.config/i3/scripts/add_layouts.sh
 exec --no-startup-id vivaldi-stable
 exec --no-startup-id "alacritty -e tmux --class _tmux_terminal"
-# exec --no-startup-id slack
+exec --no-startup-id slack
 # exec --no-startup-id "spotify --force-device-scale-factor=1.63"
 
 # Color palette used for the terminal ( ~/.Xresources file )
