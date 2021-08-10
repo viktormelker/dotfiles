@@ -16,7 +16,6 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython.vim'
-Bundle 'Valloric/YouCompleteMe'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'jnurmine/Zenburn'
@@ -64,9 +63,6 @@ set colorcolumn=+1
 set list
 set listchars=tab:>-
 
-" shortcuts for YouCompleteMe
-let g:ycm_autoclose_preview_window_after_completion=1
-
 let python_highlight_all=1
 syntax on
 
@@ -91,11 +87,6 @@ set nu
 
 " integrate with system clipboard
 set clipboard=unnamedplus
-
-"custom keys
-let mapleader="§"
-map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
-map <leader>r  :YcmCompleter GoToReferences<CR>
 
 " Color theme switch
 call togglebg#map("<F5>")
