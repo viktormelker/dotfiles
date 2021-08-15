@@ -86,6 +86,9 @@ sudo pacman -S ranger
 yay -S spotify
 sudo pacman -S geoip
 sudo pacman -S calcurse
+yay -S handlr-bin
+yay -S joplin
+sudo pacman -S unzip
 
 # bluetooth
 sudo pacman -S bluez-utils pulseaudio-bluetooth blueman

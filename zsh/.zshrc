@@ -158,3 +158,8 @@ source /opt/google-cloud-sdk/completion.zsh.inc
 
 # switching kubernetes cluster
 bindkey -s '^o' 'kubectx\n'
+
+# Zplug
+export ZPLUG_HOME=~/.zplug
+source ~/.zplug/init.zsh
+zplug "MichaelAquilina/zsh-autoswitch-virtualenv"
