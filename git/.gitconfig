@@ -196,6 +196,9 @@
 [url "git@github-business-ventures:business-ventures"]
         insteadOf = git@github.com:business-ventures
 
+[url "ssh://git@github-business-ventures/business-ventures"]
+    insteadOf = ssh://github.com/business-ventures
+
 [url "git@gist.github.com:"]
 
 	insteadOf = "gst:"
