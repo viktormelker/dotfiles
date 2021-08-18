@@ -447,9 +447,9 @@ mode "$mode_gaps_outer" {
 
 set $mode_screens (s) single screen, (h) home dual screens
 mode "$mode_screens" {
-    bindsym s exec --no-startup-id bash ~/scripts/display/single_screen.sh, mode "default"
+    bindsym s exec --no-startup-id bash ~/scripts/display/dell_single_screen.sh, mode "default"
     # bindsym d exec --no-startup-id bash ~/scripts/display/office_dual.sh, mode "default"
-    bindsym h exec --no-startup-id bash ~/scripts/display/home_dual.sh, mode "default"
+    bindsym h exec --no-startup-id bash ~/scripts/display/dell_home_dual.sh, mode "default"
 
     # back to normal: Enter or Escape
     bindsym Return mode "default"
