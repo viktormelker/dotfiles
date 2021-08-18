@@ -68,5 +68,8 @@
     "security.workspace.trust.untrustedFiles": "open",
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook"
+    },
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
     }
 }
