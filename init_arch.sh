@@ -89,6 +89,7 @@ sudo pacman -S calcurse
 yay -S handlr-bin
 yay -S joplin
 sudo pacman -S unzip
+sudo pacman -S yq
 
 # bluetooth
 sudo pacman -S bluez-utils pulseaudio-bluetooth blueman
