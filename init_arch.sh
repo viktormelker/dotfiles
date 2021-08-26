@@ -89,6 +89,7 @@ sudo pacman -S calcurse
 yay -S handlr-bin
 yay -S joplin
 sudo pacman -S unzip
+sudo pacman -S autorandr
 sudo pacman -S yq
 
 # bluetooth
