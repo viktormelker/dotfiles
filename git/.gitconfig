@@ -1,6 +1,6 @@
 [user]
-      email = viktormelker@gmail.com
-      name = Viktor Melker
+	email = viktormelker@gmail.com
+	name = Viktor Melker
 
 [pull]
       rebase = false
