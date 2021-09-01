@@ -91,6 +91,7 @@ yay -S joplin
 sudo pacman -S unzip
 sudo pacman -S autorandr
 sudo pacman -S yq
+sudo pacman -S gnome-keyring seahorse
 
 # bluetooth
 sudo pacman -S bluez-utils pulseaudio-bluetooth blueman
