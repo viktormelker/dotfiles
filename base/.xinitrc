@@ -63,8 +63,5 @@ get_session(){
     echo "dbus-launch ${dbus_args[*]}"
 }
 
-eval $(gnome-keyring-daemon --start)
-export SSH_AUTH_SOCKs
-
 exec $(get_session "$1")
 xrdb -merge ~/.Xresources

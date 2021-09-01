@@ -35,3 +35,5 @@ export MANPAGER='less -X';
 
 # For flutter development
 export CHROME_EXECUTABLE=/usr/bin/chromium
+
+export BROWSER=/usr/bin/vivaldi-stable
