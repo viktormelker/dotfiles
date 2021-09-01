@@ -63,12 +63,8 @@ get_session(){
     echo "dbus-launch ${dbus_args[*]}"
 }
 
-keychain ~/.ssh/id_ed25519_hm
-keychain ~/.ssh/id_ed25519
-[ -f ~/.keychain/$HOSTNAME-sh ] && . ~/.keychain/$HOSTNAME-sh 2>/dev/null
-[ -f ~/.keychain/$HOSTNAME-sh-gpg ] && . ~/.keychain/$HOSTNAME-sh-gpg 2>/dev/null
-
-export $(gnome-keyring-daemon --start)
+eval $(gnome-keyring-daemon --start)
+export SSH_AUTH_SOCKs
 
 exec $(get_session "$1")
 xrdb -merge ~/.Xresources

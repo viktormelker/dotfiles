@@ -149,9 +149,6 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
 
-eval `keychain --agents ssh --eval id_ed25519_hm`
-eval `keychain --agents ssh --eval id_ed25519`
-
 # completion for gcloud
 source /opt/google-cloud-sdk/completion.zsh.inc
 
