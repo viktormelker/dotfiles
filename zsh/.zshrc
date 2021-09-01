@@ -97,9 +97,6 @@ fi
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
 
-# ssh
-export SSH_KEY_PATH="~/.ssh/rsa_id"
-
 # required for vim plugin YouCompleteMe
 export PYTHON_CONFIGURE_OPTS="--enable-shared"
 
