@@ -305,7 +305,7 @@ exec bash ~/scripts/display/dell_single.sh
 exec --no-startup-id flameshot
 
 # Autostart applications that are shown on screen
-# exec --no-startup-id ~/.config/i3/scripts/add_layouts.sh
+exec --no-startup-id ~/.config/i3/scripts/add_layouts.sh
 exec --no-startup-id vivaldi-stable
 exec --no-startup-id "alacritty -e tmux"
 exec --no-startup-id slack
