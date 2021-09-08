@@ -9,22 +9,24 @@
     "type": "con",
     "nodes": [
         {
-            "border": "pixel",
+            "border": "none",
             "current_border_width": 2,
             "floating": "auto_off",
             "geometry": {
-               "height": 2118,
-               "width": 3840,
+               "height": 1624,
+               "width": 2882,
                "x": 0,
-               "y": 0
+               "y": 177
             },
             "marks": [],
-            "name": "i3: Layout saving in i3 — Mozilla Firefox",
-            "percent": null,
+            "name": "Dell XPS 13 (9310) - ArchWiki - Vivaldi",
+            "percent": 1,
             "swallows": [
                {
-               "class": "^firefox$",
-               "instance": "^Navigator$"
+                "class": "^Vivaldi\\-stable$",
+               // "instance": "^vivaldi\\-stable$",
+               // "title": "^Dell\\ XPS\\ 13\\ \\(9310\\)\\ \\-\\ ArchWiki\\ \\-\\ Vivaldi$",
+                "window_role": "^browser$"
                }
             ],
             "type": "con"
