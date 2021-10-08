@@ -170,3 +170,5 @@ fi
 zplug load --verbose
 
 export PATH="$HOME/.poetry/bin:$PATH"
+
+eval "$(starship init zsh)"
