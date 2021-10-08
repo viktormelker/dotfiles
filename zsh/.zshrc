@@ -136,7 +136,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # direnv plugin for loading environment variables
 eval "$(direnv hook zsh)"
 
-# export QT_AUTO_SCREEN_SCALE_FACTOR=1
+export QT_AUTO_SCREEN_SCALE_FACTOR=1
 # export GDK_SCALE=2
 # export GDK_DPI_SCALE=0.5
 
@@ -170,3 +170,5 @@ fi
 zplug load --verbose
 
 export PATH="$HOME/.poetry/bin:$PATH"
+
+eval "$(starship init zsh)"
