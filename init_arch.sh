@@ -154,3 +154,6 @@ sudo pacman -S mariadb
 
 sudo pacman -S terraform
 sudo pacman -S kustomize
+
+# Kafka
+yay -S kafkacat-git
