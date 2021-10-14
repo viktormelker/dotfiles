@@ -121,7 +121,7 @@ sudo pacman -S rclone
 yay -S postman
 
 # for kubernetes
-yay -S minikube kubectl k9s kubectx stern
+yay -S minikube kubectl k9s kubectx stern kubeval
 
 # poetry
 curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
