@@ -131,6 +131,10 @@ curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poet
 yay -S flutter vysor
 sudo pacman -S dart
 
+# Android development
+yay -S android-sdk android-sdk-platform-tools android-sdk-build-tools
+yay -S android-platform android-sdk-cmdline-tools-latest android-studio
+
 # for circuitpython
 yay -S mu-editor bossa
 

@@ -116,6 +116,8 @@ export PYTHONIOENCODING=utf-8
 # Aliases
 source ~/.aliases
 
+source ~/.exports
+
 # add ruby paths
 export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
 
@@ -172,3 +174,9 @@ zplug load --verbose
 export PATH="$HOME/.poetry/bin:$PATH"
 
 eval "$(starship init zsh)"
+
+export ANDROID_SDK_ROOT='/opt/android-sdk'
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools/
+export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin/
+export PATH=$PATH:$ANDROID_ROOT/emulator
+export PATH=$PATH:$ANDROID_SDK_ROOT/tools/
