@@ -116,6 +116,8 @@ export PYTHONIOENCODING=utf-8
 # Aliases
 source ~/.aliases
 
+source ~/.exports
+
 # add ruby paths
 export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
 
