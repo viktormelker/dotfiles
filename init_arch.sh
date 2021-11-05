@@ -145,6 +145,9 @@ sudo pacman -S yarn
 yay -S jlink
 sudo pacman -S arm-none-eabi-gcc arm-none-eabi-newlib
 
+# ruby
+sudo pacman -s ruby
+
 # Instead of docker
 sudo pacman -S podman
 
