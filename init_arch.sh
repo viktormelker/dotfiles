@@ -92,6 +92,7 @@ sudo pacman -S unzip
 sudo pacman -S autorandr
 sudo pacman -S yq
 sudo pacman -S gnome-keyring seahorse
+yay -S fwupd
 
 # bluetooth
 sudo pacman -S bluez-utils pulseaudio-bluetooth blueman
@@ -157,6 +158,7 @@ sudo pacman -S swig
 yay -S neo4j-community
 sudo pacman -S redis
 sudo pacman -S postgresql
+
 sudo pacman -S mariadb
 
 sudo pacman -S terraform
