@@ -70,6 +70,7 @@
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook"
     },
+    "workbench.editor.revealIfOpen": true,
     "[yaml]": {
         "editor.defaultFormatter": "redhat.vscode-yaml"
     },
