@@ -163,6 +163,7 @@ sudo pacman -S postgresql
 sudo pacman -S mariadb
 
 sudo pacman -S terraform
+yay -S terraform-docs-bin
 sudo pacman -S kustomize
 
 # Kafka
