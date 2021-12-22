@@ -194,10 +194,16 @@
 	insteadOf = "github:"
 
 [url "git@github-business-ventures:business-ventures"]
-        insteadOf = git@github.com:business-ventures
+	insteadOf = git@github.com:business-ventures
 
 [url "ssh://git@github-business-ventures/business-ventures"]
     insteadOf = ssh://github.com/business-ventures
+
+[url "git@github-business-ventures:hm-group"]
+	insteadOf = git@github.com:hm-group
+
+[url "ssh://git@github-business-ventures/hm-group"]
+    insteadOf = ssh://github.com/hm-group
 
 [url "git@gist.github.com:"]
 
