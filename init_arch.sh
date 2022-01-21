@@ -54,6 +54,7 @@ sudo pacman -S cmake
 sudo pacman -S bind
 sudo pacman -S gopass
 sudo pacman -S keychain
+sudo pacman -S github-cli
 
 echo 'xrdb -merge ~/.Xresources' >> ~/.xinitrc
 
