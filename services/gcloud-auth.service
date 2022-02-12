@@ -1,0 +1,8 @@
+[Unit]
+Description=google cloud authentication service
+
+[Service]
+ExecStart=/usr/local/bin/gcloud-auth.sh
+
+[Install]
+WantedBy=default.target
