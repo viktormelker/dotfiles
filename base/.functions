@@ -85,15 +85,6 @@ function server() {
 #	dig +nocmd "$1" any +multiline +noall +answer;
 #}
 
-# UTF-8-encode a string of Unicode symbols
-#function escape() {
-#	printf "\\\x%s" $(printf "$@" | xxd -p -c1 -u);
-#	# print a newline unless we’re piping the output to another program
-#	if [ -t 1 ]; then
-#		echo ""; # newline
-#	fi;
-#}
-
 # Show all the names (CNs and SANs) listed in the SSL certificate
 # for a given domain
 #function getcertnames() {
@@ -169,4 +160,14 @@ function tre() {
 # ff: Find file under the current directory
 ff () {
 	/usr/bin/find . -name "$@";
+}
+
+# H&M
+cloudsql-proxy-integration() {
+  if [ -z "$*" ]; then port="9001"; else port="$*"; fi
+  cloud_sql_proxy -instances="creator-studio-307813:europe-north1:shared-postgresql=tcp:$port"
+}
+cloudsql-proxy-production() {
+  if [ -z "$*" ]; then port="9002"; else port="$*"; fi
+  cloud_sql_proxy -instances="csproduction-292e:europe-west1:shared-postgresql=tcp:$port"
 }
