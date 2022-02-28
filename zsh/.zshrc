@@ -126,6 +126,7 @@ export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH"
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Add custom functions
+source "$HOME/.functions"
 export FPATH="$HOME/.zsh/functions:$FPATH"
 autoload -Uz kp
 autoload -Uz fp
