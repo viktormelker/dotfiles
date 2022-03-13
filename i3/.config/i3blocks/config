@@ -1,0 +1,11 @@
+command=~/.local/bin/statusbar/$BLOCK_NAME
+separator_block_width=20
+markup=pango
+
+[clock]
+label=🕑
+interval=30
+
+[cpu]
+interval=15
+label=💻

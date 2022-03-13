@@ -13,20 +13,19 @@
             "current_border_width": 2,
             "floating": "auto_off",
             "geometry": {
-               "height": 1624,
-               "width": 2882,
+               "height": 1758,
+               "width": 2880,
                "x": 0,
-               "y": 177
+               "y": 42
             },
             "marks": [],
-            "name": "Dell XPS 13 (9310) - ArchWiki - Vivaldi",
-            "percent": 1,
+            "name": "Slack | Threads | Creator Studio | 1 new item",
+            "percent": null,
             "swallows": [
                {
-                "class": "^Vivaldi\\-stable$",
-               // "instance": "^vivaldi\\-stable$",
-               // "title": "^Dell\\ XPS\\ 13\\ \\(9310\\)\\ \\-\\ ArchWiki\\ \\-\\ Vivaldi$",
-                "window_role": "^browser$"
+                "class": "^Slack$",
+                "instance": "^slack$",
+               // "window_role": "^browser\\-window$"
                }
             ],
             "type": "con"

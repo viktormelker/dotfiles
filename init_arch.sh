@@ -94,6 +94,7 @@ yay -S handlr-bin
 yay -S joplin
 sudo pacman -S fwupd
 yay -S mons
+sudo pacman -S numlockx
 
 # bluetooth
 sudo pacman -S bluez-utils pulseaudio-bluetooth blueman
