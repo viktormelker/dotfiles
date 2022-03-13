@@ -26,7 +26,7 @@ sudo pacman -S yay
 #
 sudo pacman -S bash-completion
 
-sudo pacman -S chromium
+# sudo pacman -S chromium
 
 # For development
 yay visual-studio-code-bin
@@ -43,20 +43,20 @@ sudo pacman -S powerline-fonts
 sudo pacman -S httpie
 sudo pacman -S tmux
 sudo pacman -S ctags
-sudo pacman -S npm
+sudo pacman -S npm nvm
 sudo pacman -S zip
 sudo pacman -S alacritty
-sudo pacman -S hub
 sudo pacman -S xsel
 sudo pacman -S kscreen
 yay -S direnv
 sudo pacman -S cmake
 sudo pacman -S bind
 sudo pacman -S gopass
-sudo pacman -S keychain
+# sudo pacman -S keychain
 sudo pacman -S github-cli
+sudo pacman -S diff-so-fancy
+sudo pacman -S ripgrep
 
-echo 'xrdb -merge ~/.Xresources' >> ~/.xinitrc
 
 # Cloud development
 yay -S google-cloud-sdk
@@ -70,9 +70,10 @@ npm install -g aws-cdk
 yay -S franz
 yay -S slack-desktop
 yay -S discord
+
 # Nice tools
 sudo pacman -S peek flameshot
-sudo pacman -S graphviz
+# sudo pacman -S graphviz
 sudo pacman -S tig
 sudo pacman -S rustup
 rustup install stable
@@ -80,20 +81,19 @@ rustup default stable
 cargo install du-dust
 sudo pacman -S okular
 sudo pacman -S lsd
-sudo pacman -S xclip
-yay -S nerd-fonts-complete
 sudo pacman -S tldr
 sudo pacman -S ranger
-yay -S spotify
-sudo pacman -S geoip
-sudo pacman -S calcurse
-yay -S handlr-bin
-yay -S joplin
 sudo pacman -S unzip
 sudo pacman -S autorandr
-sudo pacman -S yq
 sudo pacman -S gnome-keyring seahorse
-yay -S fwupd
+# sudo pacman -S yq
+# sudo pacman -S xclip
+yay -S nerd-fonts-complete
+yay -S spotify
+yay -S handlr-bin
+yay -S joplin
+sudo pacman -S fwupd
+yay -S mons
 
 # bluetooth
 sudo pacman -S bluez-utils pulseaudio-bluetooth blueman

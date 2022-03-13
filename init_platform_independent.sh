@@ -33,3 +33,9 @@ git clone https://github.com/zplug/zplug $ZPLUG_HOME
 
 # Install starship, shell prompt
 sh -c "$(curl -fsSL https://starship.rs/install.sh)"
+
+
+git clone git@github.com:rliou92/python-umonitor.git ~/.python-umonitor
+pushd ~/.python-umonitor
+pip install . --user
+popd
