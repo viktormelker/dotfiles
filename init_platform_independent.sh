@@ -1,10 +1,6 @@
 #!/bin/bash
 # install all cross plattform stuff here
 
-git config --global user.email "viktormelker@gmail.com"
-git config --global user.name "Viktor Melker"
-git config --global gpg.program gpg2
-
 pip install --upgrade pip
 
 mkdir ~/dev
@@ -22,15 +18,6 @@ curl https://pyenv.run | bash
 # fzf, needed for some of the tmux stuff!
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
-
-# Nix package manager
-curl https://nixos.org/nix/install | sh
-. /home/viktor/.nix-profile/etc/profile.d/nix.sh
-nix-env -i diff-so-fancy
-nix-env -i ripgrep
-
-# zsh
-mkdir ~/.zsh
 
 # vim
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
