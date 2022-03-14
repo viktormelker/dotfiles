@@ -24,7 +24,7 @@
             "swallows": [
                {
                "class": "^Spotify$",
-               "instance": "^spotify$",
+               "instance": "^spotify$"
                // "machine": "^viktor\\-20xw0055mx$",
                // "title": "^Spotify$"
                }

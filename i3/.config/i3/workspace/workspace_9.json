@@ -24,7 +24,7 @@
             "swallows": [
                {
                 "class": "^Slack$",
-                "instance": "^slack$",
+                "instance": "^slack$"
                // "window_role": "^browser\\-window$"
                }
             ],
