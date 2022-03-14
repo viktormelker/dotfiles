@@ -132,4 +132,4 @@ _poetry_d8ed458479242b5f_complete()
 }
 
 _poetry_d8ed458479242b5f_complete "$@"
-compdef _poetry_d8ed458479242b5f_complete /home/viktor/.poetry/bin/poetry
+compdef _poetry_d8ed458479242b5f_complete /$HOME/.poetry/bin/poetry
