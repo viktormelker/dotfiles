@@ -157,12 +157,6 @@ function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
 
-# H&M
-cloudsql-proxy-integration() {
-	if [ -z "$*" ]; then port="9001"; else port="$*"; fi
-	cloud_sql_proxy -instances="creator-studio-307813:europe-north1:shared-postgresql=tcp:$port"
-}
-cloudsql-proxy-production() {
-	if [ -z "$*" ]; then port="9002"; else port="$*"; fi
-	cloud_sql_proxy -instances="csproduction-292e:europe-west1:shared-postgresql=tcp:$port"
+function rerun() {
+	git ls-files -cdmo --exclude-standard | entr -a -c "$@"
 }
