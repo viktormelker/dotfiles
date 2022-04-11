@@ -1,10 +1,9 @@
 {
-    "window.zoomLevel": 0,
     "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true,
-    "python.linting.flake8Path": "/home/viktor/.local/bin/flake8",
+    "python.linting.flake8Path": "/$HOME/.local/bin/flake8",
     "python.linting.mypyEnabled": false,
-    "python.linting.mypyPath": "/home/viktor/.local/bin/mypy",
+    "python.linting.mypyPath": "/$HOME/.local/bin/mypy",
     "files.exclude": {
         "**/*.js": {
             "when": "$(basename).ts"
@@ -45,7 +44,7 @@
     "vsdocker.imageUser": "docker.io/melkerman",
     "docker.defaultRegistryPath": "melkerman",
     "python.formatting.provider": "black",
-    "python.formatting.blackPath": "/home/viktor/.local/bin/black",
+    "python.formatting.blackPath": "/$HOME/.local/bin/black",
     "liveshare.guestApprovalRequired": true,
     "liveshare.allowGuestDebugControl": true,
     "liveshare.allowGuestTaskControl": true,
@@ -85,5 +84,11 @@
         "editor.suggestSelection": "first",
         "editor.tabCompletion": "onlySnippets",
         "editor.wordBasedSuggestions": false
-    }
+    },
+    "[markdown]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true,
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+    },
+    "joplin.token": "59fc56b48ab2d3537c5ae1b9ebab0839e7daf8d7be8aaa39ae726965386ae449c4c619d3f41303ba0a21056d4018cb86f9e88a7ee49f5dadf561c8e84b0780f4"
 }

@@ -56,6 +56,7 @@ sudo pacman -S gopass
 sudo pacman -S github-cli
 sudo pacman -S diff-so-fancy
 sudo pacman -S ripgrep
+sudo pacman -S entr
 
 
 # Cloud development
@@ -89,7 +90,7 @@ sudo pacman -S gnome-keyring seahorse
 # sudo pacman -S yq
 # sudo pacman -S xclip
 yay -S nerd-fonts-complete
-yay -S spotify
+yay -S spotify libcurl-compat libcurl-gnutls
 yay -S handlr-bin
 yay -S joplin
 sudo pacman -S fwupd
@@ -124,7 +125,7 @@ sudo pacman -S rclone
 yay -S postman
 
 # for kubernetes
-yay -S minikube kubectl k9s kubectx stern kubeval
+yay -S minikube kubectl k9s kubectx stern kubeval helm skaffold
 
 # poetry
 curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
