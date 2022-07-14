@@ -38,3 +38,4 @@ export MANPAGER='less -X';
 export CHROME_EXECUTABLE=/usr/bin/chromium
 
 export BROWSER=/usr/bin/vivaldi-stable
+export KUBECONFIG=~/.kube/config
