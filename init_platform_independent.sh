@@ -2,6 +2,9 @@
 # install all cross plattform stuff here
 
 pip install --upgrade pip
+pip install pipx
+pipx install black
+pipx install rich-cli
 
 mkdir ~/dev
 
