@@ -131,7 +131,7 @@ yay -S minikube kubectl k9s kubectx stern kubeval helm skaffold
 curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
 
 # For flutter
-yay -S flutter vysor
+yay -S flutter vysor ninja
 sudo pacman -S dart
 
 # Android development
