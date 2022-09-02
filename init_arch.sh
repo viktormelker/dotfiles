@@ -125,7 +125,7 @@ sudo pacman -S rclone
 yay -S postman
 
 # for kubernetes
-yay -S minikube kubectl k9s kubectx stern kubeval helm skaffold
+yay -S minikube kubectl k9s kubectx stern kubeval helm skaffold, krew
 
 # poetry
 curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
