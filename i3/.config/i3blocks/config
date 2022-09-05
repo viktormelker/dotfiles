@@ -9,3 +9,12 @@ interval=30
 [cpu]
 interval=15
 label=💻
+
+[i3volume]
+label=
+command=~/i3-volume/volume output i3blocks
+interval=once
+signal=10
+color=#b8bb26
+separator_block_width=10
+markup=pango

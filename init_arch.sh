@@ -98,7 +98,7 @@ yay -S mons
 sudo pacman -S numlockx
 
 # bluetooth
-sudo pacman -S bluez-utils pulseaudio-bluetooth blueman
+sudo pacman -S bluez-utils blueman
 
 # Yubikey stuff
 sudo pacman -S yubikey-manager-qt
@@ -116,7 +116,7 @@ sudo systemctl start pcscd.service
 sudo pacman -S i3-vm i3status-manjaro dmenu-manjaro
 sudo pacman -S i3-wallpapers i3lock pcmanfm network-manager-applet
 sudo pacman -S feh rofi py3status xautolock conky xorg-xbacklight i3blocks
-sudo pacman -S pulseaudio pavucontrol dunst perl-anyevent-i3
+sudo pacman -S pavucontrol dunst perl-anyevent-i3
 yay -S alttab-git
 
 # Optional development stuff
@@ -137,6 +137,9 @@ sudo pacman -S dart
 # Android development
 yay -S android-sdk android-sdk-platform-tools android-sdk-build-tools
 yay -S android-platform android-sdk-cmdline-tools-latest android-studio
+
+# Virtualization and hardware acceleration (used by android studio for hardware acceleration)
+sudo pacman -S qemu-full libvirt bridge-utils
 
 # for circuitpython
 yay -S mu-editor bossa
@@ -170,3 +173,7 @@ sudo pacman -S kustomize
 
 # Kafka
 yay -S kafkacat-git
+
+
+# sound
+sudo pacman -S pipewire wireplumber helvum

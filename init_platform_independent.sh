@@ -42,3 +42,6 @@ git clone git@github.com:rliou92/python-umonitor.git ~/.python-umonitor
 pushd ~/.python-umonitor
 pip install . --user
 popd
+
+
+git clone https://github.com/hastinbe/i3-volume.git ~/i3-volume
