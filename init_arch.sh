@@ -177,3 +177,7 @@ yay -S kafkacat-git
 
 # sound
 sudo pacman -S pipewire wireplumber helvum
+
+
+# SQL UI
+yay -Ss dbgate-bin
