@@ -135,7 +135,7 @@ yay -S flutter vysor ninja
 sudo pacman -S dart
 
 # Android development
-yay -S android-sdk android-sdk-platform-tools android-sdk-build-tools
+yay -S android-sdk android-sdk-platform-tools android-sdk-build-tools android-tools
 yay -S android-platform android-sdk-cmdline-tools-latest android-studio
 
 # Virtualization and hardware acceleration (used by android studio for hardware acceleration)
