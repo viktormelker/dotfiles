@@ -154,6 +154,10 @@ sudo pacman -S arm-none-eabi-gcc arm-none-eabi-newlib
 # ruby
 sudo pacman -s ruby
 
+# elixir
+sudo pacman -S elixir
+sudo pacman -S inotify-tools
+
 # Instead of docker
 sudo pacman -S podman
 
