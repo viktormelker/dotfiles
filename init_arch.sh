@@ -128,7 +128,7 @@ yay -S postman
 yay -S minikube kubectl k9s kubectx stern kubeval helm skaffold, krew
 
 # poetry
-curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
+# curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
 
 # For flutter
 yay -S flutter vysor ninja

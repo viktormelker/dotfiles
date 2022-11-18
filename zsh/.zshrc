@@ -156,7 +156,6 @@ source /opt/google-cloud-sdk/completion.zsh.inc
 # switching kubernetes cluster
 bindkey -s '^o' 'kubectx\n'
 
-export PATH="$HOME/.poetry/bin:$PATH"
 
 eval "$(starship init zsh)"
 
