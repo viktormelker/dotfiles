@@ -129,6 +129,7 @@ yay -S minikube kubectl k9s kubectx stern kubeval helm skaffold, krew
 
 # poetry
 # curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
+sudo pacman -S openssl-1.1  # Needed for TLS in python. For example pip
 
 # For flutter
 yay -S flutter vysor ninja
