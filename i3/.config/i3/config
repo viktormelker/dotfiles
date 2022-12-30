@@ -273,6 +273,17 @@ mode "$mode_display" {
 }
 
 
+bindsym $mod+Ctrl+s mode "$mode_sound"
+set $mode_sound Configure sound: [o]utput [i]input
+mode "$mode_sound" {
+    # set default sink
+    bindsym o exec $HOME/.local/bin/pactl_set_default_sink.sh; mode "default"
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+F8 mode "$mode_sound"
+
 # Resize window (you can also use the mouse for that)
 bindsym $mod+r mode "resize"
 mode "resize" {
