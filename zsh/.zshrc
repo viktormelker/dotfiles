@@ -110,7 +110,7 @@ source /usr/share/nvm/init-nvm.sh
 
 # Python
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
-export PYTHONBREAKPOINT=pdb.set_trace
+export PYTHONBREAKPOINT=ipdb.set_trace
 export PYTHONIOENCODING=utf-8
 
 # Aliases
