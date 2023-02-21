@@ -43,7 +43,7 @@ sudo pacman -S powerline-fonts
 sudo pacman -S httpie
 sudo pacman -S tmux
 sudo pacman -S ctags
-sudo pacman -S npm nvm
+sudo pacman -S npm nvm openslide
 sudo pacman -S zip
 sudo pacman -S alacritty
 sudo pacman -S xsel
@@ -125,7 +125,8 @@ sudo pacman -S rclone
 yay -S postman
 
 # for kubernetes
-yay -S minikube kubectl k9s kubectx stern kubeval helm skaffold, krew
+yay -S minikube kubectl k9s kubectx stern kubeval helm skaffold krew
+kubectl krew install explore
 
 # poetry
 # curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
@@ -183,6 +184,8 @@ yay -S kafkacat-git
 # sound
 sudo pacman -S pipewire wireplumber helvum
 
-
 # SQL UI
 yay -Ss dbgate-bin
+
+# Webpage generation
+sudo pacman -S hugo
