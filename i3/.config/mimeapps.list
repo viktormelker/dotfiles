@@ -2,6 +2,10 @@
 x-scheme-handler/slack=slack.desktop
 x-scheme-handler/http=vivaldi-stable.desktop
 x-scheme-handler/https=vivaldi-stable.desktop
+x-scheme-handler/postman=Postman.desktop
+x-scheme-handler/msteams=teams.desktop
+text/html=vivaldi-stable.desktop
+
 
 [Added Associations]
 application/pdf=okularApplication_pdf.desktop;
