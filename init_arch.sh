@@ -97,6 +97,7 @@ sudo pacman -S fwupd
 yay -S mons
 sudo pacman -S numlockx
 
+
 # bluetooth
 sudo pacman -S bluez-utils blueman
 
@@ -118,6 +119,7 @@ sudo pacman -S i3-wallpapers i3lock pcmanfm network-manager-applet
 sudo pacman -S feh rofi py3status xautolock conky xorg-xbacklight i3blocks
 sudo pacman -S pavucontrol dunst perl-anyevent-i3
 yay -S alttab-git
+yay -S rofi-greenclip
 
 # Optional development stuff
 # Tools
