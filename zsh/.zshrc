@@ -118,6 +118,11 @@ source ~/.aliases
 
 source ~/.exports
 
+SECRET_EXPORTS_FILE=~/.secret_exports
+if test -f "$SECRET_EXPORTS_FILE"; then
+    source "$SECRET_EXPORTS_FILE";
+fi
+
 # add ruby paths
 export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
 export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH"
