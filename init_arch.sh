@@ -117,8 +117,8 @@ sudo systemctl start pcscd.service
 sudo pacman -S i3-vm i3status-manjaro dmenu-manjaro
 sudo pacman -S i3-wallpapers i3lock pcmanfm network-manager-applet
 sudo pacman -S feh rofi py3status xautolock conky xorg-xbacklight i3blocks
-sudo pacman -S pavucontrol dunst perl-anyevent-i3
-yay -S alttab-git
+sudo pacman -S pavucontrol dunst perl-anyevent-i3 xss-lock
+yay -S xidlehook
 yay -S rofi-greenclip
 
 # Optional development stuff
