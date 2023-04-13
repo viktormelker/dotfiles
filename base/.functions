@@ -79,6 +79,11 @@ function server() {
 	python -c $'import SimpleHTTPServer;\nmap = SimpleHTTPServer.SimpleHTTPRequestHandler.extensions_map;\nmap[""] = "text/plain";\nfor key, value in map.items():\n\tmap[key] = value + ";charset=UTF-8";\nSimpleHTTPServer.test();' "$port";
 }
 
+function kafka-delete-topic() {
+    set -x
+    topic=$1
+    kafka-topics.sh --bootstrap-server $KAFKA_BROKERS --delete --topic $topic 2>/dev/null
+}
 
 # Run `dig` and display the most useful info
 #function digga() {
