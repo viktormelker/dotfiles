@@ -54,9 +54,9 @@ bindsym $mod+Ctrl+m exec pavucontrol
 
 # Screen brightness controls
 # bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
-bindsym $mod+F6 exec "xbacklight -inc 10; notify-send 'brightness up'"
+# bindsym $mod+F6 exec "xbacklight -inc 10; notify-send 'brightness up'"
 # bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
-bindsym $mod+F5 exec "xbacklight -dec 10; notify-send 'brightness down'"
+# bindsym $mod+F5 exec "xbacklight -dec 10; notify-send 'brightness down'"
 
 
 # Start Applications
@@ -260,7 +260,7 @@ mode "$mode_system" {
 }
 
 # Handle display settings
-bindsym $mod+Ctrl+d mode "$mode_display"
+bindsym $mod+F7 mode "$mode_display"
 set $mode_display (d)ual home, (s)ingle home, (l)aptop only, (m) full hd mirror
 mode "$mode_display" {
     bindsym d exec --no-startup-id umonitor -l docked_home, mode "default"
@@ -273,17 +273,17 @@ mode "$mode_display" {
     bindsym Escape mode "default"
 }
 
-
-bindsym $mod+Ctrl+s mode "$mode_sound"
+bindsym $mod+F4 mode "$mode_sound"
 set $mode_sound Configure sound: [o]utput [i]input
 mode "$mode_sound" {
     # set default sink
     bindsym o exec $HOME/.local/bin/pactl_set_default_sink.sh; mode "default"
+    bindsym i mode "default"
+
 
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-bindsym $mod+F8 mode "$mode_sound"
 
 # Resize window (you can also use the mouse for that)
 bindsym $mod+r mode "resize"
