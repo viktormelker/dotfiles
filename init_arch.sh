@@ -30,6 +30,7 @@ sudo pacman -S bash-completion
 
 # For development
 yay visual-studio-code-bin
+sudo pacman -S kakoune
 sudo pacman -S docker-compose
 sudo pacman -S docker
 # add user to docker group
@@ -53,7 +54,7 @@ sudo pacman -S cmake
 sudo pacman -S bind
 sudo pacman -S gopass
 # sudo pacman -S keychain
-sudo pacman -S github-cli
+# sudo pacman -S github-cli
 sudo pacman -S diff-so-fancy
 sudo pacman -S ripgrep
 sudo pacman -S entr
@@ -94,7 +95,7 @@ yay -S spotify libcurl-compat libcurl-gnutls
 yay -S handlr-bin
 yay -S joplin
 sudo pacman -S fwupd
-yay -S mons
+# yay -S mons
 sudo pacman -S numlockx
 
 

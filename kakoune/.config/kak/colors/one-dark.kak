@@ -1,0 +1,1 @@
+../../../dev/dotfiles/kakoune/.config/kak/colors/one-dark.kak
