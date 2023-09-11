@@ -155,9 +155,6 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
 
-# completion for gcloud
-source /opt/google-cloud-sdk/completion.zsh.inc
-
 # switching kubernetes cluster
 bindkey -s '^o' 'kubectx\n'
 
