@@ -61,7 +61,7 @@ sudo pacman -S entr
 
 
 # Cloud development
-yay -S google-cloud-sdk
+yay -S google-cloud-cli google-cloud-cli-gke-gcloud-auth-plugin
 
 # AWS stuff
 yay -S aws-cli-v2-bin

@@ -1,97 +1,118 @@
 {
-    "python.linting.pylintEnabled": false,
-    "python.linting.flake8Enabled": true,
-    "python.linting.flake8Path": "/home/viktor/.local/bin/flake8",
-    "python.linting.mypyEnabled": false,
-    "python.linting.mypyPath": "/home/viktor/.local/bin/mypy",
-    "files.exclude": {
-        "**/*.js": {
-            "when": "$(basename).ts"
-        },
-        "**/*.map": {
-            "when": "$(basename).map"
-        },
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/CVS": true,
-        "**/.DS_Store": true
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Path": "/home/viktor/.local/bin/flake8",
+  "python.linting.mypyEnabled": false,
+  "python.linting.mypyPath": "/home/viktor/.local/bin/mypy",
+  "files.exclude": {
+    "**/*.js": {
+      "when": "$(basename).ts"
     },
+    "**/*.map": {
+      "when": "$(basename).map"
+    },
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true
+  },
+  "editor.rulers": [
+    100
+  ],
+  "workbench.iconTheme": "vscode-icons",
+  "search.exclude": {
+    "**/.venv/": true,
+    "**/venv/": true,
+    "**/dist/": true,
+    "**/.mypy_cache/": true
+  },
+  "search.useIgnoreFiles": false,
+  "editor.renderWhitespace": "all",
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "files.insertFinalNewline": true,
+  "editor.formatOnPaste": true,
+  "editor.minimap.enabled": false,
+  "autoDocstring.docstringFormat": "google",
+  "explorer.confirmDelete": false,
+  "files.associations": {
+    "*.avsc": "json"
+  },
+  "explorer.confirmDragAndDrop": false,
+  "git.confirmSync": false,
+  "vsdocker.imageUser": "docker.io/melkerman",
+  "docker.defaultRegistryPath": "melkerman",
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "/home/viktor/.local/bin/black",
+  "liveshare.guestApprovalRequired": true,
+  "liveshare.allowGuestDebugControl": true,
+  "liveshare.allowGuestTaskControl": true,
+  "git.suggestSmartCommit": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "python.languageServer": "Pylance",
+  "python.analysis.typeCheckingMode": "basic",
+  "sync.gist": "3e547ba1a64dd63a0fd16ce8a3acf7cd",
+  "aws.onDefaultRegionMissing": "add",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "workbench.editor.revealIfOpen": true,
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[elixir]": {
+    "editor.formatOnSave": true
+  },
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
     "editor.rulers": [
-        100
+      10
     ],
-    "workbench.iconTheme": "vscode-icons",
-    "search.exclude": {
-        "**/.venv/": true,
-        "**/venv/": true,
-        "**/dist/": true,
-        "**/.mypy_cache/": true,
-    },
-    "search.useIgnoreFiles": false,
-    "editor.renderWhitespace": "all",
-    "files.trimTrailingWhitespace": true,
-    "files.trimFinalNewlines": true,
-    "files.insertFinalNewline": true,
-    "editor.formatOnPaste": true,
-    "editor.minimap.enabled": false,
-    "autoDocstring.docstringFormat": "google",
-    "explorer.confirmDelete": false,
-    "files.associations": {
-        "*.avsc": "json"
-    },
-    "explorer.confirmDragAndDrop": false,
-    "git.confirmSync": false,
-    "vsdocker.imageUser": "docker.io/melkerman",
-    "docker.defaultRegistryPath": "melkerman",
-    "python.formatting.provider": "black",
-    "python.formatting.blackPath": "/home/viktor/.local/bin/black",
-    "liveshare.guestApprovalRequired": true,
-    "liveshare.allowGuestDebugControl": true,
-    "liveshare.allowGuestTaskControl": true,
-    "git.suggestSmartCommit": false,
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "python.languageServer": "Pylance",
-    "python.analysis.typeCheckingMode": "basic",
-    "sync.gist": "3e547ba1a64dd63a0fd16ce8a3acf7cd",
-    "aws.onDefaultRegionMissing": "add",
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "security.workspace.trust.untrustedFiles": "open",
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter-notebook"
-    },
-    "workbench.editor.revealIfOpen": true,
-    "[yaml]": {
-        "editor.defaultFormatter": "redhat.vscode-yaml"
-    },
-    "[dart]": {
-        "editor.formatOnSave": true,
-        "editor.formatOnType": true,
-        "editor.rulers": [
-            10
-        ],
-        "editor.selectionHighlight": false,
-        "editor.suggest.snippetsPreventQuickSuggestions": false,
-        "editor.suggestSelection": "first",
-        "editor.tabCompletion": "onlySnippets",
-        "editor.wordBasedSuggestions": false
-    },
-    "[markdown]": {
-        "editor.formatOnSave": true,
-        "editor.formatOnPaste": true,
-        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
-    },
-    "joplin.token": "59fc56b48ab2d3537c5ae1b9ebab0839e7daf8d7be8aaa39ae726965386ae449c4c619d3f41303ba0a21056d4018cb86f9e88a7ee49f5dadf561c8e84b0780f4",
-    "vsicons.dontShowNewVersionMessage": true,
-    "editor.tabCompletion": "on",
-    "workbench.colorTheme": "Default Dark+"
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false
+  },
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
+  "joplin.token": "59fc56b48ab2d3537c5ae1b9ebab0839e7daf8d7be8aaa39ae726965386ae449c4c619d3f41303ba0a21056d4018cb86f9e88a7ee49f5dadf561c8e84b0780f4",
+  "vsicons.dontShowNewVersionMessage": true,
+  "editor.tabCompletion": "on",
+  "workbench.colorTheme": "Default Dark+",
+  "gitlens.hovers.currentLine.enabled": false,
+  "gitlens.autolinks": [
+    {
+      "url": "https://dev.azure.com/BusinessVenture/Creator%20Studio/_boards/board/t/Station%20-%20Fulfill%20and%20Support/Stories/?workitem=<num>",
+      "prefix": "TICKET-"
+    }
+  ],
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "circleci.hostUrl": "",
+  "elixirLS.enableTestLenses": true,
+  "elixirLS.suggestSpecs": false,
+  "emmet.includeLanguages": {
+    "phoenix-heex": "html"
+  },
+  "git.openRepositoryInParentFolders": "always",
+  "window.zoomLevel": 1
 }
