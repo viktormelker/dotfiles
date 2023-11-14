@@ -333,6 +333,7 @@ exec --no-startup-id flameshot
 exec --no-startup-id "umonitor --listen --daemonize"
 exec --no-startup-id "rclone mount vm_gdrive:/ ~/google_drive --daemon"
 exec --no-startup-id "rclone mount vm_dropbox:/ ~/dropbox --daemon"
+exec --no-startup-id "rclone sync ~/obsidian vm_gdrive:/obsidian"
 
 # Autostart applications that are shown on screen
 exec --no-startup-id ~/.config/i3/scripts/add_layouts.sh
