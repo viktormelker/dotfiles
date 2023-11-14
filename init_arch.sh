@@ -88,6 +88,7 @@ sudo pacman -S ranger
 sudo pacman -S unzip
 sudo pacman -S autorandr
 sudo pacman -S gnome-keyring seahorse
+sudo pacman -S btop
 # sudo pacman -S yq
 # sudo pacman -S xclip
 yay -S nerd-fonts-complete
@@ -125,7 +126,8 @@ yay -S rofi-greenclip
 # Optional development stuff
 # Tools
 sudo pacman -S rclone
-yay -S postman
+mkdir ~/google_drive
+mkdir ~/dropbox
 
 # for kubernetes
 yay -S minikube kubectl k9s kubectx stern kubeval helm skaffold krew
