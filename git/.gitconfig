@@ -167,6 +167,11 @@
 	# Automatically correct and execute mistyped commands
 	autocorrect = 1
 
+[init]
+
+	# Use main as default branch name instead of master
+	defaultBranch = main
+
 [merge]
 	# Include summaries of merged commits in newly created merge commit messages
 	tool="meld"
