@@ -1,9 +1,4 @@
 {
-  "python.linting.pylintEnabled": false,
-  "python.linting.flake8Enabled": true,
-  "python.linting.flake8Path": "/home/viktor/.local/bin/flake8",
-  "python.linting.mypyEnabled": false,
-  "python.linting.mypyPath": "/home/viktor/.local/bin/mypy",
   "files.exclude": {
     "**/*.js": {
       "when": "$(basename).ts"
@@ -11,11 +6,7 @@
     "**/*.map": {
       "when": "$(basename).map"
     },
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true
+    "**/.git": true
   },
   "editor.rulers": [
     100
@@ -111,8 +102,12 @@
   "elixirLS.enableTestLenses": true,
   "elixirLS.suggestSpecs": false,
   "emmet.includeLanguages": {
-    "phoenix-heex": "html"
+    "phoenix-heex": "html",
+    "html-eex": "html"
   },
-  "git.openRepositoryInParentFolders": "always",
-  "window.zoomLevel": 1
+"git.openRepositoryInParentFolders": "always",
+"window.zoomLevel": 1,
+"vs-kubernetes": {
+  "vscode-kubernetes.minikube-path-linux": "/home/viktor/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube"
+}
 }
