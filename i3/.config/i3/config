@@ -330,6 +330,7 @@ exec --no-startup-id xss-lock blurlock
 exec_always --no-startup-id fix_xcursor
 exec_always alttab
 exec --no-startup-id flameshot
+exec --no-startup-id udiskie
 exec --no-startup-id "umonitor --listen --daemonize"
 exec --no-startup-id "rclone mount vm_gdrive:/ ~/google_drive --daemon"
 exec --no-startup-id "rclone mount vm_dropbox:/ ~/dropbox --daemon"

@@ -58,6 +58,7 @@ sudo pacman -S gopass
 sudo pacman -S diff-so-fancy
 sudo pacman -S ripgrep
 sudo pacman -S entr
+yay -S udisks2 udiskie --needed
 
 
 # Cloud development
