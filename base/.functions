@@ -179,3 +179,11 @@ function create_tmux_window() {
     fi
     tmux switch-client -t "$window_name"
 }
+
+function cloudsql-proxy-integration() {
+  gcloud compute --project creator-studio-307813 start-iap-tunnel --quiet --iap-tunnel-disable-connection-check cloud-sql-proxy-tunnel 5432 --local-host-port=0.0.0.0:9001 --zone=europe-north1-a
+}
+
+function cloudsql-proxy-production() {
+  gcloud compute --project csproduction-292e start-iap-tunnel --quiet --iap-tunnel-disable-connection-check cloud-sql-proxy-tunnel 5432 --local-host-port=0.0.0.0:9002 --zone=europe-west1-b
+}
