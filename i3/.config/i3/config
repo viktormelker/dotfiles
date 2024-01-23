@@ -106,6 +106,14 @@ bindsym $mod+Ctrl+Shift+Up move workspace to output up
 bindsym $mod+Ctrl+Shift+k move workspace to output up
 bindsym $mod+Ctrl+Shift+Down move workspace to output down
 bindsym $mod+Ctrl+Shift+j move workspace to output down
+bindsym $mod+Alt+Left move workspace to output left
+bindsym $mod+Alt+h move workspace to output left
+bindsym $mod+Alt+l move workspace to output right
+bindsym $mod+Alt+Right move workspace to output right
+bindsym $mod+Alt+Up move workspace to output up
+bindsym $mod+Alt+k move workspace to output up
+bindsym $mod+Alt+Down move workspace to output down
+bindsym $mod+Alt+j move workspace to output down
 
 # workspace back and forth (with/without active container)
 workspace_auto_back_and_forth yes
@@ -201,9 +209,7 @@ bindsym $mod+Shift+0 move container to workspace $ws10; workspace $ws0
 
 # Open applications on specific workspaces
 # assign [class="Thunderbird"] $ws1
-# assign [class="Pale moon"] $ws2
 # assign [class="Pcmanfm"] $ws3
-# assign [class="Skype"] $ws5
 
 # Open specific applications in floating mode
 for_window [class="calamares"] floating enable border normal
@@ -229,7 +235,6 @@ for_window [class="Simple-scan"] floating enable border normal
 for_window [class="(?i)System-config-printer.py"] floating enable border normal
 for_window [class="Timeset-gui"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal
-for_window [class="Xfburn"] floating enable
 
 for_window [instance="__scratchpad"] move scratchpad
 # exec --no-startup-id code ~/Documents/job -name __scratchpad
