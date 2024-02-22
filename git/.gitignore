@@ -27,3 +27,4 @@ Thumbs.db
 .env
 .vscode
 .python-version
+.tool-versions
