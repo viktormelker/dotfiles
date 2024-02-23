@@ -44,7 +44,8 @@ sudo pacman -S powerline-fonts
 sudo pacman -S httpie
 sudo pacman -S tmux
 sudo pacman -S ctags
-sudo pacman -S npm nvm openslide
+sudo pacman -S npm openslide
+# sudo pacman -S nvm
 sudo pacman -S zip
 sudo pacman -S alacritty
 sudo pacman -S xsel
@@ -191,7 +192,9 @@ yay -S kafkacat-git
 sudo pacman -S pipewire wireplumber helvum
 
 # SQL UI
-yay -Ss dbgate-bin
+sudo pacman -S dbeaver jre17-openjdk-headless
+
+yay -S mongodb-tools-bin
 
 # Webpage generation
 sudo pacman -S hugo

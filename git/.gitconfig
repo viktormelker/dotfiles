@@ -97,6 +97,15 @@
 	# Detect whitespace errors when applying a patch
 	whitespace = fix
 
+
+[branch]
+
+	sort = -committerdate
+
+[column]
+
+	ui = auto
+
 [core]
 
 	# Use custom `.gitignore`
@@ -185,6 +194,10 @@
 	default = current
 	# Make `git push` push relevant annotated tags when pushing branches out.
 	followTags = true
+
+[rerere]
+
+	enabled = true
 
 # URL shorthands
 
