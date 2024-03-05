@@ -89,7 +89,7 @@ sudo pacman -S tldr
 sudo pacman -S ranger
 sudo pacman -S unzip
 sudo pacman -S autorandr
-sudo pacman -S gnome-keyring seahorse
+sudo pacman -S gnome-keyring seahorse  # for ssh agent keyring helpers
 sudo pacman -S btop
 # sudo pacman -S yq
 # sudo pacman -S xclip

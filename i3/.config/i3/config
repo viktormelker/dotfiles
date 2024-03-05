@@ -106,14 +106,6 @@ bindsym $mod+Ctrl+Shift+Up move workspace to output up
 bindsym $mod+Ctrl+Shift+k move workspace to output up
 bindsym $mod+Ctrl+Shift+Down move workspace to output down
 bindsym $mod+Ctrl+Shift+j move workspace to output down
-bindsym $mod+Mod4+Left move workspace to output left
-bindsym $mod+Mod4+h move workspace to output left
-bindsym $mod+Mod4+l move workspace to output right
-bindsym $mod+Mod4+Right move workspace to output right
-bindsym $mod+Mod4+Up move workspace to output up
-bindsym $mod+Mod4+k move workspace to output up
-bindsym $mod+Mod4+Down move workspace to output down
-bindsym $mod+Mod4+j move workspace to output down
 
 # workspace back and forth (with/without active container)
 workspace_auto_back_and_forth yes
@@ -270,12 +262,13 @@ mode "$mode_system" {
 
 # Handle display settings
 bindsym $mod+F7 mode "$mode_display"
-set $mode_display (d)ual home, (s)ingle home, (l)aptop only, (m) full hd mirror
+set $mode_display (d)ual home, (s)ingle home, (l)aptop only, (m) full hd mirror, (e) extended double hm
 mode "$mode_display" {
     bindsym d exec --no-startup-id umonitor -l docked_home, mode "default"
     bindsym s exec --no-startup-id umonitor -l home_single_right, mode "default"
     bindsym l exec --no-startup-id umonitor -l laptop, mode "default"
     bindsym m exec --no-startup-id umonitor -l hm_mirror_full_hd, mode "default"
+    bindsym e exec --no-startup-id umonitor -l double-display-hm, mode "default"
 
     # exit display mode: "Enter" or "Escape"
     bindsym Return mode "default"
