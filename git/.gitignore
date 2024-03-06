@@ -17,7 +17,6 @@ Thumbs.db
 # virtualenvs
 .venv
 
-.python-version
 .vscode
 .mypy_cache
 *.code-workspace
@@ -26,5 +25,4 @@ Thumbs.db
 
 .env
 .vscode
-.python-version
 .tool-versions
