@@ -57,6 +57,7 @@ sudo pacman -S gopass
 # sudo pacman -S keychain
 # sudo pacman -S github-cli
 sudo pacman -S diff-so-fancy
+sudo pacman -S difftastic
 sudo pacman -S ripgrep
 sudo pacman -S entr
 yay -S udisks2 udiskie --needed
@@ -198,3 +199,5 @@ yay -S mongodb-tools-bin
 
 # Webpage generation
 sudo pacman -S hugo
+
+yay -S lyx
