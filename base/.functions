@@ -5,6 +5,10 @@ function mkd() {
 	mkdir -p "$@" && cd "$_";
 }
 
+function up() {
+	uv pip "$@" --extra-index-url https://oauth2accesstoken@europe-north1-python.pkg.dev/creator-studio-307813/qlty/simple/ --keyring-provider subprocess
+}
+
 # Create a .tar.gz archive, using `zopfli`, `pigz` or `gzip` for compression
 function targz() {
 	local tmpFile="${@%/}.tar";
