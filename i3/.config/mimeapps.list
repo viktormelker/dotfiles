@@ -5,8 +5,11 @@ x-scheme-handler/https=firefox.desktop
 x-scheme-handler/postman=Postman.desktop
 x-scheme-handler/msteams=teams.desktop
 text/html=firefox.desktop
-
+image/png=okularApplication_kimgio.desktop
+x-scheme-handler/webcal=firefox.desktop
+x-scheme-handler/mailto=firefox.desktop
 
 [Added Associations]
 application/pdf=okularApplication_pdf.desktop;
 text/csv=visual-studio-code.desktop;
+image/png=okularApplication_kimgio.desktop;
