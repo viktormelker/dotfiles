@@ -37,7 +37,7 @@ export MANPAGER='less -X';
 # For flutter development
 export CHROME_EXECUTABLE=/usr/bin/chromium
 
-export BROWSER=/usr/bin/vivaldi-stable
+export BROWSER=/usr/bin/firefox
 export KUBECONFIG=~/.kube/config
 
 export SCHEMA_REGISTRY_URL=http://schema-registry-cp-schema-registry.kafka.svc.cluster.local:8081
