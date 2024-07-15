@@ -179,3 +179,6 @@ export PATH="${PATH}:${HOME}/.python/bin"
 
 source "$HOME/.asdf/asdf.sh"
 source "$HOME/.asdf/completions/asdf.bash"
+
+# configure docker inside minikube
+eval $(minikube docker-env)

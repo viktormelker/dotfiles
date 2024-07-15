@@ -174,7 +174,7 @@ function create_tmux_window() {
     if [ -n "$1" ]; then
         dir_path=$1
     else
-        dir_path=$(find ~/dev -type d -name .git | grep -v -P '\.terraform' | sed -e 's@/.git@@' | ~/.fzf/bin/fzf -e --reverse)
+        dir_path=$(find ~/dev -type d -name .git | grep -v -P '\.terraform'| grep -v -P 'qlty-platform' | sed -e 's@/.git@@' | ~/.fzf/bin/fzf -e --reverse)
     fi
     [ -z "$dir_path" ] && return 0
     window_name=$(echo "$dir_path" | sed 's@.*/@@')
