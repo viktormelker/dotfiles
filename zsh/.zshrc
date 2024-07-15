@@ -174,5 +174,8 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/tools/
 # krew for k8s
 export PATH="${PATH}:${HOME}/.krew/bin"
 
+# Python stuff
+export PATH="${PATH}:${HOME}/.python/bin"
+
 source "$HOME/.asdf/asdf.sh"
 source "$HOME/.asdf/completions/asdf.bash"

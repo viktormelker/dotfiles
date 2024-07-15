@@ -8,6 +8,7 @@ pipx install rich-cli
 pipx install terminal-copilot
 
 mkdir ~/dev
+mkdir ~/.python
 
 # install tmux plugin manager
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
