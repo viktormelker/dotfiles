@@ -156,7 +156,7 @@ eval "$(direnv hook zsh)"
 export TERMINAL=/usr/bin/alacritty
 
 export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
 
 # switching kubernetes cluster
@@ -173,9 +173,6 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/tools/
 
 # krew for k8s
 export PATH="${PATH}:${HOME}/.krew/bin"
-
-# Python stuff
-export PATH="${PATH}:${HOME}/.python/bin"
 
 source "$HOME/.asdf/asdf.sh"
 source "$HOME/.asdf/completions/asdf.bash"
