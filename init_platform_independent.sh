@@ -14,10 +14,6 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # Install pyenv
 curl https://pyenv.run | bash
-# pyenv install 2.7.16
-# pyenv install 3.7.5
-# pyenv install 3.8.0
-
 
 # fzf, needed for some of the tmux stuff!
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
