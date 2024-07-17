@@ -255,13 +255,12 @@ mode "$mode_system" {
 
 # Handle display settings
 bindsym $mod+F7 mode "$mode_display"
-set $mode_display (d)ual home, (s)ingle home, (l)aptop only, (m) full hd mirror, (e) extended double hm
+set $mode_display (d)ual home, (s)ingle home, (l)aptop only, (f)yndiq double
 mode "$mode_display" {
     bindsym d exec --no-startup-id ~/scripts/display/home_dual.sh, mode "default"
     bindsym s exec --no-startup-id ~/scripts/display/single_screen.sh, mode "default"
-    bindsym l exec --no-startup-id umonitor -l laptop, mode "default"
-    bindsym m exec --no-startup-id umonitor -l hm_mirror_full_hd, mode "default"
-    bindsym e exec --no-startup-id umonitor -l double-display-hm, mode "default"
+    # bindsym l exec --no-startup-id umonitor -l laptop, mode "default"
+    bindsym f exec --no-startup-id ~/scripts/display/fyndiq_dual.sh, mode "default"
 
     # exit display mode: "Enter" or "Escape"
     bindsym Return mode "default"
@@ -329,6 +328,7 @@ exec --no-startup-id "rclone sync ~/obsidian vm_gdrive:/obsidian"
 # Autostart applications that are shown on screen
 exec --no-startup-id ~/.config/i3/scripts/add_layouts.sh
 exec --no-startup-id firefox
+exec --no-startup-id obsidian
 exec --no-startup-id "alacritty -e tmux"
 exec --no-startup-id slack
 exec --no-startup-id "spotify --force-device-scale-factor=1.63"

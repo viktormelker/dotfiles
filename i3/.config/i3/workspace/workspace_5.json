@@ -9,23 +9,23 @@
     "type": "con",
     "nodes": [
         {
-            "border": "pixel",
+            "border": "none",
             "current_border_width": 2,
             "floating": "auto_off",
             "geometry": {
-               "height": 2045,
-               "width": 3840,
-               "x": 0,
+               "height": 1059,
+               "width": 1881,
+               "x": 1878,
                "y": 0
             },
             "marks": [],
-            "name": "i3: Layout saving in i3 — Mozilla Firefox",
-            "percent": 1,
+            "name": "Things to fix - obsidian - Obsidian v1.6.5",
+            "percent": null,
             "swallows": [
-               {
-                "class": "^firefox$",
-                "window_role": "^browser$"
-               }
+                {
+                   "class": "^obsidian$",
+                   "window_role": "^browser\\-window$"
+                }
             ],
             "type": "con"
         }

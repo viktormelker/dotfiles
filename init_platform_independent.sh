@@ -23,12 +23,6 @@ curl https://pyenv.run | bash
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 
-# vim
-git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-# Install all plugins with :PluginInstall in vim
-# Configure YouCompleteMe by running install
-~/.vim/bundle/YouCompleteMe/install.py --clang-completer
-
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 
 # zplug
@@ -37,13 +31,6 @@ git clone https://github.com/zplug/zplug $ZPLUG_HOME
 
 # Install starship, shell prompt
 sh -c "$(curl -fsSL https://starship.rs/install.sh)"
-
-
-git clone git@github.com:rliou92/python-umonitor.git ~/.python-umonitor
-pushd ~/.python-umonitor
-pip install . --user
-popd
-
 
 git clone https://github.com/hastinbe/i3-volume.git ~/i3-volume
 
