@@ -323,7 +323,6 @@ exec --no-startup-id udiskie
 exec --no-startup-id "umonitor --listen --daemonize"
 exec --no-startup-id "rclone mount vm_gdrive:/ ~/google_drive --daemon"
 exec --no-startup-id "rclone mount vm_dropbox:/ ~/dropbox --daemon"
-exec --no-startup-id "rclone sync ~/obsidian vm_gdrive:/obsidian"
 
 # Autostart applications that are shown on screen
 exec --no-startup-id ~/.config/i3/scripts/add_layouts.sh
@@ -332,6 +331,7 @@ exec --no-startup-id obsidian
 exec --no-startup-id "alacritty -e tmux"
 exec --no-startup-id slack
 exec --no-startup-id "spotify --force-device-scale-factor=1.63"
+exec --no-startup-id "numlockx on"
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
