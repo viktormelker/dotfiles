@@ -138,6 +138,17 @@ function c() {
 	fi;
 }
 
+# `c` with no arguments opens the current directory in zed, otherwise
+# opens the given location
+function z() {
+	if [ $# -eq 0 ]; then
+		zed .;
+	else
+		zed "$@";
+	fi;
+}
+
+
 # `v` with no arguments opens the current directory in Vim, otherwise opens the
 # given location
 function v() {
