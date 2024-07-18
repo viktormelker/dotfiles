@@ -122,9 +122,8 @@ alias kblf="echo 0 | sudo tee /sys/class/leds/tpacpi::kbd_backlight/brightness"
 
 alias gdd="git difftool "
 
-
+# Add CDON aliases
 export CDON_UTILS_PATH="$HOME/dev/utils"
-
 alias db="bash $CDON_UTILS_PATH/db.sh"
 alias pr="bash $CDON_UTILS_PATH/pr.sh"
 # alias kfmt="bash $CDON_UTILS_PATH/kfmt.sh"
