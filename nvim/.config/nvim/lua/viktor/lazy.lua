@@ -11,7 +11,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("viktor.plugins", {
+require("lazy").setup({{ import = "viktor.plugins"}, {import = "viktor.plugins.lsp"}}, {
  checker = {
   enabled = true,
   notify = false,
