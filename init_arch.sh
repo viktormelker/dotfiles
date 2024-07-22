@@ -131,6 +131,7 @@ yay -S rofi-greenclip
 sudo pacman -S rclone
 mkdir ~/google_drive
 mkdir ~/dropbox
+sudo pacman -S lazygit
 
 # for kubernetes
 yay -S minikube kubectl k9s kubectx stern kubeval helm skaffold krew
