@@ -61,6 +61,7 @@ sudo pacman -S difftastic
 sudo pacman -S ripgrep
 sudo pacman -S entr
 yay -S udisks2 udiskie --needed
+sudo pacman -S base-devel --needed
 
 
 # Cloud development
