@@ -179,3 +179,7 @@ source "$HOME/.asdf/completions/asdf.bash"
 
 # configure docker inside minikube
 eval $(minikube docker-env)
+
+export PATH="$FLYCTL_PATH/bin:$PATH"
+
+source /usr/share/nvm/init-nvm.sh
