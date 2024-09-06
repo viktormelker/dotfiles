@@ -203,3 +203,5 @@ yay -S mongodb-tools-bin
 sudo pacman -S hugo
 
 yay -S lyx
+
+sudo pacman -S networkmanager-openvpn openvpn
