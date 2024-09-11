@@ -22,7 +22,6 @@ $git_metrics\
 $git_status\
 $hg_branch\
 $pijul_channel\
-$docker_context\
 $c\
 $cmake\
 $cobol\

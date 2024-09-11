@@ -205,3 +205,7 @@ sudo pacman -S hugo
 yay -S lyx
 
 sudo pacman -S networkmanager-openvpn openvpn
+
+# for sftp
+sudo pacman -S gvfs
+yay -S gigolo
