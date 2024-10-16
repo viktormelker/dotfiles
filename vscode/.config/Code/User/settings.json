@@ -25,7 +25,6 @@
   "files.insertFinalNewline": true,
   "editor.formatOnPaste": true,
   "editor.minimap.enabled": false,
-  "autoDocstring.docstringFormat": "google",
   "explorer.confirmDelete": false,
   "files.associations": {
     "*.avsc": "json"
@@ -34,11 +33,6 @@
   "git.confirmSync": false,
   "vsdocker.imageUser": "docker.io/melkerman",
   "docker.defaultRegistryPath": "melkerman",
-  "python.formatting.provider": "black",
-  "python.formatting.blackPath": "/home/viktor/.local/bin/black",
-  "liveshare.guestApprovalRequired": true,
-  "liveshare.allowGuestDebugControl": true,
-  "liveshare.allowGuestTaskControl": true,
   "git.suggestSmartCommit": false,
   "[javascript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
@@ -50,11 +44,8 @@
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "python.languageServer": "Pylance",
   "python.analysis.typeCheckingMode": "basic",
-  "sync.gist": "3e547ba1a64dd63a0fd16ce8a3acf7cd",
-  "aws.onDefaultRegionMissing": "add",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "security.workspace.trust.untrustedFiles": "open",
   "workbench.editorAssociations": {
@@ -84,7 +75,6 @@
     "editor.formatOnPaste": true,
     "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
   },
-  "joplin.token": "59fc56b48ab2d3537c5ae1b9ebab0839e7daf8d7be8aaa39ae726965386ae449c4c619d3f41303ba0a21056d4018cb86f9e88a7ee49f5dadf561c8e84b0780f4",
   "vsicons.dontShowNewVersionMessage": true,
   "editor.tabCompletion": "on",
   "workbench.colorTheme": "Default Dark+",
@@ -97,9 +87,8 @@
   ],
   "[python]": {
     "editor.formatOnType": true,
-    "editor.defaultFormatter": "ms-python.black-formatter"
+    "editor.defaultFormatter": "charliermarsh.ruff",
   },
-  "circleci.hostUrl": "",
   "elixirLS.enableTestLenses": true,
   "elixirLS.suggestSpecs": false,
   "emmet.includeLanguages": {
@@ -110,5 +99,13 @@
 "vs-kubernetes": {
   "vscode-kubernetes.minikube-path-linux": "/home/viktor/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube"
 },
-"github.copilot.editor.enableAutoCompletions": true
+"github.copilot.editor.enableAutoCompletions": true,
+"[html]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"[typescript]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"editor.multiCursorLimit": 15000,
+"circleci.hostUrl": ""
 }

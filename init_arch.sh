@@ -102,6 +102,7 @@ yay -S joplin
 sudo pacman -S fwupd
 # yay -S mons
 sudo pacman -S numlockx
+sudo pacman -S colordiff
 
 
 # bluetooth
