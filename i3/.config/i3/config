@@ -325,6 +325,7 @@ exec --no-startup-id "rclone mount vm_gdrive:/ ~/google_drive --daemon"
 exec --no-startup-id "rclone mount vm_dropbox:/ ~/dropbox --daemon"
 exec --no-startup-id "autorandr --load laptop"
 exec --no-startup-id "numlockx on"
+exec --no-startup-id "xset r rate 250 40"
 
 # Autostart applications that are shown on screen
 exec --no-startup-id ~/.config/i3/scripts/add_layouts.sh
