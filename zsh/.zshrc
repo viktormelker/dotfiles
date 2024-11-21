@@ -114,7 +114,7 @@ export PATH="$HOME/.yarn/bin:$PATH"
 
 # Python
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
-export PYTHONBREAKPOINT=pdb.set_trace
+export PYTHONBREAKPOINT=ipdb.set_trace
 export PYTHONIOENCODING=utf-8
 
 # Aliases
@@ -183,3 +183,5 @@ eval $(minikube docker-env)
 export PATH="$FLYCTL_PATH/bin:$PATH"
 
 source /usr/share/nvm/init-nvm.sh
+
+fpath+=~/.zfunc; autoload -Uz compinit; compinit

@@ -131,4 +131,8 @@ alias pr="bash $CDON_UTILS_PATH/pr.sh"
 alias mongo="bash $CDON_UTILS_PATH/mongo.sh"
 alias secret="bash $CDON_UTILS_PATH/secret.sh"
 alias cdonify="bash $CDON_UTILS_PATH/cdonify.sh"
-alias skaffold="source (minikube docker-env -p dev) && skaffold"
+# alias skaffold="eval $(minikube docker-env) && skaffold"
+
+alias docker-local="eval $(minikube docker-env --unset)"
+alias docker-minikube="eval $(minikube docker-env)"
+
