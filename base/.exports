@@ -48,3 +48,4 @@ export GOOGLE_APPLICATION_CREDENTIALS=$HOME/.config/gcloud/application_default_c
 export GCLOUD_ARTIFACT_REGISTRY_CREDENTIALS=$(cat $GOOGLE_APPLICATION_CREDENTIALS | base64)
 
 export KUBECTL_EXTERNAL_DIFF="colordiff -N -u"
+export UV_KEYRING_PROVIDER=subprocess
