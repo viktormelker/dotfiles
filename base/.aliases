@@ -66,7 +66,6 @@ alias week='date +%V'
 #alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
 
 # IP addresses
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
 
 # Canonical hex dump; some systems have this symlinked
@@ -133,6 +132,4 @@ alias secret="bash $CDON_UTILS_PATH/secret.sh"
 alias cdonify="bash $CDON_UTILS_PATH/cdonify.sh"
 # alias skaffold="eval $(minikube docker-env) && skaffold"
 
-alias docker-local="eval $(minikube docker-env --unset)"
-alias docker-minikube="eval $(minikube docker-env)"
 
