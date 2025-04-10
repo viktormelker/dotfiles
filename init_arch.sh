@@ -33,6 +33,7 @@ yay visual-studio-code-bin
 sudo pacman -S kakoune
 sudo pacman -S docker-compose
 sudo pacman -S docker
+sudo pacman -S dive
 # add user to docker group
 sudo gpasswd -a viktor docker
 # start docker daemon on boot
@@ -92,13 +93,13 @@ sudo pacman -S ranger
 sudo pacman -S unzip
 sudo pacman -S autorandr
 sudo pacman -S gnome-keyring seahorse  # for ssh agent keyring helpers
-sudo pacman -S btop
+# sudo pacman -S btop
 # sudo pacman -S yq
 # sudo pacman -S xclip
 yay -S nerd-fonts-complete
 yay -S spotify libcurl-compat libcurl-gnutls
 yay -S handlr-bin
-yay -S joplin
+# yay -S joplin
 sudo pacman -S fwupd
 # yay -S mons
 sudo pacman -S numlockx
