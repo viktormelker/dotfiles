@@ -146,6 +146,9 @@ autoload -Uz _poetry
 # For rust executables
 export PATH="$HOME/.cargo/bin:$PATH"
 
+# For go executables
+export PATH=~/go/bin:$PATH
+
 # direnv plugin for loading environment variables
 eval "$(direnv hook zsh)"
 
