@@ -129,7 +129,6 @@ alias pr="bash $CDON_UTILS_PATH/pr.sh"
 # alias kfmt="bash $CDON_UTILS_PATH/kfmt.sh"
 alias mongo="bash $CDON_UTILS_PATH/mongo.sh"
 alias secret="bash $CDON_UTILS_PATH/secret.sh"
-alias cdonify="bash $CDON_UTILS_PATH/cdonify.sh"
-# alias skaffold="eval $(minikube docker-env) && skaffold"
+alias vpn="bash $CDON_UTILS_PATH/vpn.sh"
 
 
