@@ -49,6 +49,7 @@ sudo pacman -S npm openslide
 # sudo pacman -S nvm
 sudo pacman -S zip
 sudo pacman -S alacritty
+sudo pacman -S ghostty
 sudo pacman -S xsel
 sudo pacman -S kscreen
 yay -S direnv

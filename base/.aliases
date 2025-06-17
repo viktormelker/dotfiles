@@ -17,11 +17,9 @@ alias .5="cd ../../../.."
 #alias gd='git diff '
 #alias gco='git checkout '
 #alias gmm='git merge master'
-alias branch-cleanup='git fetch origin --prune && git branch --merged origin/master | grep -v 'master$' | xargs git branch -d'
 #alias c='clear'
 alias hgr="history|grep"
 alias fgr="find .|grep"
-alias pgr="ps aux|grep"
 alias dc="docker-compose"
 alias qfind="find . -name"
 
