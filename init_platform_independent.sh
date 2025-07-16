@@ -29,6 +29,3 @@ git clone https://github.com/zplug/zplug $ZPLUG_HOME
 sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 
 git clone https://github.com/hastinbe/i3-volume.git ~/i3-volume
-
-# For development environment version management
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.11.3

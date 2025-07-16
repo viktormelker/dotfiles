@@ -46,7 +46,8 @@ sudo pacman -S httpie
 sudo pacman -S tmux
 sudo pacman -S ctags
 sudo pacman -S npm openslide
-# sudo pacman -S nvm
+sudo pacman -S nvm
+sudo pacman -Syu mise
 sudo pacman -S zip
 sudo pacman -S alacritty
 sudo pacman -S ghostty

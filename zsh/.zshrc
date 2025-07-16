@@ -177,9 +177,6 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/tools/
 # krew for k8s
 export PATH="${PATH}:${HOME}/.krew/bin"
 
-source "$HOME/.asdf/asdf.sh"
-source "$HOME/.asdf/completions/asdf.bash"
-
 # configure docker inside minikube
 eval $(minikube docker-env)
 
@@ -188,3 +185,5 @@ export PATH="$FLYCTL_PATH/bin:$PATH"
 source /usr/share/nvm/init-nvm.sh
 
 fpath+=~/.zfunc; autoload -Uz compinit; compinit
+
+eval "$(/usr/bin/mise activate zsh)"
