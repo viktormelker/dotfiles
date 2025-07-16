@@ -65,6 +65,7 @@ sudo pacman -S ripgrep
 sudo pacman -S entr
 yay -S udisks2 udiskie --needed
 sudo pacman -S base-devel --needed
+uv tool install mcp-proxy
 
 
 # Cloud development
