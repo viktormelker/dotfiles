@@ -99,3 +99,25 @@ $character"""
 symbol = "☸️ "
 format = '[${symbol}\(${context}\)](bold white) '
 disabled = false
+
+
+[python]
+format = '([(\($virtualenv\) )]($style))'
+style = "bright-black"
+
+[directory]
+style = "bright-blue"
+
+[character]
+success_symbol = "[\\$](black)"
+error_symbol = "[\\$](bright-red)"
+
+[git_branch]
+format = "[$symbol$branch]($style) "
+style = "bright-purple"
+
+[git_state]
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+style = "purple"
+
+[cmd_duration.disabled]
