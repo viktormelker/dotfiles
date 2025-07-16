@@ -84,7 +84,7 @@ plugins=(
   ssh-agent
 )
 
-zstyle :omz:plugins:ssh-agent identities id_rsa id_ed25519 id_ed25519_hm
+zstyle :omz:plugins:ssh-agent identities id_rsa id_ed25519
 zstyle :omz:plugins:ssh-agent lazy yes
 
 source $ZSH/oh-my-zsh.sh
