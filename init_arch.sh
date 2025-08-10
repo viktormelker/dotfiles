@@ -30,7 +30,7 @@ sudo pacman -S bash-completion
 
 # For development
 yay visual-studio-code-bin
-sudo pacman -S kakoune
+# sudo pacman -S kakoune
 sudo pacman -S docker-compose
 sudo pacman -S docker
 sudo pacman -S dive
@@ -214,3 +214,6 @@ sudo pacman -S networkmanager-openvpn openvpn
 # for sftp
 sudo pacman -S gvfs
 yay -S gigolo
+
+# For tuxedo computer
+yay -S tuxedo-control-center-bin tuxedo-drivers-dkms linux-headers
