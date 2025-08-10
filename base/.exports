@@ -53,3 +53,4 @@ export UV_KEYRING_PROVIDER=subprocess
 export VPN_USER="vmelker"
 
 export TERMINAL=/usr/bin/ghostty
+export PATH=$PATH:$HOME/.local/bin

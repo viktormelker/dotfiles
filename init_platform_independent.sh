@@ -1,6 +1,9 @@
 #!/bin/bash
 # install all cross plattform stuff here
 
+# install uv
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
 pip install --upgrade pip
 pip install pipx
 pipx install black
@@ -26,6 +29,4 @@ export ZPLUG_HOME=~/.zplug
 git clone https://github.com/zplug/zplug $ZPLUG_HOME
 
 # Install starship, shell prompt
-sh -c "$(curl -fsSL https://starship.rs/install.sh)"
-
-git clone https://github.com/hastinbe/i3-volume.git ~/i3-volume
+# sh -c "$(curl -fsSL https://starship.rs/install.sh)"
