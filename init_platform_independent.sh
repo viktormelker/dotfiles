@@ -4,12 +4,6 @@
 # install uv
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
-pip install --upgrade pip
-pip install pipx
-pipx install black
-pipx install rich-cli
-pipx install terminal-copilot
-
 mkdir ~/dev
 
 # install tmux plugin manager
