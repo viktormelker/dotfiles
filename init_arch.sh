@@ -50,22 +50,22 @@ sudo pacman -S npm
 sudo pacman -S nvm
 sudo pacman -Syu mise
 sudo pacman -S zip
-sudo pacman -S alacritty
+# sudo pacman -S alacritty
 sudo pacman -S ghostty
 # sudo pacman -S xsel
 # sudo pacman -S kscreen
 yay -S direnv
-sudo pacman -S cmake
-sudo pacman -S bind
-sudo pacman -S gopass
+# sudo pacman -S cmake
+# sudo pacman -S bind
+# sudo pacman -S gopass
 # sudo pacman -S keychain
 # sudo pacman -S github-cli
 # sudo pacman -S diff-so-fancy
 sudo pacman -S difftastic
 sudo pacman -S ripgrep
 sudo pacman -S entr
-yay -S udisks2 udiskie --needed
-sudo pacman -S base-devel --needed
+# yay -S udisks2 udiskie --needed
+# sudo pacman -S base-devel --needed
 uv tool install mcp-proxy
 
 
@@ -185,9 +185,6 @@ yay -S kafkacat-git
 
 # sound
 sudo pacman -S pipewire wireplumber helvum
-
-# SQL UI
-sudo pacman -S dbeaver jre17-openjdk-headless
 
 yay -S mongodb-tools-bin
 
