@@ -18,6 +18,8 @@ Thumbs.db
 .venv
 
 .vscode
+vscode/.config/Code/User/History
+
 .mypy_cache
 *.code-workspace
 
