@@ -77,7 +77,6 @@
   },
   "vsicons.dontShowNewVersionMessage": true,
   "editor.tabCompletion": "on",
-  "workbench.colorTheme": "Default Dark+",
   "gitlens.hovers.currentLine.enabled": false,
   "gitlens.autolinks": [
     {
