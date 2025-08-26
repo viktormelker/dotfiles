@@ -1,0 +1,56 @@
+{
+  "rules": [
+    {
+      "name": "Python dependencies",
+      "description": "Only pin dependencies to Major versions, never minor or patch versions. Always prefer to use the latest versions of dependencies unless there is a very good reason not to. Usually this only happens as a software project gets old and features of a dependency are getting deprecated. Or for keeping compatibility between different dependencies. Use 'dependency-groups' 'dev' and 'test' for dependencies that are only needed on the development machine (for example ipdb) or tests (for example pytest) respectively."
+    },
+    {
+      "name": "Python version",
+      "description": "Always prefer to use the latest stable python version"
+    },
+    {
+      "name": "Python testing framework",
+      "description": "Always use Pytest when writing tests for python code"
+    },
+    {
+      "name": "Sync vs Async python",
+      "description": "When coding python always prefer to use syncronous functions over async functions for simplicity. Only use async functions if it brings a clear and big advantage over syncronous functions"
+    },
+    {
+      "name": "Python cli framework",
+      "description": "Whenever implementing a python CLI prefer to use Typer"
+    },
+    {
+      "name": "Python API framework",
+      "description": "Whenever creating a python API prefer to use the 'FastApi' framework"
+    },
+    {
+      "name": "Step by step implementations",
+      "description": "Whenever implementing new features do changes in small iterations. Just make a minimum working implementation and then ask for feedback on that. This could mean just implementing the 'happy path' for a feature first. After the 'happy path' has been validated the feature can be improved by handling edge cases."
+    },
+    {
+      "name": "User requires all linting, sorting, formatting, and static analysis to pass before code changes are done",
+      "description": "User requires that all linting, sorting, formatting, and static code analysis must be run and pass successfully before any code change is considered done."
+    },
+    {
+      "name": "User prefers using isort for sorting imports in Python",
+      "description": "User prefers to use isort for sorting imports in all Python files."
+    },
+    {
+      "name": "User prefers Python project configuration and tooling",
+      "description": "User prefers to always use pyproject.toml for configuration of dependencies and Python tooling, uv/uvx for running Python code, and ruff for linting."
+    },
+    {
+      "name": "User prefers using structlog for all logging",
+      "description": "User prefers using structlog for all logging in their projects."
+    },
+    {
+      "name": "User prefers not to send logs to Sentry",
+      "description": "User prefers to never send logs to Sentry, regardless of log level."
+    },
+    {
+      "name": "User prefers using Sentry for error tracking",
+      "description": "User prefers to use Sentry for error tracking in their projects."
+    }
+  ]
+}
