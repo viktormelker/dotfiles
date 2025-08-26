@@ -24,13 +24,13 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 sudo pacman -S yay
 
 #
-sudo pacman -S bash-completion
+# sudo pacman -S bash-completion
 
 # sudo pacman -S chromium
 
 # For development
 yay visual-studio-code-bin
-sudo pacman -S kakoune
+# sudo pacman -S kakoune
 sudo pacman -S docker-compose
 sudo pacman -S docker
 sudo pacman -S dive
@@ -40,49 +40,44 @@ sudo gpasswd -a viktor docker
 sudo systemctl enable docker.service
 
 # important developer stuff
-sudo pacman -S vim jq tree
-sudo pacman -S powerline-fonts
+sudo pacman -S neovim jq tree
+# sudo pacman -S powerline-fonts
 sudo pacman -S httpie
 sudo pacman -S tmux
-sudo pacman -S ctags
-sudo pacman -S npm openslide
+# sudo pacman -S ctags
+sudo pacman -S npm
+# sudo pacman -S openslide
 sudo pacman -S nvm
 sudo pacman -Syu mise
 sudo pacman -S zip
-sudo pacman -S alacritty
+# sudo pacman -S alacritty
 sudo pacman -S ghostty
-sudo pacman -S xsel
-sudo pacman -S kscreen
+# sudo pacman -S xsel
+# sudo pacman -S kscreen
 yay -S direnv
-sudo pacman -S cmake
-sudo pacman -S bind
-sudo pacman -S gopass
+# sudo pacman -S cmake
+# sudo pacman -S bind
+# sudo pacman -S gopass
 # sudo pacman -S keychain
 # sudo pacman -S github-cli
-sudo pacman -S diff-so-fancy
+# sudo pacman -S diff-so-fancy
 sudo pacman -S difftastic
 sudo pacman -S ripgrep
 sudo pacman -S entr
-yay -S udisks2 udiskie --needed
-sudo pacman -S base-devel --needed
+# yay -S udisks2 udiskie --needed
+# sudo pacman -S base-devel --needed
 uv tool install mcp-proxy
 
 
 # Cloud development
 yay -S google-cloud-cli google-cloud-cli-gke-gcloud-auth-plugin
 
-# AWS stuff
-yay -S aws-cli-v2-bin
-yay -S aws-vault
-npm install -g aws-cdk
-
 # communication
-yay -S franz
-yay -S slack-desktop
+yay -S slack-desktop-wayland
 yay -S discord
 
 # Nice tools
-sudo pacman -S peek flameshot
+sudo pacman -S peek
 # sudo pacman -S graphviz
 sudo pacman -S tig
 sudo pacman -S rustup
@@ -93,7 +88,7 @@ sudo pacman -S okular
 sudo pacman -S lsd
 sudo pacman -S tldr
 sudo pacman -S ranger
-sudo pacman -S unzip
+# sudo pacman -S unzip
 sudo pacman -S autorandr
 sudo pacman -S gnome-keyring seahorse  # for ssh agent keyring helpers
 # sudo pacman -S btop
@@ -102,11 +97,8 @@ sudo pacman -S gnome-keyring seahorse  # for ssh agent keyring helpers
 yay -S nerd-fonts-complete
 yay -S spotify libcurl-compat libcurl-gnutls
 yay -S handlr-bin
-# yay -S joplin
 sudo pacman -S fwupd
-# yay -S mons
 sudo pacman -S numlockx
-sudo pacman -S colordiff
 
 
 # bluetooth
@@ -140,11 +132,10 @@ mkdir ~/dropbox
 sudo pacman -S lazygit
 
 # for kubernetes
-yay -S minikube kubectl k9s kubectx stern kubeval helm skaffold krew
+sudo pacman -S kubectl
+yay -S minikube k9s kubectx stern kubeval helm skaffold krew kustomize
 kubectl krew install explore
 
-# poetry
-# curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
 sudo pacman -S openssl-1.1  # Needed for TLS in python. For example pip
 
 # For flutter
@@ -182,15 +173,11 @@ sudo pacman -S podman
 sudo pacman -S swig
 
 # Databases
-yay -S neo4j-community
 sudo pacman -S redis
 sudo pacman -S postgresql
 
-sudo pacman -S mariadb
-
 sudo pacman -S terraform
 yay -S terraform-docs-bin
-sudo pacman -S kustomize
 
 # Kafka
 yay -S kafkacat-git
@@ -199,19 +186,17 @@ yay -S kafkacat-git
 # sound
 sudo pacman -S pipewire wireplumber helvum
 
-# SQL UI
-sudo pacman -S dbeaver jre17-openjdk-headless
-
 yay -S mongodb-tools-bin
 
 # Webpage generation
 sudo pacman -S hugo
-
-yay -S lyx
 
 sudo pacman -S networkmanager-openvpn openvpn
 
 # for sftp
 sudo pacman -S gvfs
 yay -S gigolo
+
+# For tuxedo computer
+yay -S tuxedo-control-center-bin tuxedo-drivers-dkms linux-headers
 yay -S warp-terminal

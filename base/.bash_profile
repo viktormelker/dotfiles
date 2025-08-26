@@ -2,7 +2,6 @@
 git config --global user.email "viktormelker@gmail.com"
 git config --global user.name "Viktor Melker"
 
-
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$HOME/.nix-profile/bin;$PATH";
 

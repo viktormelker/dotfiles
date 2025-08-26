@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Make vim the default editor.
-export EDITOR='vim';
+export EDITOR='nvim';
 
 # Enable persistent REPL history for `node`.
 export NODE_REPL_HISTORY=~/.node_history;
@@ -53,3 +53,4 @@ export UV_KEYRING_PROVIDER=subprocess
 export VPN_USER="vmelker"
 
 export TERMINAL=/usr/bin/ghostty
+export PATH=$PATH:$HOME/.local/bin
