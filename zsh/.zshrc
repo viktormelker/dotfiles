@@ -82,6 +82,7 @@ plugins=(
   colored-man-pages
   httpie
   ssh-agent
+  nvm
 )
 
 zstyle :omz:plugins:ssh-agent identities id_rsa id_ed25519
