@@ -83,6 +83,7 @@ plugins=(
   httpie
   ssh-agent
   nvm
+  mise
 )
 
 zstyle :omz:plugins:ssh-agent identities id_rsa id_ed25519
@@ -111,7 +112,7 @@ export PATH=~/.fzf/bin:$PATH
 
 # Node stuff
 export PATH="$HOME/.yarn/bin:$PATH"
-# source /usr/share/nvm/init-nvm.sh
+source /usr/share/nvm/init-nvm.sh
 
 # Python
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
@@ -182,8 +183,6 @@ export PATH="${PATH}:${HOME}/.krew/bin"
 eval $(minikube docker-env)
 
 export PATH="$FLYCTL_PATH/bin:$PATH"
-
-source /usr/share/nvm/init-nvm.sh
 
 fpath+=~/.zfunc; autoload -Uz compinit; compinit
 
