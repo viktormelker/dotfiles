@@ -49,8 +49,19 @@ export GCLOUD_ARTIFACT_REGISTRY_CREDENTIALS=$(cat $GOOGLE_APPLICATION_CREDENTIAL
 
 export KUBECTL_EXTERNAL_DIFF="colordiff -N -u"
 export UV_KEYRING_PROVIDER=subprocess
+export PYENV_ROOT="$HOME/.pyenv"
 
 export VPN_USER="vmelker"
 
 export TERMINAL=/usr/bin/ghostty
 export PATH=$PATH:$HOME/.local/bin
+
+#!/bin/sh
+export XDG_CONFIG_HOME=$HOME/.config
+
+# add default location for zeit.db
+export ZEIT_DB="$HOME/.config/zeit.db"
+
+# set default shell and terminal
+export SHELL=/usr/bin/zsh
+export TERMINAL_COMMAND=xdg-terminal-exec
