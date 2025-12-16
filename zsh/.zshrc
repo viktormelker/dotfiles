@@ -157,16 +157,13 @@ eval "$(direnv hook zsh)"
 # export QT_AUTO_SCREEN_SCALE_FACTOR=1
 # export GDK_SCALE=2
 # export GDK_DPI_SCALE=0.5
-
-export TERMINAL=/usr/bin/alacritty
-
-export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init --path)"
+fi
 
 # switching kubernetes cluster
 bindkey -s '^o' 'kubectx\n'
-
 
 export ANDROID_SDK_ROOT='/opt/android-sdk'
 export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools/
