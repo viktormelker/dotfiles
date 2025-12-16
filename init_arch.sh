@@ -48,7 +48,7 @@ sudo pacman -S tmux
 sudo pacman -S npm
 # sudo pacman -S openslide
 sudo pacman -S nvm
-sudo pacman -Syu mise
+sudo pacman -S mise
 sudo pacman -S zip
 # sudo pacman -S alacritty
 sudo pacman -S ghostty
@@ -67,14 +67,16 @@ sudo pacman -S entr
 # yay -S udisks2 udiskie --needed
 # sudo pacman -S base-devel --needed
 uv tool install mcp-proxy
+uv tool install ruff
+uv tool install black
+uv tool install isort
 
 
 # Cloud development
 yay -S google-cloud-cli google-cloud-cli-gke-gcloud-auth-plugin
 
 # communication
-yay -S slack-desktop-wayland
-yay -S discord
+yay -S slack-desktop discord
 
 # Nice tools
 sudo pacman -S peek
@@ -91,9 +93,6 @@ sudo pacman -S ranger
 # sudo pacman -S unzip
 sudo pacman -S autorandr
 sudo pacman -S gnome-keyring seahorse  # for ssh agent keyring helpers
-# sudo pacman -S btop
-# sudo pacman -S yq
-# sudo pacman -S xclip
 yay -S nerd-fonts-complete
 yay -S spotify libcurl-compat libcurl-gnutls
 yay -S handlr-bin
@@ -105,11 +104,7 @@ sudo pacman -S numlockx
 sudo pacman -S bluez-utils blueman
 
 # Yubikey stuff
-sudo pacman -S yubikey-manager-qt
-sudo pacman -S yubikey-manager
-sudo pacman -S yubico-pam
-sudo pacman -S libu2f-host
-sudo pacman -S libfido2
+sudo pacman -S yubikey-manager-qt yubikey-manager yubico-pam libu2f-host libfido2
 yay -S yubioath-desktop
 yay -S acsccid
 sudo systemctl enable pcscd.service
@@ -121,6 +116,7 @@ sudo pacman -S i3-vm i3status-manjaro dmenu-manjaro
 sudo pacman -S i3-wallpapers i3lock pcmanfm network-manager-applet
 sudo pacman -S feh rofi py3status xautolock conky xorg-xbacklight i3blocks
 sudo pacman -S pavucontrol dunst perl-anyevent-i3 xss-lock
+sudo pacman -S pipewire-pulse
 yay -S xidlehook
 yay -S rofi-greenclip
 
@@ -182,7 +178,6 @@ yay -S terraform-docs-bin
 # Kafka
 yay -S kafkacat-git
 
-
 # sound
 sudo pacman -S pipewire wireplumber helvum
 
@@ -200,3 +195,7 @@ yay -S gigolo
 # For tuxedo computer
 yay -S tuxedo-control-center-bin tuxedo-drivers-dkms linux-headers
 yay -S warp-terminal
+
+# For sway
+yay -S kanshi-git
+sudo pacman -S wlr-randr
