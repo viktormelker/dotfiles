@@ -21,6 +21,3 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosugges
 # zplug
 export ZPLUG_HOME=~/.zplug
 git clone https://github.com/zplug/zplug $ZPLUG_HOME
-
-# Install starship, shell prompt
-# sh -c "$(curl -fsSL https://starship.rs/install.sh)"
