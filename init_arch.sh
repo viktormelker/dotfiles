@@ -54,7 +54,7 @@ sudo pacman -S zip
 sudo pacman -S ghostty
 # sudo pacman -S xsel
 # sudo pacman -S kscreen
-yay -S direnv
+yay -S direnv just
 # sudo pacman -S cmake
 # sudo pacman -S bind
 # sudo pacman -S gopass
