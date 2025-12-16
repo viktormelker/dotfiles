@@ -4,6 +4,17 @@
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
 
+# Start XDG autostart .desktop files using dex. See also
+# https://wiki.archlinux.org/index.php/XDG_Autostart
+exec --no-startup-id dex --autostart --environment i3
+
+# move tiling windows via drag & drop by left-clicking into the title bar,
+# or left-clicking anywhere into the window while holding the floating modifier.
+tiling_drag modifier titlebar
+
+# start a terminal
+bindsym $mod+Return exec i3-sensible-terminal
+
 # set default desktop layout (default is tiling)
 # workspace_layout stacking <stacking|tabbed>
 workspace_layout stacking
@@ -26,9 +37,6 @@ font xft:URWGothic-Book 10
 
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
-
-# start a terminal
-bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -132,6 +140,9 @@ bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
+
+# focus the child container
+#bindsym $mod+d focus child
 
 # move the currently focused window to the scratchpad
 bindsym $mod+Shift+minus move scratchpad
@@ -275,7 +286,6 @@ mode "$mode_sound" {
     bindsym o exec $HOME/.local/bin/pactl_set_default_sink.sh; mode "default"
     bindsym i mode "default"
 
-
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
@@ -331,7 +341,7 @@ exec --no-startup-id "xset r rate 250 40"
 exec --no-startup-id ~/.config/i3/scripts/add_layouts.sh
 # exec --no-startup-id firefox
 exec --no-startup-id obsidian
-exec --no-startup-id "alacritty -e tmux"
+exec --no-startup-id "ghostty -e tmux"
 exec --no-startup-id slack
 exec --no-startup-id "spotify --force-device-scale-factor=1.63"
 
@@ -487,9 +497,11 @@ set $volumestep 5
 #   List sink names: pacmd list-sinks | awk -F "[<>]" '/^\s+name: <.*>/{print $2}'
 #set $sinkname alsa_output.pci-0000_00_1b.0.analog-stereo
 
-# Using pulseaudio-utils (append "-s $sinkname" without quotes to override default sink)
-bindsym XF86AudioRaiseVolume exec --no-startup-id $volumepath/volume -n -t $statuscmd -u $statussig up $volumestep
-bindsym XF86AudioLowerVolume exec --no-startup-id $volumepath/volume -n -t $statuscmd -u $statussig down $volumestep
-bindsym XF86AudioMute        exec --no-startup-id $volumepath/volume -n -t $statuscmd -u $statussig mute
+# Use pactl to adjust volume in PulseAudio.
+set $refresh_i3status killall -SIGUSR1 i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 bindsym $mod+c exec rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
