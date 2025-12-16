@@ -194,8 +194,11 @@ yay -S gigolo
 
 # For tuxedo computer
 yay -S tuxedo-control-center-bin tuxedo-drivers-dkms linux-headers
+
 yay -S warp-terminal
 
 # For sway
 yay -S kanshi-git
 sudo pacman -S wlr-randr
+
+yay -S mkchromecast
