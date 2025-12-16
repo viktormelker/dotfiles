@@ -168,8 +168,6 @@ eval "$(pyenv init --path)"
 bindkey -s '^o' 'kubectx\n'
 
 
-eval "$(starship init zsh)"
-
 export ANDROID_SDK_ROOT='/opt/android-sdk'
 export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools/
 export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin/
@@ -187,3 +185,19 @@ export PATH="$FLYCTL_PATH/bin:$PATH"
 fpath+=~/.zfunc; autoload -Uz compinit; compinit
 
 eval "$(/usr/bin/mise activate zsh)"
+
+
+# Use powerline
+USE_POWERLINE="true"
+# Has weird character width
+# Example:
+#    is not a diamond
+HAS_WIDECHARS="false"
+# Source manjaro-zsh-configuration
+#if [[ -e /usr/share/zsh/manjaro-zsh-config ]]; then
+#  source /usr/share/zsh/manjaro-zsh-config
+#fi
+# Use manjaro zsh prompt
+#if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
+#  source /usr/share/zsh/manjaro-zsh-prompt
+#fi
