@@ -98,9 +98,9 @@ function c() {
 # opens the given location
 function z() {
 	if [ $# -eq 0 ]; then
-		zed .;
+		zeditor .;
 	else
-		zed "$@";
+		zeditor "$@";
 	fi;
 }
 
