@@ -29,7 +29,8 @@ sudo pacman -S yay
 # sudo pacman -S chromium
 
 # For development
-yay visual-studio-code-bin
+yay -S visual-studio-code-bin
+yay -S cursor-bin
 # sudo pacman -S kakoune
 sudo pacman -S docker-compose
 sudo pacman -S docker
@@ -64,7 +65,6 @@ yay -S direnv just
 sudo pacman -S difftastic
 sudo pacman -S ripgrep
 sudo pacman -S entr
-# yay -S udisks2 udiskie --needed
 # sudo pacman -S base-devel --needed
 uv tool install mcp-proxy
 uv tool install ruff
@@ -95,7 +95,7 @@ sudo pacman -S autorandr
 sudo pacman -S gnome-keyring seahorse  # for ssh agent keyring helpers
 yay -S nerd-fonts-complete
 yay -S spotify libcurl-compat libcurl-gnutls
-yay -S handlr-bin
+yay -S handlr
 sudo pacman -S fwupd
 sudo pacman -S numlockx
 
@@ -104,7 +104,8 @@ sudo pacman -S numlockx
 sudo pacman -S bluez-utils blueman
 
 # Yubikey stuff
-sudo pacman -S yubikey-manager-qt yubikey-manager yubico-pam libu2f-host libfido2
+sudo pacman -S yubikey-manager-qt yubikey-manager yubico-pam libu2f-host libfido2 pam-u2f
+
 yay -S yubioath-desktop
 yay -S acsccid
 sudo systemctl enable pcscd.service

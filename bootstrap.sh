@@ -4,5 +4,5 @@ cd "$(dirname "${BASH_SOURCE}")";
 
 git pull origin master;
 
-stow --target ~/ base fzf git python scripts tmux nvim vscode zsh pgcli autorandr warp i3 ssh
+stow --target ~/ base fzf git python scripts tmux nvim vscode zsh pgcli autorandr warp i3 ssh yubico
 ln -s ~/dev/dotfiles/git/.gitignore ~/.gitignore
