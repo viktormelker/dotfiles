@@ -23,3 +23,5 @@ export ZPLUG_HOME=~/.zplug
 git clone https://github.com/zplug/zplug $ZPLUG_HOME
 
 mkdir -p ~/dev/misc/tmux_logs
+
+git clone https://github.com/hastinbe/i3-volume.git ~/i3-volume

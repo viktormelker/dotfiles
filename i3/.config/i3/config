@@ -8,6 +8,12 @@ set $mod Mod4
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 
+# 1. Export variables to the systemd user session
+exec --no-startup-id systemctl --user import-environment DISPLAY XAUTHORITY XDG_CURRENT_DESKTOP
+
+# 2. Force D-Bus to update its own activation environment
+exec --no-startup-id dbus-update-activation-environment --systemd DISPLAY XAUTHORITY XDG_CURRENT_DESKTOP
+
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
 tiling_drag modifier titlebar
@@ -318,19 +324,18 @@ mode "resize" {
 bindsym Mod1+ctrl+l exec --no-startup-id blurlock
 
 # Autostart applications
-exec --no-startup-id nitrogen --restore; sleep 1; picom -b
+exec --no-startup-id nitrogen --restore; sleep 1; pgrep -x picom > /dev/null || picom -b
 exec --no-startup-id nm-applet
-exec --no-startup-id xfce4-power-manager
+exec --no-startup-id dunst
+# exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
 exec --no-startup-id greenclip daemon
 exec --no-startup-id blueman-applet
-exec --no-startup-id start_conky_maia
 exec --no-startup-id ~/.config/i3/scripts/autolock.sh
 exec --no-startup-id xss-lock blurlock
-exec_always --no-startup-id fix_xcursor
-exec_always alttab
+# exec_always --no-startup-id fix_xcursor
+# exec_always alttab
 exec --no-startup-id flameshot
-exec --no-startup-id udiskie
 exec --no-startup-id "rclone mount vm_gdrive:/ ~/google_drive --daemon"
 exec --no-startup-id "rclone mount vm_dropbox:/ ~/dropbox --daemon"
 exec --no-startup-id "autorandr --load laptop"
