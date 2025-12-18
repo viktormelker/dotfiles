@@ -1,1 +1,0 @@
-../../../dev/dotfiles/kakoune/.config/kak/colors/ef-autumn.kak
