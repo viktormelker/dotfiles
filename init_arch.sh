@@ -98,6 +98,7 @@ yay -S spotify libcurl-compat libcurl-gnutls
 yay -S handlr
 sudo pacman -S fwupd
 sudo pacman -S numlockx
+yay -S starship
 
 
 # bluetooth

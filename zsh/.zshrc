@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+# ZSH_THEME="agnoster" # Disabled - using Starship instead
 #ZSH_THEME="robbyrussell"
 
 export FZF_BASE=~/.fzf
@@ -198,3 +198,6 @@ HAS_WIDECHARS="false"
 #if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
 #  source /usr/share/zsh/manjaro-zsh-prompt
 #fi
+
+# Initialize Starship prompt
+eval "$(starship init zsh)"
