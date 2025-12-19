@@ -119,5 +119,3 @@ style = "bright-purple"
 [git_state]
 format = '\([$state( $progress_current/$progress_total)]($style)\) '
 style = "purple"
-
-[cmd_duration.disabled]
