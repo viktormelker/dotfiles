@@ -1,5 +1,4 @@
 #!/bin/sh
-printf " "
 date '+%d %b %H:%M'
 
 case $BLOCK_BUTTON in

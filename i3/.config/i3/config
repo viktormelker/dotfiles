@@ -503,11 +503,10 @@ set $volumestep 5
 #   List sink names: pacmd list-sinks | awk -F "[<>]" '/^\s+name: <.*>/{print $2}'
 #set $sinkname alsa_output.pci-0000_00_1b.0.analog-stereo
 
-# Use pactl to adjust volume in PulseAudio.
-set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+# Use i3-volume script for volume control with notifications
+bindsym XF86AudioRaiseVolume exec --no-startup-id ~/i3-volume/volume -n up $volumestep
+bindsym XF86AudioLowerVolume exec --no-startup-id ~/i3-volume/volume -n down $volumestep
+bindsym XF86AudioMute exec --no-startup-id ~/i3-volume/volume -n mute
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
 bindsym $mod+c exec rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
