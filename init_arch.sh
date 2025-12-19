@@ -130,8 +130,7 @@ mkdir ~/dropbox
 sudo pacman -S lazygit
 
 # for kubernetes
-sudo pacman -S kubectl
-yay -S minikube k9s kubectx stern kubeval helm skaffold krew kustomize
+yay -S minikube k9s kubectx stern kubeval helm skaffold krew kustomize kubeconform kubectl
 kubectl krew install explore
 
 sudo pacman -S openssl-1.1  # Needed for TLS in python. For example pip
