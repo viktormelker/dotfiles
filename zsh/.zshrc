@@ -175,11 +175,15 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/tools/
 export PATH="${PATH}:${HOME}/.krew/bin"
 
 # configure docker inside minikube
-eval $(minikube docker-env)
+# Only run if minikube is running
+if command -v minikube &> /dev/null && minikube status &> /dev/null; then
+  eval $(minikube docker-env)
+fi
 
 export PATH="$FLYCTL_PATH/bin:$PATH"
 
-fpath+=~/.zfunc; autoload -Uz compinit; compinit
+fpath+=~/.zfunc
+# compinit already called by oh-my-zsh, skip duplicate call
 
 eval "$(/usr/bin/mise activate zsh)"
 
