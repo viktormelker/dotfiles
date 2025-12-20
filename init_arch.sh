@@ -33,7 +33,7 @@ yay -S visual-studio-code-bin
 yay -S cursor-bin
 # sudo pacman -S kakoune
 sudo pacman -S docker-compose
-sudo pacman -S docker
+sudo pacman -S docker docker-buildx
 sudo pacman -S dive
 # add user to docker group
 sudo gpasswd -a viktor docker
