@@ -172,6 +172,7 @@ sudo pacman -S swig
 # Databases
 sudo pacman -S redis
 sudo pacman -S postgresql
+yay -S dbgate-bin
 
 sudo pacman -S terraform
 yay -S terraform-docs-bin
@@ -203,3 +204,17 @@ yay -S kanshi-git
 sudo pacman -S wlr-randr
 
 yay -S mkchromecast
+
+# For GPU
+sudo pacman -S --noconfirm mesa-utils vulkan-tools
+
+# For system restore
+sudo pacman -S timeshift
+
+# For gaming
+sudo pacman -S steam
+
+# For VPN
+sudo pacman -S openconnect
+
+yay -S claude-code glab github-cli
