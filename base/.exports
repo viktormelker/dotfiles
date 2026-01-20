@@ -53,7 +53,7 @@ export PYENV_ROOT="$HOME/.pyenv"
 
 export VPN_USER="vmelker"
 
-export TERMINAL=/usr/bin/ghostty
+export TERMINAL=ghostty
 export PATH=$PATH:$HOME/.local/bin
 
 #!/bin/sh
