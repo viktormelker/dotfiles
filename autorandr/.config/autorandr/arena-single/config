@@ -1,3 +1,5 @@
+output HDMI-1
+off
 output DP-1
 off
 output HDMI-2
@@ -12,29 +14,14 @@ output DP-4
 off
 output DP-3-1
 off
-output DP-3-2
-off
-output DP-3-3
-off
 output eDP-1
-crtc 0
-mode 2560x1600
-pos 0x0
-primary
-rate 59.99
-x-prop-broadcast_rgb Automatic
-x-prop-colorspace Default
-x-prop-max_bpc 12
-x-prop-non_desktop 0
-x-prop-scaling_mode Full aspect
-output HDMI-1
+off
+output DP-3-8
 crtc 1
 mode 2560x1440
 pos 0x0
 rate 59.95
-x-prop-aspect_ratio Automatic
 x-prop-audio auto
 x-prop-broadcast_rgb Automatic
-x-prop-colorspace Default
 x-prop-max_bpc 12
 x-prop-non_desktop 0
