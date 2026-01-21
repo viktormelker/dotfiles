@@ -6,7 +6,11 @@
     "**/*.map": {
       "when": "$(basename).map"
     },
-    "**/.git": true
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true
   },
   "editor.rulers": [
     100
@@ -32,7 +36,9 @@
   "explorer.confirmDragAndDrop": false,
   "git.confirmSync": false,
   "vsdocker.imageUser": "docker.io/melkerman",
-  "docker.defaultRegistryPath": "melkerman",
+  "liveshare.guestApprovalRequired": true,
+  "liveshare.allowGuestDebugControl": true,
+  "liveshare.allowGuestTaskControl": true,
   "git.suggestSmartCommit": false,
   "[javascript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
@@ -44,8 +50,7 @@
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "editor.suggestSelection": "first",
-  "python.languageServer": "Pylance",
-  "python.analysis.typeCheckingMode": "basic",
+  "python.languageServer": "None",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "security.workspace.trust.untrustedFiles": "open",
   "workbench.editorAssociations": {
@@ -73,7 +78,7 @@
   "[markdown]": {
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
-    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
   },
   "vsicons.dontShowNewVersionMessage": true,
   "editor.tabCompletion": "on",
@@ -87,24 +92,48 @@
   "[python]": {
     "editor.formatOnType": true,
     "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    },
   },
   "elixirLS.enableTestLenses": true,
   "elixirLS.suggestSpecs": false,
   "emmet.includeLanguages": {
-    "phoenix-heex": "html",
-    "html-eex": "html"
+    "phoenix-heex": "html"
   },
-"git.openRepositoryInParentFolders": "always",
-"vs-kubernetes": {
-  "vscode-kubernetes.minikube-path-linux": "/home/viktor/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube"
-},
-"github.copilot.editor.enableAutoCompletions": true,
-"[html]": {
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
-},
-"[typescript]": {
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
-},
-"editor.multiCursorLimit": 15000,
-"circleci.hostUrl": ""
+  "git.openRepositoryInParentFolders": "always",
+  "window.zoomLevel": 1,
+  "cursor.cpp.disabledLanguages": [
+    "plaintext",
+    "markdown",
+    "scminput"
+  ],
+  "cloudcode.duetAI.project": "",
+  "extensions.ignoreRecommendations": true,
+  "vs-kubernetes": {
+    "vs-kubernetes.minikube-show-information-expiration": "2025-08-07T12:32:35.538Z",
+    "vs-kubernetes.crd-code-completion": "disabled"
+  },
+  "githubPullRequests.pullBranch": "never",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorTheme": "Default Dark Modern",
+  "cursor.composer.textSizeScale": 1.15,
+  "cursorpyright.analysis.typeCheckingMode": "basic",
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "editor.parameterHints.enabled": false,
+  "editor.hover.enabled": false,
+  "editor.inlayHints.enabled": "offUnlessPressed"
 }
