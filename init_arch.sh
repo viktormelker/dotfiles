@@ -57,11 +57,9 @@ sudo pacman -S ghostty
 # sudo pacman -S kscreen
 yay -S direnv just
 # sudo pacman -S cmake
-# sudo pacman -S bind
+sudo pacman -S bind
 # sudo pacman -S gopass
 # sudo pacman -S keychain
-# sudo pacman -S github-cli
-# sudo pacman -S diff-so-fancy
 sudo pacman -S difftastic
 sudo pacman -S ripgrep
 sudo pacman -S entr
@@ -105,7 +103,7 @@ yay -S starship
 sudo pacman -S bluez-utils blueman
 
 # Yubikey stuff
-sudo pacman -S yubikey-manager-qt yubikey-manager yubico-pam libu2f-host libfido2 pam-u2f
+sudo pacman -S yubikey-manager-qt yubikey-manager yubico-pam libu2f-host libfido2 pam-u2f yubikey-personalization
 
 yay -S yubioath-desktop
 yay -S acsccid
@@ -206,7 +204,7 @@ sudo pacman -S wlr-randr
 yay -S mkchromecast
 
 # For GPU
-sudo pacman -S --noconfirm mesa-utils vulkan-tools
+sudo pacman -S --noconfirm mesa-utils vulkan-tools vulkan-intel
 
 # For system restore
 sudo pacman -S timeshift
@@ -217,4 +215,4 @@ sudo pacman -S steam
 # For VPN
 sudo pacman -S openconnect
 
-yay -S claude-code glab github-cli
+yay -S claude-code glab github-cli speech-dispatcher
