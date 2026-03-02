@@ -19,3 +19,6 @@ source ~/.config/user-dirs.dirs
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 . "$HOME/.local/bin/env"
+
+# opencode
+export PATH=/home/viktor/.opencode/bin:$PATH
