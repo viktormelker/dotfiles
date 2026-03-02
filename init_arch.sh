@@ -176,7 +176,7 @@ sudo pacman -S terraform
 yay -S terraform-docs-bin
 
 # Kafka
-yay -S kafkacat-git
+yay -S kafkacat-git librdkafka
 
 # sound
 sudo pacman -S pipewire wireplumber helvum
