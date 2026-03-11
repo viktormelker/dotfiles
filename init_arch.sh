@@ -216,3 +216,6 @@ sudo pacman -S steam
 sudo pacman -S openconnect
 
 yay -S claude-code glab github-cli speech-dispatcher
+
+# For browser
+yay -S vivaldi
