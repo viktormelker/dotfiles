@@ -3,13 +3,17 @@ separator_block_width=20
 markup=pango
 
 [clock]
-label=🕑 
+label=🕑
 interval=30
 markup=none
 
 [cpu]
 interval=15
-label=💻 
+label=💻
+markup=none
+
+[battery]
+interval=30
 markup=none
 
 [i3volume]

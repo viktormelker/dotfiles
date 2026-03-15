@@ -1,0 +1,34 @@
+#!/bin/sh
+
+# Find first battery in /sys/class/power_supply (BAT0, BAT1, etc.)
+for bat in /sys/class/power_supply/BAT*; do
+	[ -d "$bat" ] || continue
+	capacity=$(cat "$bat/capacity" 2>/dev/null)
+	status=$(cat "$bat/status" 2>/dev/null)
+	break
+done
+
+if [ -z "$capacity" ]; then
+	echo "N/A"
+	exit 0
+fi
+
+case $BLOCK_BUTTON in
+	1) notify-send "Battery" "$(acpi -b 2>/dev/null || echo "${capacity}% ${status}")" ;;
+	3) notify-send "Battery module" "Shows capacity and charging status. Left click for acpi details." ;;
+esac
+
+# Icon by capacity/status
+if [ "$status" = "Charging" ]; then
+	icon="⚡"
+elif [ "$capacity" -gt 90 ]; then
+	icon="🔋"
+elif [ "$capacity" -gt 60 ]; then
+	icon="🔋"
+elif [ "$capacity" -gt 30 ]; then
+	icon="🔋"
+else
+	icon="🪫"
+fi
+
+echo "${icon} ${capacity}%"
