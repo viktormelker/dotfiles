@@ -37,7 +37,7 @@ export MANPAGER='less -X';
 # For flutter development
 export CHROME_EXECUTABLE=/usr/bin/chromium
 
-export BROWSER=/usr/bin/firefox
+export BROWSER=/usr/bin/vivaldi
 export KUBECONFIG=~/.kube/config
 
 export ERL_AFLAGS="-kernel shell_history enabled"

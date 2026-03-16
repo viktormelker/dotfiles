@@ -19,11 +19,11 @@
                "y": 0
             },
             "marks": [],
-            "name": "i3: Layout saving in i3 — Mozilla Firefox",
+            "name": "i3: Layout saving in i3 — Vivaldi",
             "percent": 1,
             "swallows": [
                {
-                "class": "^firefox$",
+                "class": "^vivaldi-stable$",
                 "window_role": "^browser$"
                }
             ],
