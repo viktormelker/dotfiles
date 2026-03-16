@@ -1,0 +1,8 @@
+#!/bin/sh
+# Ensure eDP-1 is active before autorandr turns off external displays.
+# On NVIDIA Optimus systems, switching directly from dGPU-only to iGPU-only
+# in a single xrandr call can fail silently, resulting in a black screen.
+if ! xrandr | grep -q "^eDP-1 connected [0-9]"; then
+    xrandr --output eDP-1 --mode 2560x1600 --rate 240.00
+    sleep 0.5
+fi
