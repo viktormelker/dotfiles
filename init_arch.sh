@@ -181,7 +181,7 @@ yay -S kafkacat-git librdkafka
 # sound
 sudo pacman -S pipewire wireplumber helvum
 
-yay -S mongodb-tools-bin
+yay -S mongosh-bin mongodb-atlas-cli-bin
 
 # Webpage generation
 sudo pacman -S hugo
@@ -215,7 +215,7 @@ sudo pacman -S steam
 # For VPN
 sudo pacman -S openconnect
 
-yay -S claude-code glab github-cli speech-dispatcher
+yay -S claude-code glab github-cli speech-dispatcher opencode-desktop-bin
 
 # For browser
 yay -S vivaldi
