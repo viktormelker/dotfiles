@@ -1,0 +1,4 @@
+.claude
+pgcli/.config/pgcli/log
+pgcli/.config/pgcli/history
+node_modules
