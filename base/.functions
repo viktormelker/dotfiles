@@ -88,9 +88,9 @@ function server() {
 # opens the given location
 function c() {
 	if [ $# -eq 0 ]; then
-		cursor . &;
+		cursor . --ozone-platform=x11 --password-store=gnome-libsecret&;
 	else
-	  cursor "$@" &;
+	  cursor "$@" --ozone-platform=x11 --password-store=gnome-libsecret&;
 	fi;
 }
 
