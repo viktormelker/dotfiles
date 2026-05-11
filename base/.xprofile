@@ -1,0 +1,4 @@
+# Make Chromium/Electron apps pick gnome-libsecret for safeStorage.
+# Without this, XDG_CURRENT_DESKTOP=i3 makes Electron fall back to basic_text
+# and report "OS secure credential storage is unavailable".
+export XDG_CURRENT_DESKTOP=Unity
