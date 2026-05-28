@@ -65,3 +65,6 @@ export ZEIT_DB="$HOME/.config/zeit.db"
 # set default shell and terminal
 export SHELL=/usr/bin/zsh
 export TERMINAL_COMMAND=xdg-terminal-exec
+
+# For pypi uploads
+export TWINE_USERNAME=__token__
