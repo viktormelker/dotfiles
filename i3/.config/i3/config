@@ -67,10 +67,10 @@ bindsym $mod+Ctrl+m exec pavucontrol
 ################################################################################################
 
 # Screen brightness controls
-# bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
-# bindsym $mod+F6 exec "xbacklight -inc 10; notify-send 'brightness up'"
-# bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
-# bindsym $mod+F5 exec "xbacklight -dec 10; notify-send 'brightness down'"
+bindsym XF86MonBrightnessUp exec --no-startup-id ~/.config/i3/scripts/brightness.sh up
+bindsym XF86MonBrightnessDown exec --no-startup-id ~/.config/i3/scripts/brightness.sh down
+bindsym $mod+F6 exec --no-startup-id ~/.config/i3/scripts/brightness.sh up
+bindsym $mod+F5 exec --no-startup-id ~/.config/i3/scripts/brightness.sh down
 
 
 # Start Applications
