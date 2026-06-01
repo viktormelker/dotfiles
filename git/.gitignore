@@ -28,3 +28,6 @@ vscode/.config/Code/User/History
 .env
 .vscode
 .tool-versions
+mise.toml
+
+.opencode

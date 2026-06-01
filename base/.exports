@@ -68,3 +68,5 @@ export TERMINAL_COMMAND=xdg-terminal-exec
 
 # For pypi uploads
 export TWINE_USERNAME=__token__
+
+export OPENCODE_PORT=4096
