@@ -88,7 +88,7 @@ alias gdd="git difftool "
 
 # Add CDON aliases
 export CDON_UTILS_PATH="$HOME/dev/fyndiq/utils/scripts"
-alias db="bash $CDON_UTILS_PATH/db/db.sh"
+alias db="$CDON_UTILS_PATH/db/db.py"
 alias pr="bash $CDON_UTILS_PATH/pr/pr.sh"
 # alias kfmt="bash $CDON_UTILS_PATH/kfmt.sh"
 alias mongo="bash $CDON_UTILS_PATH/mongo/mongo.sh"
