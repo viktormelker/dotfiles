@@ -25,3 +25,8 @@ git clone https://github.com/zplug/zplug $ZPLUG_HOME
 mkdir -p ~/dev/misc/tmux_logs
 
 git clone https://github.com/hastinbe/i3-volume.git ~/i3-volume
+
+# install cloud-sql-proxy
+curl "https://storage.googleapis.com/cloud-sql-connectors/cloud-sql-proxy/v2.22.0/cloud-sql-proxy.linux.amd64" -o cloud-sql-proxy
+chmod +x cloud-sql-proxy
+sudo mv cloud-sql-proxy /usr/local/bin/cloud-sql-proxy
