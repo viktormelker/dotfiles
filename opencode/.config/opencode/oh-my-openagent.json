@@ -6,14 +6,8 @@
       "variant": "max"
     },
     "oracle": {
-      "model": "google/gemini-3.1-pro-preview",
-      "variant": "high",
-      "fallback_models": [
-        {
-          "model": "anthropic/claude-opus-4-8",
-          "variant": "x-high"
-        }
-      ]
+      "model": "anthropic/claude-opus-4-8",
+      "variant": "x-high"
     },
     "explore": {
       "model": "anthropic/claude-haiku-4-5"
