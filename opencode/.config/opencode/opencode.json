@@ -1,5 +1,37 @@
 {
   "$schema": "https://opencode.ai/config.json",
+  "lsp": {
+    "helm-ls": {
+      "command": [
+        "helm_ls",
+        "serve"
+      ],
+      "extensions": [
+        ".yaml",
+        ".yml",
+        ".tpl"
+      ],
+      "initialization": {
+        "helm-ls": {
+          "logLevel": "info",
+          "helmLint": {
+            "enabled": true
+          },
+          "yamlls": {
+            "enabled": true,
+            "path": "yaml-language-server",
+            "config": {
+              "schemas": {
+                "kubernetes": "templates/**"
+              },
+              "completion": true,
+              "hover": true
+            }
+          }
+        }
+      }
+    }
+  },
   "server": {
     "port": 4096
   },
