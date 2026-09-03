@@ -35,11 +35,22 @@
   "server": {
     "port": 4096
   },
-  "model": "anthropic/claude-opus-4-8",
-  "default_agent": "sisyphus",
+  "model": "anthropic/claude-opus-5",
   "agent": {
     "build": {
-      "model": "anthropic/claude-opus-4-8"
+      "model": "anthropic/claude-opus-5"
+    }
+  },
+  "provider": {
+    "anthropic": {
+      "models": {
+        "claude-opus-5": {
+          "reasoning": false
+        },
+        "claude-sonnet-5": {
+          "reasoning": false
+        }
+      }
     }
   },
   "mcp": {
@@ -80,8 +91,5 @@
         "redirectUri": "http://localhost:3118/callback"
       }
     }
-  },
-  "plugin": [
-    "oh-my-openagent@latest"
-  ]
+  }
 }
