@@ -195,6 +195,10 @@
 
 	enabled = true
 
+[remote]
+
+	pushDefault = origin
+
 # URL shorthands
 
 [url "git@github.com:"]
