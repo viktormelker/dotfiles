@@ -215,7 +215,10 @@ sudo pacman -S steam
 # For VPN
 sudo pacman -S openconnect
 
-yay -S claude-code glab github-cli speech-dispatcher opencode-desktop-bin
+yay -S claude-code glab github-cli speech-dispatcher opencode-desktop-bin ccmux-bin
+
+# task manager
+yay -S tmog-bin
 
 # For browser
 yay -S vivaldi
