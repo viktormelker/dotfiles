@@ -54,6 +54,9 @@ bindsym $mod+Tab exec --no-startup-id "rofi -show-icons -modi windowcd,window,dr
 # launch categorized menu
 bindsym $mod+z exec --no-startup-id morc_menu
 
+exec --no-startup-id handy --start-hidden
+bindsym $mod+Shift+period exec pkill -USR2 -x handy
+
 ################################################################################################
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
 ################################################################################################
