@@ -76,7 +76,7 @@ plugins=(
   kubectl
   tmux
   pip
-  github
+  gh
   fzf
   dotenv
   colored-man-pages
