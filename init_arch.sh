@@ -124,6 +124,8 @@ yay -S rofi-greenclip
 # Tools
 sudo pacman -S rclone
 mkdir ~/google_drive
+sudo pacman -S googleworkspace-cli
+
 mkdir ~/dropbox
 sudo pacman -S lazygit
 
@@ -215,7 +217,9 @@ sudo pacman -S steam
 # For VPN
 sudo pacman -S openconnect
 
-yay -S claude-code glab github-cli speech-dispatcher opencode-desktop-bin ccmux-bin
+yay -S claude-code glab github-cli speech-dispatcher opencode-desktop-bin ccmux-bin openai-codex
+
+
 
 # task manager
 yay -S tmog-bin
