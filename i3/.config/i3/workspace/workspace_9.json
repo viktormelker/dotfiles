@@ -23,9 +23,9 @@
             "percent": null,
             "swallows": [
                {
-                "class": "^Slack$",
-                "instance": "^slack$"
-               // "window_role": "^browser\\-window$"
+                "class": "^slack$",
+                "instance": "^slack$",
+                "window_role": "^browser\\-window$"
                }
             ],
             "type": "con"

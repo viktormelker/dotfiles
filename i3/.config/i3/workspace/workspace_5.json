@@ -23,7 +23,8 @@
             "percent": null,
             "swallows": [
                 {
-                   "class": "^obsidian$",
+                   "class": "^md\\.obsidian\\.Obsidian$",
+                   "instance": "^md\\.obsidian\\.obsidian$",
                    "window_role": "^browser\\-window$"
                 }
             ],
